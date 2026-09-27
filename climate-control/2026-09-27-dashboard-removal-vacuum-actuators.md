@@ -69,6 +69,19 @@ Actuator (b), as removed: a rectangular/oval housing with **two stacked diaphrag
 ports** (one per stage), molded **"40 0104"** (WOCO part number). This matches the dual-mode defroster element
 (½ open / full open) and the rebuild route of 2× 126 800 14 75 diaphragms (one per chamber).
 
+![Actuator (b) installed, with its two vacuum lines](images/2026-09-27-actuator-b-installed-vacuum-lines.jpg)
+
+As installed, both lines are red, connected with rubber elbows:
+
+| Port (in photo) | Line color | Diagram code |
+|-----------------|------------|--------------|
+| Left  | red with a **white** stripe | **rt/ws** |
+| Right | red with a **blue/violet** stripe | **rt/hbl** (red/light blue) |
+
+These match the two colors running to item 38 in the vacuum diagram, from switchover valves 12.7
+(large stroke) and 12.6 (short stroke). The diagram doesn't show which color feeds which stage.
+Reconnect by color, exactly as photographed.
+
 ### Related parts (from the BenzWorld parts list, not yet verified for this car)
 
 | Part                                   | Number          |
