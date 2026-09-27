@@ -1,0 +1,8 @@
+# Private vehicle identifiers
+.env
+
+# macOS
+.DS_Store
+
+# Saved copies of references stay local for now (copyright; repo is public)
+*/references/
