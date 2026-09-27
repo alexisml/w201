@@ -52,6 +52,10 @@ Vacuum elements shown in the diagram (circled):
 | 83.060 A/C case with blower, **pos 53** | 201 800 00 75 | Element, main air flap control |
 
 Source: the full parts catalog for this car, kept in the private archive (available on request).
+
+> **Heads-up on numbering:** the vacuum diagram's *item numbers* and the parts catalog's *positions*
+> are different systems. Vacuum diagram **item 38** is the defroster element, 000 800 87 75
+> (WOCO 40 0104). Parts catalog **pos 38** is 201 800 08 75, the round element on top of the case.
 A fifth element sits inside the heater case. It has no part number and only comes with a new case.
 
 | # | MB part number | Function | Type | Behr / Hella cross-ref | Rebuild option |
