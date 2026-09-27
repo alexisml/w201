@@ -43,7 +43,7 @@ A fifth element sits in the center of the heater case. It has no part number and
 | # | MB part number | Function | Type | Behr / Hella cross-ref | Rebuild option |
 |---|----------------|----------|------|------------------------|----------------|
 | a | **201 800 08 75** | TBD (see below) | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit), probably the same as (c) |
-| b | **000 800 87 75** | Defroster nozzle flap (item 38) | **Oval, dual-mode**: 2 vacuum ports, ½ open / full open | WOCO 40 0104. Hella 6NV 351 329-041 / 351329041 (per BenzWorld, which also gives the older MB number 201 800 05 75) | Use the seals from **2× 126 800 14 75** (same rubber, different color; Facebook 190E group) |
+| b | **000 800 87 75** | Defroster nozzle flap (item 38) | **Oval, dual-mode**: 2 stacked chambers, 2 vacuum ports, ½ open / full open | WOCO 40 0104 (molded on the housing, confirmed on the removed part). Hella 6NV 351 329-041 / 351329041 (per BenzWorld, which also gives the older MB number 201 800 05 75) | Use the seals from **2× 126 800 14 75** (same rubber, different color; Facebook 190E group) |
 | c | **201 800 03 75** | Legroom flap (item 39) | Single diaphragm, round | Behr 351329721 | Single-stage diaphragm, 28 mm (Klimakit); 9zwo8 diaphragm lists A2018000375 as compatible |
 | d | **201 800 00 75** | Main air flap = fresh/recirc (item 40, most likely) | **Double diaphragm** | Behr 90.622.00.375. Hella 6NV 351 329-301 / 351329301 | Dual-stage diaphragm cartridge, probably **clip style** (Klimakit) |
 
@@ -62,6 +62,12 @@ A fifth element sits in the center of the heater case. It has no part number and
 - **000 800 87 75 is no longer made (NLA).** ECS and Norsider list their parts as unavailable. Rebuilding is the way forward.
 
 ![Actuator (a) 201 800 08 75, Behr, next to caliper set to ~28 mm](images/2026-09-27-actuator-a-201-800-08-75-behr.jpg)
+
+![Actuator (b) 000 800 87 75, defroster, WOCO 40 0104](images/2026-09-27-actuator-b-000-800-87-75-woco-40-0104.jpg)
+
+Actuator (b), as removed: a rectangular/oval housing with **two stacked diaphragm chambers** and **two vacuum
+ports** (one per stage), molded **"40 0104"** (WOCO part number). This matches the dual-mode defroster element
+(½ open / full open) and the rebuild route of 2× 126 800 14 75 diaphragms (one per chamber).
 
 ### Related parts (from the BenzWorld parts list, not yet verified for this car)
 
