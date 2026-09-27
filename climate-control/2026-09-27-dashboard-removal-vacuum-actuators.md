@@ -15,7 +15,7 @@ Removed the dashboard by following the Pelican Parts guide:
 
 - [Mercedes-Benz 190E Dashboard Removal and Replacement](https://www.pelicanparts.com/techarticles/Mercedes-190E/43-BODY-Removing_the_Dashboard/43-BODY-Removing_the_Dashboard.htm)
   ([archived, text only](https://web.archive.org/web/20170810023426/http://www.pelicanparts.com/techarticles/Mercedes-190E/43-BODY-Removing_the_Dashboard/43-BODY-Removing_the_Dashboard.htm),
-  [local PDF + full-res images](references/pelican-190e-removing-the-dashboard/))
+  [saved copy](references/pelican-190e-removing-the-dashboard/))
 
 Prerequisites from the guide: remove the instrument cluster and center console first, then disconnect the battery.
 Tip from BenzWorld (MSGGrunt): removing the **steering wheel** makes it much easier to reinstall the dash.
@@ -97,20 +97,20 @@ _Pending._
 
 ## Sources
 
-Every link has an archived copy (Wayback Machine, or a local PDF + images in `references/`).
+Every link has a saved copy: an Internet Archive link, or a full copy in the private archive (available on request). Each `references/` folder describes what's saved.
 
 **Part identification / cross-reference**
-- BenzWorld: [Chassis Number Help For HVAC Defrost Vacuum Actuator](https://www.benzworld.org/threads/chassis-number-help-for-hvac-defrost-vacuum-actuator.1948394/) ([local](references/bw-chassis-number-defrost/)): source of the 4-part list and ECS's VIN lookup
-- BenzWorld: [Climate Control, HVAC Restoration Parts List](https://www.benzworld.org/threads/climate-control-hvac-restoration-parts-list.1945626/) ([local](references/bw-hvac-parts-list/))
-- BenzWorld: [Vacuum Element - Defroster Nozzle Flap](https://www.benzworld.org/threads/vacuum-element-defroster-nozzle-flap.3004657/) ([local](references/bw-defroster-nozzle-flap/)): includes a photo of all actuators with prices
-- Pelican Parts: [201 800 00 75](https://www.pelicanparts.com/More_Info/2018000075.htm) ([archived 2023](https://web.archive.org/web/20230210040618/https://www.pelicanparts.com/More_Info/2018000075.htm)) · [201 800 03 75](https://www.pelicanparts.com/More_Info/2018000375.htm) ([local](references/pelican-2018000375/)) · [201 800 08 75](https://www.pelicanparts.com/More_Info/2018000875.htm) ([local, images only](references/pelican-2018000875/)) · [000 800 87 75](https://www.pelicanparts.com/More_Info/0008008775.htm) ([local, images only](references/pelican-0008008775/))
-- ECS Tuning: [000 800 87 75](https://www.ecstuning.com/b-genuine-mercedes-benz-parts/vacuum-element/0008008775/) ([local](references/ecs-0008008775/))
-- Norsider (used): [201 800 00 75 / Behr 90.622.00.375](https://autopecas.norsider.pt/en/en-heater-blower-flap-actuator-mercedes-190-201-from-1982-1983-1984-1985-1986-1987-1988-1989-1990-1991-1992-1993-2018000075-behr-90-622-00-375-199464) ([local](references/norsider-2018000075/))
-- NIParts: [201 800 00 75 → Hella 351329301](https://www.niparts.com/s_242A8B/2018000075.html) ([local](references/niparts-2018000075/))
-- DRIVE2: [A 201 800 00 75](https://www.drive2.ru/parts/mercedes/a2018000075/CUuWQEAAalk) ([local](references/drive2-a2018000075/))
+- BenzWorld: [Chassis Number Help For HVAC Defrost Vacuum Actuator](https://www.benzworld.org/threads/chassis-number-help-for-hvac-defrost-vacuum-actuator.1948394/) ([saved](references/bw-chassis-number-defrost/)): source of the 4-part list and ECS's VIN lookup
+- BenzWorld: [Climate Control, HVAC Restoration Parts List](https://www.benzworld.org/threads/climate-control-hvac-restoration-parts-list.1945626/) ([saved](references/bw-hvac-parts-list/))
+- BenzWorld: [Vacuum Element - Defroster Nozzle Flap](https://www.benzworld.org/threads/vacuum-element-defroster-nozzle-flap.3004657/) ([saved](references/bw-defroster-nozzle-flap/)): includes a photo of all actuators with prices
+- Pelican Parts: [201 800 00 75](https://www.pelicanparts.com/More_Info/2018000075.htm) ([archived 2023](https://web.archive.org/web/20230210040618/https://www.pelicanparts.com/More_Info/2018000075.htm)) · [201 800 03 75](https://www.pelicanparts.com/More_Info/2018000375.htm) ([saved](references/pelican-2018000375/)) · [201 800 08 75](https://www.pelicanparts.com/More_Info/2018000875.htm) ([saved, images only](references/pelican-2018000875/)) · [000 800 87 75](https://www.pelicanparts.com/More_Info/0008008775.htm) ([saved, images only](references/pelican-0008008775/))
+- ECS Tuning: [000 800 87 75](https://www.ecstuning.com/b-genuine-mercedes-benz-parts/vacuum-element/0008008775/) ([saved](references/ecs-0008008775/))
+- Norsider (used): [201 800 00 75 / Behr 90.622.00.375](https://autopecas.norsider.pt/en/en-heater-blower-flap-actuator-mercedes-190-201-from-1982-1983-1984-1985-1986-1987-1988-1989-1990-1991-1992-1993-2018000075-behr-90-622-00-375-199464) ([saved](references/norsider-2018000075/))
+- NIParts: [201 800 00 75 → Hella 351329301](https://www.niparts.com/s_242A8B/2018000075.html) ([saved](references/niparts-2018000075/))
+- DRIVE2: [A 201 800 00 75](https://www.drive2.ru/parts/mercedes/a2018000075/CUuWQEAAalk) ([saved](references/drive2-a2018000075/))
 - Autoplicity: [Behr 201 800 03 75](https://autoplicity.com/3278849-behr-mercedes-201-800-03-75-vacuum-element): **not archived**. No Wayback snapshot, and the page could not be saved.
 
 **Rebuild parts**
-- Facebook, Mercedes 190E Owners Club: [How to repair the defroster flap vacuum element](https://www.facebook.com/groups/TheMercedes190Group/posts/10169573489405441/) ([local, partial](references/fb-190group-defrost/)): use 2× 126 800 14 75 seals
-- Klimakit: [Single-stage diaphragms](https://klimakit.com/product/universal-single-stage-vacuum-actuator-diaphragm/) ([local](references/klimakit-single-stage/)) · [Dual-stage cartridge](https://klimakit.com/product/dual-stage-vacuum-actuator-diaphragm-cartridge-assembly/) ([local](references/klimakit-dual-stage/))
-- 9zwo8: [Replacement diaphragm vacuum can](https://9zwo8.com/en/products/replacement-diaphragm-vacuum-can-mercedes-benz) ([local](references/9zwo8-diaphragm/))
+- Facebook, Mercedes 190E Owners Club: [How to repair the defroster flap vacuum element](https://www.facebook.com/groups/TheMercedes190Group/posts/10169573489405441/) ([saved, partial](references/fb-190group-defrost/)): use 2× 126 800 14 75 seals
+- Klimakit: [Single-stage diaphragms](https://klimakit.com/product/universal-single-stage-vacuum-actuator-diaphragm/) ([saved](references/klimakit-single-stage/)) · [Dual-stage cartridge](https://klimakit.com/product/dual-stage-vacuum-actuator-diaphragm-cartridge-assembly/) ([saved](references/klimakit-dual-stage/))
+- 9zwo8: [Replacement diaphragm vacuum can](https://9zwo8.com/en/products/replacement-diaphragm-vacuum-can-mercedes-benz) ([saved](references/9zwo8-diaphragm/))

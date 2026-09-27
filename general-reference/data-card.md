@@ -43,7 +43,7 @@ under the hood, and a third brake light.
 | Field | Value on card | Notes |
 |-------|---------------|-------|
 | Paint | 77 (code list also shows **147**) | **147 = Arctic White.** Matches the car, which is white (owner confirmed) |
-| Interior | 177 (code list shows **177A**) | **177 = MB-Tex, Medium Red** (1xx = MB-Tex vinyl, x77 = medium red). Matches the car's reddish interior (owner confirmed). Source: [SL Registry interior codes](https://www.sl-registry.com/decoder/interior-colors/) ([local](references/slregistry-interior-codes/)) |
+| Interior | 177 (code list shows **177A**) | **177 = MB-Tex, Medium Red** (1xx = MB-Tex vinyl, x77 = medium red). Matches the car's reddish interior (owner confirmed). Source: [SL Registry interior codes](https://www.sl-registry.com/decoder/interior-colors/) ([saved](references/slregistry-interior-codes/)) |
 
 ## Option codes
 

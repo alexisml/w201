@@ -4,5 +4,9 @@
 # macOS
 .DS_Store
 
-# Saved copies of references stay local for now (copyright; repo is public)
-*/references/
+# Full copies of third-party references live in the private repo (w201-private).
+# Only README stubs, plus copies that contain only factual data, are published here.
+*/references/**/images/
+*/references/**/*.pdf
+!general-reference/references/ilcats-vin-decode/*.pdf
+!general-reference/references/slregistry-interior-codes/*.pdf

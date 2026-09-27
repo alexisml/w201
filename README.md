@@ -73,7 +73,7 @@ diagrams and scans referenced by those entries.
 ├── climate-control/          # heating, ventilation, A/C, vacuum actuators
 │   ├── YYYY-MM-DD-short-title.md
 │   ├── images/
-│   └── references/           # archived copies of linked guides
+│   └── references/           # source info per link (full copies on request)
 ├── engine/
 ├── fuel-injection/
 ├── ignition/
@@ -95,10 +95,9 @@ Folders get created as needed — only add a topic when there's something to put
   for reference notes that aren't tied to a date.
 - **Images:** stored in the topic's `images/` folder, named `YYYY-MM-DD-description.jpg`,
   and referenced with relative paths: `![Vacuum lines](images/2026-09-27-vacuum-lines.jpg)`.
-- **Links:** every link gets a saved copy: an Internet Archive link, or a PDF plus pictures
-  in `<topic>/references/`. Saved copies are for preservation only (fair use), and always credit
-  the original. Saved copies stay on the local machine (git-ignored) because this repo is public.
-  Full rule in [CLAUDE.md](CLAUDE.md).
+- **Links:** every link gets a saved copy. Full copies of other people's work are kept in a
+  private archive and are **available on request**. Only fair-use material (our notes and photos,
+  facts, short quotes, links) is published here. Full rule in [CLAUDE.md](CLAUDE.md).
 - **Index:** every new entry gets a row in the [Log index](#log-index) below.
 
 ### Log entry template
