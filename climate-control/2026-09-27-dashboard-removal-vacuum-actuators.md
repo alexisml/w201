@@ -18,6 +18,12 @@ Removed the dashboard by following the Pelican Parts guide:
   [saved copy](references/pelican-190e-removing-the-dashboard/))
 
 Prerequisites from the guide: remove the instrument cluster and center console first, then disconnect the battery.
+
+To go further and replace the heater core, the whole heater box has to come out. See Pelican's
+[190E Heater Core Replacement](https://www.pelicanparts.com/techarticles/Mercedes-190E/44-WATER-Replacing_Your_Heater_Core/44-WATER-Replacing_Your_Heater_Core.htm)
+([archived 2017](https://web.archive.org/web/20171031174919/http://www.pelicanparts.com/techarticles/Mercedes-190E/44-WATER-Replacing_Your_Heater_Core/44-WATER-Replacing_Your_Heater_Core.htm),
+[saved](references/pelican-190e-heater-core-replacement/)): about 4 hours, heater core 002 835 54 01. A reader
+comment recommends the genuine MB core over the narrower Nissens one, because the core's retaining nuts don't line up.
 Tip from BenzWorld (MSGGrunt): removing the **steering wheel** makes it much easier to reinstall the dash.
 
 ## Vacuum diagram
@@ -42,18 +48,18 @@ A fifth element sits in the center of the heater case. It has no part number and
 
 | # | MB part number | Function | Type | Behr / Hella cross-ref | Rebuild option |
 |---|----------------|----------|------|------------------------|----------------|
-| a | **201 800 08 75** | TBD (see below) | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit), probably the same as (c) |
+| a | **201 800 08 75** | **Vacuum element, heater case** (Pelican). Most likely item 37 on top of the heater box (see below) | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit), probably the same as (c) |
 | b | **000 800 87 75** | Defroster nozzle flap (item 38) | **Oval, dual-mode**: 2 stacked chambers, 2 vacuum ports, ½ open / full open | WOCO 40 0104 (molded on the housing, confirmed on the removed part). Hella 6NV 351 329-041 / 351329041 (per BenzWorld, which also gives the older MB number 201 800 05 75) | Use the seals from **2× 126 800 14 75** (same rubber, different color; Facebook 190E group) |
 | c | **201 800 03 75** | Legroom flap (item 39) | Single diaphragm, round | Behr 351329721 | Single-stage diaphragm, 28 mm (Klimakit); 9zwo8 diaphragm lists A2018000375 as compatible |
 | d | **201 800 00 75** | Main air flap = fresh/recirc (item 40, most likely) | **Double diaphragm** | Behr 90.622.00.375. Hella 6NV 351 329-301 / 351329301 | Dual-stage diaphragm cartridge, probably **clip style** (Klimakit) |
 
 ### Notes & open questions
 
-- **Which item is (a)?** Items 38, 39 and 40 are accounted for by b, c and d. Item 38 is dual-stroke,
-  matching (b)'s dual mode. Item 40 is dual-stroke, matching (d)'s double diaphragm and Klimakit's
-  "defrost and fresh air flap" dual-stage cartridge. That leaves (a) as either **37 (blend air
-  "cold")** or **41 (heater valve)**, and the other one is the unnumbered element in the heater case.
-  **Where (a) was mounted when removed settles this.**
+- **Which item is (a)?** Pelican lists 201 800 08 75 as **"Vacuum Element - Heater Case"**. Pelican's heater
+  core article also says to *"remove the vacuum line from the vacuum element on the top of the heater
+  box"*. On the diagram, the element on top of the heater box is **item 37 (blend air flaps, "cold")**, so
+  (a) is most likely 37. That would make item 41 (heater valve) the unnumbered element inside the case.
+  Where (a) was mounted when removed will confirm it.
 - MSGGrunt's 2014 parts list says "#37, #38, #39, #41 are replaceable, #40 only with the heater housing".
   That was based on a different, older diagram whose numbering probably doesn't match this one. Don't
   trust the item numbers across diagrams.
@@ -109,7 +115,7 @@ _Pending._
 
 ## To do
 
-- [ ] Record where (a) 201 800 08 75 was mounted → settles 37 vs 41
+- [ ] Confirm (a) 201 800 08 75 came from the top of the heater box (item 37)
 - [ ] Double-check the Behr number on (a)'s label
 - [ ] Measure the diaphragm cups of (a) and (c) to confirm the 28 mm shallow type
 - [ ] Source 2× 126 800 14 75 for the (b) defroster rebuild
@@ -126,12 +132,12 @@ Every link has a saved copy: an Internet Archive link, or a full copy in the pri
 - BenzWorld: [Chassis Number Help For HVAC Defrost Vacuum Actuator](https://www.benzworld.org/threads/chassis-number-help-for-hvac-defrost-vacuum-actuator.1948394/) ([saved](references/bw-chassis-number-defrost/)): source of the 4-part list and ECS's VIN lookup
 - BenzWorld: [Climate Control, HVAC Restoration Parts List](https://www.benzworld.org/threads/climate-control-hvac-restoration-parts-list.1945626/) ([saved](references/bw-hvac-parts-list/))
 - BenzWorld: [Vacuum Element - Defroster Nozzle Flap](https://www.benzworld.org/threads/vacuum-element-defroster-nozzle-flap.3004657/) ([saved](references/bw-defroster-nozzle-flap/)): includes a photo of all actuators with prices
-- Pelican Parts: [201 800 00 75](https://www.pelicanparts.com/More_Info/2018000075.htm) ([archived 2023](https://web.archive.org/web/20230210040618/https://www.pelicanparts.com/More_Info/2018000075.htm)) · [201 800 03 75](https://www.pelicanparts.com/More_Info/2018000375.htm) ([saved](references/pelican-2018000375/)) · [201 800 08 75](https://www.pelicanparts.com/More_Info/2018000875.htm) ([saved, images only](references/pelican-2018000875/)) · [000 800 87 75](https://www.pelicanparts.com/More_Info/0008008775.htm) ([saved, images only](references/pelican-0008008775/))
+- Pelican Parts: [201 800 00 75](https://www.pelicanparts.com/More_Info/2018000075.htm) ([archived 2023](https://web.archive.org/web/20230210040618/https://www.pelicanparts.com/More_Info/2018000075.htm)) · [201 800 03 75](https://www.pelicanparts.com/More_Info/2018000375.htm) ([saved](references/pelican-2018000375/)) · [201 800 08 75](https://www.pelicanparts.com/More_Info/2018000875.htm) ([saved](references/pelican-2018000875/)) · [000 800 87 75](https://www.pelicanparts.com/More_Info/0008008775.htm) ([saved](references/pelican-0008008775/))
 - ECS Tuning: [000 800 87 75](https://www.ecstuning.com/b-genuine-mercedes-benz-parts/vacuum-element/0008008775/) ([saved](references/ecs-0008008775/))
 - Norsider (used): [201 800 00 75 / Behr 90.622.00.375](https://autopecas.norsider.pt/en/en-heater-blower-flap-actuator-mercedes-190-201-from-1982-1983-1984-1985-1986-1987-1988-1989-1990-1991-1992-1993-2018000075-behr-90-622-00-375-199464) ([saved](references/norsider-2018000075/))
 - NIParts: [201 800 00 75 → Hella 351329301](https://www.niparts.com/s_242A8B/2018000075.html) ([saved](references/niparts-2018000075/))
 - DRIVE2: [A 201 800 00 75](https://www.drive2.ru/parts/mercedes/a2018000075/CUuWQEAAalk) ([saved](references/drive2-a2018000075/))
-- Autoplicity: [Behr 201 800 03 75](https://autoplicity.com/3278849-behr-mercedes-201-800-03-75-vacuum-element): **not archived**. No Wayback snapshot, and the page could not be saved.
+- Autoplicity: [Behr 201 800 03 75](https://autoplicity.com/3278849-behr-mercedes-201-800-03-75-vacuum-element) ([saved](references/autoplicity-2018000375/))
 
 **Rebuild parts**
 - Facebook, Mercedes 190E Owners Club: [How to repair the defroster flap vacuum element](https://www.facebook.com/groups/TheMercedes190Group/posts/10169573489405441/) ([saved](references/fb-190group-defrost/)): use 2× 126 800 14 75 seals
