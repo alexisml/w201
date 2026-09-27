@@ -59,6 +59,10 @@ A fifth element sits in the center of the heater case. It has no part number and
   trust the item numbers across diagrams.
 - Behr label number: this entry records what the photo shows (9063100055). An earlier note had
   906310055. Check it against the physical label.
+- **Symptom of a broken defroster actuator (b):** with the A/C set to blow through the vents, the
+  center vents blow cold while the side vents blow hot. A heater control valve leak can look similar.
+  Source: comments on the Facebook 190E group post.
+- **Access to (b):** the post's author says only the instrument cluster needs to come out, not the whole dash.
 - **000 800 87 75 is no longer made (NLA).** ECS and Norsider list their parts as unavailable. Rebuilding is the way forward.
 
 ![Actuator (a) 201 800 08 75, Behr, next to caliper set to ~28 mm](images/2026-09-27-actuator-a-201-800-08-75-behr.jpg)
@@ -130,6 +134,6 @@ Every link has a saved copy: an Internet Archive link, or a full copy in the pri
 - Autoplicity: [Behr 201 800 03 75](https://autoplicity.com/3278849-behr-mercedes-201-800-03-75-vacuum-element): **not archived**. No Wayback snapshot, and the page could not be saved.
 
 **Rebuild parts**
-- Facebook, Mercedes 190E Owners Club: [How to repair the defroster flap vacuum element](https://www.facebook.com/groups/TheMercedes190Group/posts/10169573489405441/) ([saved, partial](references/fb-190group-defrost/)): use 2× 126 800 14 75 seals
+- Facebook, Mercedes 190E Owners Club: [How to repair the defroster flap vacuum element](https://www.facebook.com/groups/TheMercedes190Group/posts/10169573489405441/) ([saved](references/fb-190group-defrost/)): use 2× 126 800 14 75 seals
 - Klimakit: [Single-stage diaphragms](https://klimakit.com/product/universal-single-stage-vacuum-actuator-diaphragm/) ([saved](references/klimakit-single-stage/)) · [Dual-stage cartridge](https://klimakit.com/product/dual-stage-vacuum-actuator-diaphragm-cartridge-assembly/) ([saved](references/klimakit-dual-stage/))
 - 9zwo8: [Replacement diaphragm vacuum can](https://9zwo8.com/en/products/replacement-diaphragm-vacuum-can-mercedes-benz) ([saved](references/9zwo8-diaphragm/))
