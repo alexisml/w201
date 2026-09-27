@@ -21,7 +21,8 @@ The VIN, engine number, transmission serial, order number and body number live o
 | Lights / wipers | Bosch / Bosch |
 
 The site also lists the same data card under catalogs 14R, 15C, 15D, 15E and 431 (other markets and
-model years). Only 452 matches this car's model year and ident range. **Use catalog 452 for parts lookups.**
+model years). Only 452 matches this car's model year and ident range. **Use catalog 452 for parts lookups.** The full catalog 452 for this car (54 groups, 197 diagrams, 6,244 part
+rows, with a part-number index) is kept in the private archive and is available on request.
 
 ## Why USA
 

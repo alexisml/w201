@@ -42,24 +42,30 @@ Vacuum elements shown in the diagram (circled):
 
 ## Part list for this car
 
-These four part numbers are what the EPC gives for a 1992 190E 2.3 8V. ECS Tuning ran that car's VIN in the
-[chassis number thread](references/bw-chassis-number-defrost/), and it matches the parts removed from this car.
-A fifth element sits in the center of the heater case. It has no part number and only comes with a new heater case.
+**Confirmed in the EPC for this car (catalog 452, 190 E 2.3 USA, 1988).** The four elements are:
+
+| EPC position | Part number | EPC name |
+|---|---|---|
+| 83.045 Heater case with blower, **pos 38** | 201 800 08 75 | Element (round, **on top of the heater case**) |
+| 83.045, **pos 59** | 000 800 87 75, alternative **201 800 05 75** | Element, defroster nozzle flap control |
+| 83.045, **pos 56** | 201 800 03 75 | Element, operating unit → defroster nozzle flap, legroom |
+| 83.060 A/C case with blower, **pos 53** | 201 800 00 75 | Element, main air flap control |
+
+Source: the full parts catalog for this car, kept in the private archive (available on request).
+A fifth element sits inside the heater case. It has no part number and only comes with a new case.
 
 | # | MB part number | Function | Type | Behr / Hella cross-ref | Rebuild option |
 |---|----------------|----------|------|------------------------|----------------|
-| a | **201 800 08 75** | **Vacuum element, heater case** (Pelican). Most likely item 37 on top of the heater box (see below) | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit), probably the same as (c) |
+| a | **201 800 08 75** | **Vacuum element on top of the heater case** (EPC 83.045 pos 38): item 37, blend air flaps | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit), probably the same as (c) |
 | b | **000 800 87 75** | Defroster nozzle flap (item 38) | **Oval, dual-mode**: 2 stacked chambers, 2 vacuum ports, ½ open / full open | WOCO 40 0104 (molded on the housing, confirmed on the removed part). Hella 6NV 351 329-041 / 351329041 (per BenzWorld, which also gives the older MB number 201 800 05 75) | Use the seals from **2× 126 800 14 75** (same rubber, different color; Facebook 190E group) |
 | c | **201 800 03 75** | Legroom flap (item 39) | Single diaphragm, round | Behr 351329721 | Single-stage diaphragm, 28 mm (Klimakit); 9zwo8 diaphragm lists A2018000375 as compatible |
 | d | **201 800 00 75** | Main air flap = fresh/recirc (item 40, most likely) | **Double diaphragm** | Behr 90.622.00.375. Hella 6NV 351 329-301 / 351329301 | Dual-stage diaphragm cartridge, probably **clip style** (Klimakit) |
 
 ### Notes & open questions
 
-- **Which item is (a)?** Pelican lists 201 800 08 75 as **"Vacuum Element - Heater Case"**. Pelican's heater
-  core article also says to *"remove the vacuum line from the vacuum element on the top of the heater
-  box"*. On the diagram, the element on top of the heater box is **item 37 (blend air flaps, "cold")**, so
-  (a) is most likely 37. That would make item 41 (heater valve) the unnumbered element inside the case.
-  Where (a) was mounted when removed will confirm it.
+- **(a) is item 37, the element on top of the heater case.** The EPC diagram 83.045 shows pos 38
+  (201 800 08 75) mounted on top of the case. Pelican calls it "Vacuum Element - Heater Case", and
+  Pelican's heater core article mentions "the vacuum element on the top of the heater box".
 - MSGGrunt's 2014 parts list says "#37, #38, #39, #41 are replaceable, #40 only with the heater housing".
   That was based on a different, older diagram whose numbering probably doesn't match this one. Don't
   trust the item numbers across diagrams.
@@ -115,7 +121,6 @@ _Pending._
 
 ## To do
 
-- [ ] Confirm (a) 201 800 08 75 came from the top of the heater box (item 37)
 - [ ] Double-check the Behr number on (a)'s label
 - [ ] Measure the diaphragm cups of (a) and (c) to confirm the 28 mm shallow type
 - [ ] Source 2× 126 800 14 75 for the (b) defroster rebuild
