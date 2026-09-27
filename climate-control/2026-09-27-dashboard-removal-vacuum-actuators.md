@@ -60,7 +60,7 @@ A fifth element sits inside the heater case. It has no part number and only come
 
 | # | MB part number | Function | Type | Behr / Hella cross-ref | Rebuild option |
 |---|----------------|----------|------|------------------------|----------------|
-| a | **201 800 08 75** | **Vacuum element on top of the heater case** (EPC 83.045 pos 38): item 37, blend air flaps | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit), probably the same as (c) |
+| a | **201 800 08 75** | **Vacuum element on top of the heater case** (EPC 83.045 pos 38): item 37, blend air flaps | Single diaphragm, round | Label on the removed part reads **9063100055** (Behr 90.631.00.055?), dated ?/05/88 | Single-stage diaphragm, **28 mm shallow cup** (Klimakit). Cup depth measured at ~28 mm; probably the same as (c) |
 | b | **000 800 87 75** | Defroster nozzle flap (item 38) | **Oval, dual-mode**: 2 stacked chambers, 2 vacuum ports, ½ open / full open | WOCO 40 0104 (molded on the housing, confirmed on the removed part). Hella 6NV 351 329-041 / 351329041 (per BenzWorld, which also gives the older MB number 201 800 05 75) | Use the seals from **2× 126 800 14 75** (same rubber, different color; Facebook 190E group) |
 | c | **201 800 03 75** | Legroom flap (item 39) | Single diaphragm, round | Behr 351329721 | **9zwo8 diaphragm** (explicitly lists A2018000375, the only direct cross-reference). Klimakit single-stage 28 mm likely also fits |
 | d | **201 800 00 75** | Main air flap control = fresh/recirc (item 40; EPC 83.060 pos 53) | **Double diaphragm** | Behr 90.622.00.375. Hella 6NV 351 329-301 / 351329301 | Dual-stage diaphragm cartridge, probably **clip style** (Klimakit) |
@@ -84,7 +84,7 @@ A fifth element sits inside the heater case. It has no part number and only come
   owner's successful repair (with video), not from a catalog cross-reference.
 - **000 800 87 75 is no longer made (NLA).** ECS and Norsider list their parts as unavailable. Rebuilding is the way forward.
 
-![Actuator (a) 201 800 08 75, Behr, next to caliper set to ~28 mm](images/2026-09-27-actuator-a-201-800-08-75-behr.jpg)
+![Actuator (a) 201 800 08 75, Behr, next to the caliper set to its measured cup depth of ~28 mm](images/2026-09-27-actuator-a-201-800-08-75-behr.jpg)
 
 ![Actuator (b) 000 800 87 75, defroster, WOCO 40 0104](images/2026-09-27-actuator-b-000-800-87-75-woco-40-0104.jpg)
 
@@ -130,7 +130,8 @@ _Pending._
 
 - [ ] Double-check the Behr number on (a)'s label
 - [ ] Open (a) and (c) side by side. If they're the same, one diaphragm type covers both
-- [ ] Measure the diaphragm **cup depth** (not the diameter) on (a) and (c): Klimakit sells 28 mm shallow and 33 mm deep
+- [x] Cup depth of (a) measured: **~28 mm** (approximate), which is Klimakit's shallow type
+- [ ] Measure the cup depth of (c) too: Klimakit sells 28 mm shallow and 33 mm deep
 - [ ] Source 2× 126 800 14 75 for the (b) defroster rebuild
 - [ ] Confirm the Klimakit dual-stage linkage type for (d) (clip vs eyelet)
 - [ ] Vacuum-test each actuator and hard line before reassembly
