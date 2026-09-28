@@ -70,6 +70,7 @@ diagrams and scans referenced by those entries.
 ├── CLAUDE.md                 # repo rules (links, private data)
 ├── .env.example              # template for VIN / engine number (.env is git-ignored)
 ├── general-reference/        # whole-car info: data card, specs, manuals
+├── art/                      # posters, drawings, blueprints
 ├── climate-control/          # heating, ventilation, A/C, vacuum actuators
 │   ├── YYYY-MM-DD-short-title.md
 │   ├── images/
