@@ -75,6 +75,7 @@ diagrams and scans referenced by those entries.
 │   ├── YYYY-MM-DD-short-title.md
 │   ├── images/
 │   └── references/           # source info per link (full copies on request)
+├── central-locking/          # pneumatic central locking: pump, actuators, lines
 ├── engine/
 ├── fuel-injection/
 ├── ignition/
@@ -135,6 +136,7 @@ Lessons learned, follow-ups, references.
 | 2026-09-27 | [Data card / VIN decode](general-reference/data-card.md) | general-reference | done |
 | 2026-09-27 | [Dashboard removal & broken HVAC vacuum actuators](climate-control/2026-09-27-dashboard-removal-vacuum-actuators.md) | climate-control | open |
 | 2026-09-27 | [Blower fan not working](climate-control/2026-09-27-blower-not-working.md) | climate-control | open |
+| 2026-09-28 | [Central locking not working (pump silent)](central-locking/2026-09-28-central-locking-not-working.md) | central-locking | open |
 
 ---
 
