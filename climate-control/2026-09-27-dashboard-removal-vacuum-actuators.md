@@ -111,7 +111,7 @@ Reconnect by color, exactly as photographed.
 |----------------------------------------|-----------------|
 | Switchover valve with vacuum lines     | 201 800 05 78   |
 | Push-button climate control unit       | 201 830 09 85 / 88 (MSGGrunt's final fix: rebuilt 201 830 08 85) |
-| Heater core                            | 002 835 54 01   |
+| Heater core                            | 002 835 54 01 (confirmed in EPC 452, 83.045 pos 26; seals 000 835 37 98 ×2) |
 | Heater control valve (by battery)      | 000 830 57 84   |
 | Blower motor                           | 201 820 06 42   |
 | Blower speed switch                    | 201 820 17 10   |
@@ -133,6 +133,7 @@ _Pending._
 - [x] Cup depth of (a) measured: **~28 mm** (approximate), which is Klimakit's shallow type
 - [ ] Measure the cup depth of (c) too: Klimakit sells 28 mm shallow and 33 mm deep
 - [ ] Source 2× 126 800 14 75 for the (b) defroster rebuild
+- [ ] Source 2× heater core water pipe seals `A 000 835 37 98` (EPC 452, 83.045 pos 30) and replace them while the dash is out. Heater core itself: `A 002 835 54 01` (pos 26, replaces `A 002 835 37 01`)
 - [ ] Confirm the Klimakit dual-stage linkage type for (d) (clip vs eyelet)
 - [ ] Vacuum-test each actuator and hard line before reassembly
 - [ ] Test the push-button control unit + switchover valve
