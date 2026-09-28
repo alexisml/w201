@@ -1,7 +1,7 @@
 # Drawing Database — Mercedes-Benz 190E 1990 blueprints (W201)
 
 - **Original:** <https://drawingdatabase.com/mercedes-benz-w201-1990/>
-- **Wayback Machine:** not checked (Internet Archive was offline on 2026-09-28)
+- **Wayback Machine:** <https://web.archive.org/web/20250115115209/https://drawingdatabase.com/mercedes-benz-w201-1990/> (complete: page and both full-size images, identical to the saved files)
 - **Archived:** 2026-09-28
 - **Full copy:** kept in the private archive. Available on request.
 
