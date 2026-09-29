@@ -143,6 +143,7 @@ Lessons learned, follow-ups, references.
 
 ## Resources
 
+- [Parts suppliers](general-reference/parts-suppliers.md): stores worth checking for W201 parts
 - Mercedes-Benz WIS / EPC (factory service info and parts catalog)
 - Bosch KE-Jetronic technical documentation
 - Community forums: BenzWorld (W201 section), PeachParts (MBWorld), w201.com
