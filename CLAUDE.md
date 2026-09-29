@@ -21,6 +21,9 @@ References disappear over time, so every link we add gets a saved copy:
 4. Link the saved copy next to the original.
 5. If a page can't be saved, mark it **not archived** in the entry.
 
+Exception: plain store or website listings, like [general-reference/parts-suppliers.md](general-reference/parts-suppliers.md),
+don't need saving. Product pages used as a source for a fact still do.
+
 ### Where copies go
 
 This repo is public. Full copies of other people's work live in the private repo
