@@ -1,4 +1,4 @@
-# Throttle pedal: dead zone and step
+# Throttle pedal: dead zone, step and kickdown
 
 **Mileage:** 
 **Topic:** engine (throttle linkage)
@@ -105,6 +105,72 @@ Only if the step gets worse, catches, or the throttle feels sticky.
 7. **Cruise control actuator.** Its rod joins the same linkage and can drag.
 8. **Pedal end.** The pedal lever bearing, the pedal stop, the kick-down switch and anything under
    the pedal (floor mat, debris).
+9. **Kickdown.** See the next section.
+
+## Kickdown
+
+The kickdown switch has nothing to do with the step at 20–30 %. It only acts at the very end of the
+pedal travel, when the pedal is pushed to the floor.
+
+### Parts (EPC 452)
+
+| Part | Number | Catalog position |
+|------|--------|------------------|
+| Kick-down switch, under the accelerator pedal | `A 001 545 63 14` or `A 001 545 78 14` | 30.015 pos 35 |
+| Kickdown solenoid valve on the gearbox, magnet coil | `A 000 304 23 90` or `A 000 304 27 90` | 27.045 pos 130 / 205 |
+| Kickdown solenoid valve, magnet frame | `A 000 304 22 90` or `A 000 304 28 90` | 27.045 pos 135 / 210 |
+
+### How it works on the 722.4 (general info, not verified on this car)
+
+- The 722.4 shifts hydraulically. The kickdown solenoid is one of its few electrical parts.
+- **Two ways to get a downshift at full throttle:**
+  - **Mechanical, through the control pressure cable.** Pressing hard pulls the cable and the gearbox
+    shifts down on its own. One owner found his solenoid wire had been cut for years and the car still
+    kicked down, up to about 55 mph.
+  - **Electrical, through the switch and solenoid.** With the pedal on the floor, the switch powers the
+    solenoid on the gearbox, which forces the downshift at higher speeds too (above about 55 mph in
+    that owner's case). At low speed it can give a double downshift.
+- **The circuit:** fuel pump relay → kick-down switch under the pedal → solenoid on the gearbox (at
+  the rear, on the right). The switch gets its power through the fuel pump relay, so it is only live
+  when the relay is on (engine running). One BenzWorld poster says the feed also goes through the A/C
+  ("Klima") relay; not checked for this car.
+- **The solenoid** is a coil sealed in epoxy. It rarely fails, and if it does it's open or shorted.
+  A good one draws about **1 A at 12 V**, so about 12 Ω. (W126 thread; same design, not checked
+  against the factory manual.)
+
+### Expected behavior
+
+- **Pedal feel (typical, not confirmed on this car):** the switch sits under the pedal and is only
+  pressed in the last bit of travel, past full throttle, so it feels like a firmer spot right at the
+  floor. It should not be felt anywhere in the middle of the travel.
+- **On the road** (in D, at part throttle in a higher gear): floor it, and the gearbox drops one gear
+  (two at low speed) straight away and holds it to higher revs. It should work at motorway speeds too.
+- **When you lift off:** it shifts back up normally. It should never stay stuck in a low gear.
+
+### Signs something is off
+
+- **No downshift at all, at any speed**, plus very early upshifts (4th by 12–15 mph): points to the
+  control pressure cable (loose, broken or badly adjusted), not the kickdown switch. The cable should
+  just touch when the linkage is at idle. (190E 2.0 thread on BenzWorld)
+- **Downshifts at low speed but not above about 55 mph:** the electrical side (switch, fuel pump
+  relay, wiring, solenoid).
+- **Stuck in a low gear, or won't upshift:** check for a switch stuck closed or constant power at the
+  solenoid (our reading, not from a source).
+- **A fuse blows under kickdown:** a shorted solenoid wire. One owner's wire was pinched between the
+  gearbox pan and the case.
+
+### How to check
+
+1. **Pedal:** lift the carpet under the pedal. Check that the switch is there, the plug is on, and
+   the pedal presses it at the bottom of its travel.
+2. **Listen:** ignition on (engine running if the switch isn't live with the key alone). Someone
+   presses the switch by hand or floors the pedal while another person under the car listens for a
+   click at the solenoid on the gearbox.
+3. **Voltage:** at the switch, the feed wire should have 12 V. The output wire to the solenoid should
+   read 12 V only while the switch is pressed. Check the switch's fuse and the fuel pump relay if
+   there's no feed.
+4. **Solenoid:** unplugged, about 12 Ω across it. Check the wire along the gearbox for damage.
+5. **Road test:** a downshift when floored at about 30 mph and again above about 55 mph.
 
 ## Sources
 
@@ -145,4 +211,16 @@ Only if the step gets worse, catches, or the throttle feels sticky.
   **not archived**: blocked by a bot check and not on Wayback. Search snippets say it describes a
   roller running along a flat part of a bracket for the first inch of pedal travel, but the page
   itself couldn't be read.
-- Parts: private parts catalog, EPC 452, groups 07.015, 07.135, 30.015 and 54.750.
+- **BenzWorld: How does the 722.4 kickdown work?** (2013):
+  <https://www.benzworld.org/threads/how-does-the-722-4-kickdown-work.1716118/>
+  ([saved copy](references/bw-722-4-kickdown-how/README.md)): mechanical kickdown up to about 55 mph,
+  the solenoid above that. No Wayback snapshot.
+- **BenzWorld: Kickdown diagnostic** (W126 section):
+  <https://www.benzworld.org/threads/kickdown-diagnostic.1279657/>
+  ([saved copy](references/bw-kickdown-diagnostic/README.md)): switch fed from the fuel pump relay,
+  voltage test, solenoid draws about 1 A, pinched wire. No Wayback snapshot.
+- **BenzWorld: 190E auto very early shift into top and no kickdown** (2016):
+  <https://www.benzworld.org/threads/190e-auto-very-early-shift-into-top-and-no-kickdown.2552321/>
+  ([saved copy](references/bw-190e-early-shift-no-kickdown/README.md)): control pressure cable
+  symptoms, the three parts of the kickdown circuit. No Wayback snapshot.
+- Parts: private parts catalog, EPC 452, groups 07.015, 07.135, 27.045, 30.015 and 54.750.
