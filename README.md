@@ -144,6 +144,7 @@ Lessons learned, follow-ups, references.
 ## Resources
 
 - [Parts suppliers](general-reference/parts-suppliers.md): stores worth checking for W201 parts
+- [To buy: aesthetic parts](general-reference/to-buy-aesthetic.md): cosmetic parts to replace, with part numbers
 - Mercedes-Benz WIS / EPC (factory service info and parts catalog)
 - Bosch KE-Jetronic technical documentation
 - Community forums: BenzWorld (W201 section), PeachParts (MBWorld), w201.com
