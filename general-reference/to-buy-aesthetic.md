@@ -23,6 +23,9 @@ EPC 09.015 Air Cleaner. Ribbed hose into the inlet of the oval air cleaner housi
 
 - [ ] **Hose**: `A 102 094 17 87` (pos 80). The catalog also lists `A 102 094 56 82` at the same
   position without saying which one fits. Compare with the hose on the car before buying
+- [ ] *Alternative:* [rpm-depot "Upgrade intake" kit](https://rpm-depot.de/en/product/upgrade-intake-mercedes-w201-190e-1-8-2-0-2-3-m102/)
+  (aftermarket scoop, hose and fastening parts). The listing says it fits "M102 models with small
+  radiator", so check that it fits this car first
 
 ## Body
 
