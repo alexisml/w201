@@ -138,6 +138,7 @@ Lessons learned, follow-ups, references.
 | 2026-09-27 | [Blower fan not working](climate-control/2026-09-27-blower-not-working.md) | climate-control | open |
 | 2026-09-28 | [Central locking not working (pump silent)](central-locking/2026-09-28-central-locking-not-working.md) | central-locking | open |
 | 2026-09-29 | [Throttle pedal: dead zone, step and kickdown](engine/throttle-pedal.md) | engine | reference |
+| 2026-10-01 | [Interior restoration: door panels, carpets](interior/interior-restoration.md) | interior | planned |
 
 ---
 

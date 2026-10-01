@@ -21,8 +21,11 @@ The catalog names all three "bracket, ignition cables" and lists no replacement 
 EPC 09.015 Air Cleaner. Ribbed hose into the inlet of the oval air cleaner housing
 (`A 015 094 88 02`, confirmed on this car).
 
-- [ ] **Hose**: `A 102 094 17 87` (pos 80). The catalog also lists `A 102 094 56 82` at the same
-  position without saying which one fits. Compare with the hose on the car before buying
+- [ ] **Hose**: **`A 102 094 56 82`** (pos 80), confirmed for this car. It connects the intake
+  scoop next to the radiator to the air cleaner. Reproduction sold by
+  [rpm-depot](https://rpm-depot.de/en/product/air-filter-intake-hose-m102-8v-mercedes-w201-190e-up-to-9-1988-a1020945682/)
+  ([reference](references/rpm-depot-m102-intake-hose/README.md)), listed for M102.985 KE-Jetronic,
+  up to 9/1988. The other hose at pos 80, `A 102 094 17 87`, is not the one for this car
 - [ ] *Alternative:* [rpm-depot "Upgrade intake" kit](https://rpm-depot.de/en/product/upgrade-intake-mercedes-w201-190e-1-8-2-0-2-3-m102/)
   (aftermarket scoop, hose and fastening parts). The listing says it fits "M102 models with small
   radiator", so check that it fits this car first
