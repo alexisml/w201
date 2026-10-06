@@ -61,6 +61,24 @@ number, the clips and a clip kit comparison: see [body/sacco-cladding.md](../bod
 - [ ] Front bumper `A 201 880 15 70`, rear bumper `A 201 880 15 71` (US facelift, complete with cover)
 - [ ] *Optional:* "sportline" badges `A 201 817 13 20` (2)
 
+### Engine undertray, rear panel (under the engine/gearbox)
+
+Black plastic panel with a large square opening, sold as "lower engine splash shield" for petrol
+W201s. Sellers give interchange `A 201 524 12 30`.
+
+- Facelift European catalog (15C, 52.030 "Engine compartment panelling, gasoline vehicles"):
+  **`A 201 524 12 30`** is pos 17, the rear panel behind the front anti-noise capsule. It mounts
+  with 2 spacers `A 201 524 03 47` (pos 32) bolted to the side members (`N 000933 008145` ×2,
+  nut `N 913002 008004` ×2), 10 bolts `A 201 990 11 36` and clip nuts `A 001 994 98 45`
+  ([reference](../body/references/elcats-w201-facelift-catalog/README.md)).
+- **This car's catalog (EPC 452) doesn't list it**, and neither does the US facelift catalog (15D).
+  US cars only have the front capsule (here `A 201 520 60 23`) and the two side parts. So it was
+  never fitted to US cars; check the side members for the spacer mounting points before buying.
+- **Dimensions:** not published by the catalog or the sellers checked (2026-10-06). Measure under
+  the car, or ask the seller.
+
+- [ ] Rear undertray `A 201 524 12 30` (aftermarket copies exist), plus spacers and bolts above
+
 ## Where to buy
 
 See [parts-suppliers.md](parts-suppliers.md).

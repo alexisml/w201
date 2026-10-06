@@ -5,9 +5,11 @@
   - 15C, 88.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=50b69934-ce92-4497-bd5b-ca95b3f14015&Unit=77adf6e9-51e1-4a9b-a7d7-28843297346b&Title=x>
   - 15D (190 E 2.3 USA, from 09/88), 69.060: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=fd1a5666-a51f-4b5c-8863-4957763d68c1&Title=x>
   - 15D, 88.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=581a8939-3f44-41fc-9b92-1bec6cb2b1a1&Title=x>
+  - 15C, 52.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=50b69934-ce92-4497-bd5b-ca95b3f14015&Unit=809c6857-162a-4211-86a9-565fd170a0af&Title=x>
+  - 15D, 52.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=0abbdcd7-085b-453a-9659-6db07625c89b&Title=x>
   - 15D, 88.075: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=2307f56c-53f3-4c12-8945-d3e5f51b12e8&Title=x>
 - **Wayback Machine:** only the catalog home page (<https://web.archive.org/web/20250825234902/http://www.elcats.ru/mercedes/>); the parts pages are not archived
-- **Full copy:** kept in the private archive (one PDF per catalog page plus the 5 diagrams). Available on request.
+- **Full copy:** kept in the private archive (one PDF per catalog page plus the 6 diagrams). Available on request.
 - **Archived:** 2026-10-06
 
 The site shows part numbers as images and the PDFs print the parts tree collapsed, so the PDFs hold
