@@ -170,6 +170,12 @@ Sources disagree on how much drilling is needed. Most conversion reports say som
   clips, and used countersunk self-tapping screws, filled and painted over
   ([Листва, DRIVE2](https://www.drive2.ru/l/4290194/), [reference](references/drive2-listva-1987/README.md)).
   Likely both are partly true: the main door clips can share old holes, the extra fixings can't.
+- A UK owner restoring a 1985 car says pre- and post-facelift cars use **the same two rows of
+  mounting holes**, for either the two separate rubbing strips or the Sacco panels; only factory
+  body kits add more holes. Standard facelift panels and bumpers fit a pre-facelift car, leaving a
+  few spare holes
+  ([Manny's 1985 190E, Mercedes-190.co.uk](https://mercedes-190.co.uk/manny-s-1985-190e-t57648.html),
+  [reference](references/m190uk-mannys-1985-190e/README.md)).
 
 ### Doors, fenders and other body parts
 
@@ -215,6 +221,12 @@ Sources disagree on how much drilling is needed. Most conversion reports say som
   the counter
   ([Umbau Mopf Beplankung auf Vormopf, motor-talk](https://www.motor-talk.de/forum/umbau-mopf-beplankung-auf-vormopf-t4322277.html),
   [Wayback](https://web.archive.org/web/20240101122206/https://www.motor-talk.de/forum/umbau-mopf-beplankung-auf-vormopf-t4322277.html)).
+
+- Going the other way (facelift to pre-facelift look) takes 10 mid-height strips, 8 lower strips, 2
+  rear-panel covers, 2 small skirt extenders below the front fenders, 2 pre-facelift bumpers and,
+  optionally, the early mirrors. That is the list of what comes off this car
+  ([Pre facelift w201 or parts to create one, Mercedes-190.co.uk](https://mercedes-190.co.uk/pre-facelift-w201-or-parts-to-create-one-t41580.html),
+  [reference](references/m190uk-pre-facelift-parts/README.md)).
 
 ### Cost and time
 

@@ -82,6 +82,12 @@ New on the facelift rear (15D): fastening plate `A 000 984 12 64` ×5 (104) and 
   ([Karosserie-Umbau: Mopf zu Vormopf??](https://w201-ev.de/forum/thread/28708-karosserie-umbau-mopf-zu-vormopf/),
   [Wayback](https://web.archive.org/web/20160810213001/http://w201-ev.de/forum/index.php/Thread/28708-Karosserie-Umbau-Mopf-zu-Vormopf/)).
 
+- Pre- and post-facelift bumpers differ slightly in looks. The front bumper side mounts are bolted
+  to the body (10 mm socket) and clip into the bumper skin with a tab to release. Lower-valance
+  grilles are fake on 4-cylinder cars; the 2.6 has real openings on the right
+  ([Manny's 1985 190E, Mercedes-190.co.uk](https://mercedes-190.co.uk/manny-s-1985-190e-t57648.html),
+  [reference](references/m190uk-mannys-1985-190e/README.md)).
+
 ## To check before buying
 
 - [ ] Whether the facelift US bumpers bolt straight on. The mounting part numbers are the same and

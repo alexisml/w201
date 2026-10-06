@@ -44,6 +44,14 @@ panel comes off, so buy spares.
   files saved). 8 STL clip models: CLIP 1-2, 2, 3, 4 and CLIP A, B, C, D. Which clip goes where
   isn't recorded yet; check against the old clips before printing
 
+### Facelift door panels in a pre-facelift car
+
+Facelift door panels fit the early doors (the panels are already slotted), but the facelift
+speaker pods bolt (10 mm nuts) to a frame in the door that pre-facelift doors don't have; on later
+doors it appears riveted in. Power seat switches also changed plug type
+([Facelift door panels in early model, BenzWorld](https://www.benzworld.org/threads/facelift-door-panels-in-early-model.1730265/),
+[reference](references/bw-facelift-door-panels-early/README.md)).
+
 ## Carpets and other details
 
 To do.
