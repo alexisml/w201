@@ -144,6 +144,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-05 | [Mixture adjustment: CIS-E duty cycle](fuel-injection/mixture-adjustment.md) | fuel-injection | reference |
 | 2026-10-05 | [Coolant sensors and thermovalves at the thermostat](cooling/coolant-sensors.md) | cooling | reference |
 | 2026-10-06 | [Aesthetics: cosmetic parts plan](aesthetics/README.md) (engine bay, seals, sunroof, Sacco cladding, bumpers, undertray) | aesthetics | planned |
+| 2026-10-06 | [Oil filler cap and seal](engine/oil-filler-cap.md) | engine | planned |
 
 ---
 

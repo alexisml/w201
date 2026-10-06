@@ -12,6 +12,7 @@ on request), and for facelift parts from catalogs 15C / 15D on elcats.ru
 | Sunroof | [sunroof.md](sunroof.md) | Side wind deflectors |
 | Side cladding | [sacco-cladding.md](sacco-cladding.md) | Facelift / Sportline "Sacco" panels, side skirts, badges, clips |
 | Bumpers | [bumpers.md](bumpers.md) | US facelift front and rear bumpers |
+| Grille | [grille.md](grille.md) | Radiator grille shell, insert, chrome strips, badge, star, fasteners |
 | Undertray | [undertray.md](undertray.md) | Engine undertray and its mounting parts |
 
 ## Shopping list
@@ -25,6 +26,7 @@ The details, alternatives and things to check are in each file.
 - [ ] Sunroof side deflectors `A 140 780 03 92` / `04 92`, 4 rivets `N 910 001 00 3201`
 - [ ] Sacco panels (5 per side), side skirts, end caps, clip kit, side skirt hardware, tape
 - [ ] *Optional:* "sportline" badges `A 201 817 13 20` (2)
+- [ ] Grille: new insert, clips, locks and screws; refurbish or replace the shell `A 201 880 07 83`
 - [ ] Bumpers `A 201 880 15 70` (front) and `A 201 880 15 71` (rear)
 - [ ] Undertray: factory panel for this car `A 201 520 60 23` (or `A 201 524 12 30` with struts and fasteners)
 
