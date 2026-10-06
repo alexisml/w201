@@ -15,7 +15,7 @@
 
 The site shows part numbers as images and the PDFs print the parts tree collapsed, so the PDFs hold
 the page and diagram only. The part numbers, quantities and footnotes were read off the live pages
-by hand and are written out in [sacco-cladding.md](../../sacco-cladding.md)
+by hand and are written out in [sacco-cladding.md](../../sacco-cladding.md), [bumpers.md](../../bumpers.md) and [undertray.md](../../undertray.md)
 ILCATS (the source of the EPC 452 copy) showed a captcha on 2026-10-06.
 
 Preservation copy kept for reference under fair use, in the spirit of the Internet Archive. All rights stay with the original authors/owners. The original link above is the primary source.

@@ -84,6 +84,7 @@ diagrams and scans referenced by those entries.
 ├── transmission/
 ├── suspension-steering/
 ├── brakes/
+├── aesthetics/               # cosmetic parts plan: one file per group
 ├── body/
 ├── interior/
 └── specs/                    # torque values, fluids, capacities, part numbers
@@ -142,14 +143,14 @@ Lessons learned, follow-ups, references.
 | 2026-10-01 | [R16 / R16/1 EZL ignition reference resistor](ignition/r16-reference-resistor.md) | ignition | reference |
 | 2026-10-05 | [Mixture adjustment: CIS-E duty cycle](fuel-injection/mixture-adjustment.md) | fuel-injection | reference |
 | 2026-10-05 | [Coolant sensors and thermovalves at the thermostat](cooling/coolant-sensors.md) | cooling | reference |
-| 2026-10-06 | [Sacco side cladding, side skirts and facelift bumpers](body/sacco-cladding.md) | body | planned |
+| 2026-10-06 | [Aesthetics: cosmetic parts plan](aesthetics/README.md) (engine bay, seals, sunroof, Sacco cladding, bumpers, undertray) | aesthetics | planned |
 
 ---
 
 ## Resources
 
 - [Parts suppliers](general-reference/parts-suppliers.md): stores worth checking for W201 parts
-- [To buy: aesthetic parts](general-reference/to-buy-aesthetic.md): cosmetic parts to replace, with part numbers
+- [Aesthetics](aesthetics/README.md): cosmetic parts to replace or add, one file per group, with part numbers
 - Mercedes-Benz WIS / EPC (factory service info and parts catalog)
 - Bosch KE-Jetronic technical documentation
 - Community forums: BenzWorld (W201 section), PeachParts (MBWorld), w201.com

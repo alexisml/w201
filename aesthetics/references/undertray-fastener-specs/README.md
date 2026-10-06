@@ -1,7 +1,7 @@
 # Engine undertray fasteners: size and spec pages (several supplier pages)
 
 Supplier pages used for the sizes of the undertray mounting parts in
-[to-buy-aesthetic.md](../../../general-reference/to-buy-aesthetic.md).
+[undertray.md](../../undertray.md).
 
 | Part | Original | Copy |
 |---|---|---|

@@ -1,11 +1,12 @@
-# Sacco side cladding, side skirts and facelift bumpers (planned)
+# Sacco side cladding and side skirts (planned)
 
 **System:** body
 **Status:** planned
 
 Plan to swap the narrow pre-facelift side strips for the wide facelift "Sacco boards" (the cladding
-on the Sportline and on every W201 built from 09/1988), plus the side skirts and the facelift
-bumpers. This note lists the parts, the clips and what to check before buying.
+on the Sportline and on every W201 built from 09/1988), plus the side skirts. This note lists the
+parts, the clips and what to check before buying. The matching bumpers are in
+[bumpers.md](bumpers.md).
 
 ## Background
 
@@ -108,56 +109,18 @@ buttons `A 000 990 62 92` (191).
 **To buy separately:** the side skirt hardware above, adhesive tape `A 005 989 16 85` (about 5.2 m)
 and `A 001 988 45 81` if a kit leaves it out (only TrabHan's list skips it).
 
-## Bumpers (US facelift, catalog 15D)
-
-This car has US bumpers, so the US facelift parts are listed. The mounting hardware (brackets
-`A 201 880 01 14`, seal `A 201 885 00 98`, nuts, washers and bolts to the cross member) has the
-same numbers in both catalogs. The bar, cover, rail and energy absorber change.
-
-### Front (88.030)
-
-| Part | Pre-facelift (this car, EPC 452) | US facelift (15D) | Pos |
-|---|---|---|---|
-| Bumper, complete with cover | `A 201 880 03 70` | **`A 201 880 15 70`** (replaces `17 70`) | 5 |
-| Bumper without cover | `A 201 880 05 70` | `A 201 880 13 70` | 11 |
-| Cover (painted part) | `A 201 885 02 25` | **`A 201 880 21 40`** (replaces `11 40`) | 29 |
-| Energy-absorbing unit | `A 201 885 01 37` | `A 201 885 07 37` | 80 |
-| Rail (rub strip) | `A 201 885 01 21` | `A 201 885 12 21` | 83 |
-| Tow eye cover | `A 201 880 09 05` | `A 201 880 09 05` up to MY 1990, `A 201 880 03 05` from MY 1991 | 35 |
-| End covers (bumper joint) | `A 201 885 07 23` / `08 23` | `A 201 885 07 23`, `08 23`, `12 23` | 104 |
-
-Small parts (15D): washer `A 201 990 05 40` ×7, expanding rivet `A 201 990 02 92` ×7 (black
-No. 9051 or grey No. 7B90), protective rail threaded insert `A 000 984 31 25` ×6 and screw
-`N 000000 000521` ×6, lock `A 000 994 96 45` (as needed).
-
-### Rear (88.075)
-
-| Part | Pre-facelift (this car, EPC 452) | US facelift (15D) | Pos |
-|---|---|---|---|
-| Bumper, complete with cover | `A 201 880 03 71` | **`A 201 880 15 71`** (replaces `20 71` and `22 71`) | 5 |
-| Bumper without cover | `A 201 880 06 71` | `A 201 880 19 71` | 11 |
-| Cover (painted part) | `A 201 885 04 25` | **`A 201 880 14 71`** (replaces `A 201 885 16 25`) | 26 |
-| Energy-absorbing unit | `A 201 885 03 37` | `A 201 885 08 37` | 68 |
-| Rail (rub strip) | `A 201 885 03 21` | `A 201 885 13 21` | 71 |
-
-New on the facelift rear (15D): fastening plate `A 000 984 12 64` ×5 (104) and `A 000 984 13 64` ×5
-(65), turn lock `A 001 988 06 42` ×5 (107). Small parts: rivet `A 201 990 02 92` ×7, washer
-`A 201 990 05 40` ×11, threaded insert `A 000 984 31 25` ×8, screw `N 000000 000521` ×8.
-
 ## To check before buying
 
 - [ ] What strips are on the car now, and whether the doors, fenders and sills already have holes
   for the facelift clips. *Not confirmed:* converting a pre-facelift car usually means drilling
   new holes; check the panel backs against the door skins first.
-- [ ] Whether the facelift US bumpers bolt straight on (same mounting part numbers suggest yes, but
-  not confirmed).
 - [ ] Panel color: No. 7738 per catalog, or body color.
 - [ ] Standard rear pieces (`75 40` / `76 40`) unless wider tyres are planned.
 
 ## Sources
 
 - Facelift parts catalogs 15C (190 E 2.3, from 09/88) and 15D (190 E 2.3 USA, from 09/88), groups
-  69.060, 88.030, 88.075, on [elcats.ru](https://www.elcats.ru/mercedes/)
+  69.060, on [elcats.ru](https://www.elcats.ru/mercedes/)
   ([Wayback, catalog home only](https://web.archive.org/web/20250825234902/http://www.elcats.ru/mercedes/))
   ([reference](references/elcats-w201-facelift-catalog/README.md)). Part numbers are shown as
   images on that site; they were read off the page by hand on 2026-10-06.
