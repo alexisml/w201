@@ -141,6 +141,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-01 | [Interior restoration: door panels, carpets](interior/interior-restoration.md) | interior | planned |
 | 2026-10-01 | [R16 / R16/1 EZL ignition reference resistor](ignition/r16-reference-resistor.md) | ignition | reference |
 | 2026-10-05 | [Mixture adjustment: CIS-E duty cycle](fuel-injection/mixture-adjustment.md) | fuel-injection | reference |
+| 2026-10-05 | [Coolant sensors and thermovalves at the thermostat](cooling/coolant-sensors.md) | cooling | reference |
 
 ---
 
