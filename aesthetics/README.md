@@ -26,7 +26,7 @@ The details, alternatives and things to check are in each file.
 - [ ] Sacco panels (5 per side), side skirts, end caps, clip kit, side skirt hardware, tape
 - [ ] *Optional:* "sportline" badges `A 201 817 13 20` (2)
 - [ ] Bumpers `A 201 880 15 70` (front) and `A 201 880 15 71` (rear)
-- [ ] Undertray `A 201 524 12 30` with spacers and fasteners; *optional* front capsule `A 201 524 41 25`
+- [ ] Undertray: factory panel for this car `A 201 520 60 23` (or `A 201 524 12 30` with struts and fasteners)
 
 ## Where to buy
 
