@@ -80,10 +80,25 @@ What the catalogs show (52.030 "Engine compartment panelling, gasoline vehicles"
 - `A 201 524 12 30` was used with **both** the pre-facelift and the facelift bumpers (catalogs 431
   and 15C), so the bumper choice doesn't matter for it. It bolts to the side members and the
   engine compartment, not to the bumper.
-- Mounting (431): 2 spacers `A 201 524 03 47` bolted to the side members (`N 000933 008145` ×2,
-  nut `N 913002 008004` ×2), 6 screws `A 201 990 05 36` into clip nuts `A 001 994 98 45` ×6, and
-  a rubber edge strip `A 201 505 41 86` (2 × 100 mm, sold by the meter). 15C uses 10 bolts
-  `A 201 990 11 36` instead.
+- Mounting parts for `A 201 524 12 30` alone (catalog 431, pre-facelift Europe). Sizes come from
+  aftermarket equivalents and supplier pages, not from the Mercedes catalog
+  ([reference](../body/references/undertray-fastener-specs/README.md)):
+
+  | Part | Number | Qty | Pos | Size / spec |
+  |---|---|---|---|---|
+  | Spacer strut, panel to side member | `A 201 524 03 47` | 2 | 11 | Bent steel strap, about 80 g; ships in a 23 cm package (online-teile). No drawing dimensions found. |
+  | Bolt, strut to side member | `N 000933 008145` | 2 | 14 | Hex bolt DIN 933, **M8 × 1.25 × 18 mm**, grade 8.8, zinc (febi 04859, DT 9.02022; SAMPA and AUGER list 20 mm) |
+  | Nut | `N 913002 008004` | 2 | 20 | **M8 × 1.25 self-locking hex nut**, 13 mm spanner, DIN 980/985 (DT 9.34009, AIC 55724). Footnote 012: from ident no. 024 031764 |
+  | Clip nut | `A 001 994 98 45` | 6 | 23 | Sheet metal clip nut for **4.8 mm** screws, 19 × 10 mm (Frankberg). Undercar shield clip |
+  | Sheet metal screw | `A 201 990 05 36` | 6 | 26 | Combination screw **4.8 × 19 mm**, 8 mm hex head (WS8), 26 mm washer, black zinc (SWG) |
+  | Rubber edge strip | `A 201 505 41 86` | 2 × 100 mm | 8 | Rubber strip on the panel edge, sold by the meter. Still listed by online-teile (2026-10-06) |
+
+- The facelift catalog (15C) fixes the panel together with the front capsule and side parts, so
+  its counts cover all three: 6 × `A 201 990 05 36`, 10 × clip nut `A 001 994 98 45`, 10 × bolt
+  `A 201 990 11 36`, 2 × `N 304017 008016` (M8 × 16 hex bolt, ISO 4017), 2 × washer
+  `N 000125 008443`, 2 × bolt `N 000933 008145` and 2 × nut `N 913002 008004` for the struts.
+  `A 201 990 11 36`: no size found; it is also used on this car's side panels (EPC 452 52.030
+  pos 50), so measure one there.
 - US cars never got it from the factory, so check the side members for the spacer mounting points.
 - To copy the facelift layout instead: front capsule `A 201 524 41 25` (15C lists it "only with
   A/C"; this car has A/C) plus the rear panel.
