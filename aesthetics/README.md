@@ -9,7 +9,7 @@ on request), and for facelift parts from catalogs 15C / 15D on elcats.ru
 |---|---|---|
 | Engine bay | [engine-bay.md](engine-bay.md) | Ignition cable cover, air intake hose |
 | Seals | [seals.md](seals.md) | Fire wall seal below the hood, hood side edge seals |
-| Sunroof | [sunroof.md](sunroof.md) | Side wind deflectors |
+| Sunroof | [sunroof.md](sunroof.md) | Side wind deflectors, removing the panel |
 | Side cladding | [sacco-cladding.md](sacco-cladding.md) | Facelift / Sportline "Sacco" panels, side skirts, badges, clips |
 | Bumpers | [bumpers.md](bumpers.md) | US facelift front and rear bumpers |
 | Grille | [grille.md](grille.md) | Radiator grille shell, insert, chrome strips, badge, star, fasteners |
