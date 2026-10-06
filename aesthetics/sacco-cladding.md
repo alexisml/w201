@@ -134,42 +134,106 @@ and `A 001 988 45 81` if a kit leaves it out (only TrabHan's list skips it).
 
 ## Fitting on a pre-facelift car
 
-- **Holes:** owners disagree. One says nothing is drilled: the old trim-strip clips come out and the
-  cladding clips go into the same holes. Others had to drill **2 screw holes at the door ends**
-  (where the door boards are screwed from inside). One owner spent about €200 on used boards and
-  bumpers, €112 on clips and screws, and about 5 hours
-  ([Beplankung mit Stoßstangen Mopf!](https://w201.com/index.php?thread/50324-beplankung-mit-sto%C3%9Fstangen-mopf/),
-  [reference](references/w201com-beplankung-stossstangen-mopf/README.md)).
-- Russian owners say facelift side boards and sill covers fit a pre-facelift body without changes;
-  doors are the same; the rear bumper must be the facelift one
-  ([рестайл и до рестайл, DRIVE2](https://www.drive2.ru/l/464251468594020540/),
-  [reference](references/drive2-restyle-vs-prerestyle/README.md)). Doors swap between pre- and
-  post-facelift cars if the clips are changed; the top edge of the board often scrapes the paint
+Owners have done this conversion many times. Mercedes itself offered it after 1988 for about
+1,500 DM (parts, paint and fitting), and WIS has a procedure for it (not captured)
+([Saccobretter nachrüsten bei einem vor MOPF Modell](https://w201.com/index.php?thread/95319-mercedes-w201-saccobretter-nachr%C3%BCsten-bei-einem-vor-mopf-modell/),
+[reference](references/w201com-saccobretter-nachruesten-vormopf/README.md)).
+
+### Holes and drilling
+
+Sources disagree on how much drilling is needed. Most conversion reports say some is:
+
+- **Door ends:** pre-facelift doors lack the 2 screw holes at the rear end of each door board.
+  Drill them, then prime and grease the holes (1987 car, w201.com thread above; also
+  [Beplankung mit Stoßstangen Mopf!](https://w201.com/index.php?thread/50324-beplankung-mit-sto%C3%9Fstangen-mopf/),
+  [reference](references/w201com-beplankung-stossstangen-mopf/README.md)). Another member says
+  the doors need slotted holes and extra clips along the bottom
+  ([Verplankung](https://w201.com/index.php?thread/16507-verplankung/),
+  [reference](references/w201com-verplankung/README.md)).
+- **Front fender piece ahead of the door and rear bumper area:** drilling needed, per WIS for
+  pre-facelift cars; the rear fender also needs trimming so the plastic nut reaches the bumper's
+  short stud. Rust-proof every hole
+  ([welche Clips für 16v Beplankung wo hin??](https://w201.com/index.php?thread/24573-welche-clips-f%C3%BCr-16v-beplankung-wo-hin/),
+  [reference](references/w201com-clips-16v-beplankung/README.md); 16V cladding on a pre-facelift
+  car, same idea).
+- **Rear fenders:** pre-facelift rear side panels lack the large (partly oval) holes for the lower
+  rear cladding
+  ([Karosserie-Umbau: Mopf zu Vormopf??](https://w201-ev.de/forum/thread/28708-karosserie-umbau-mopf-zu-vormopf/),
+  [Wayback](https://web.archive.org/web/20160810213001/http://w201-ev.de/forum/index.php/Thread/28708-Karosserie-Umbau-Mopf-zu-Vormopf/)).
+- **Sills:** pre-facelift sills lack the pressed mounting points for the lower edge of the sill
+  covers (same thread). Fit the skirts like the factory ones, glued and screwed, after flooding the
+  sills and jack points with cavity wax (w201.com 95319). A 1984 car had its facelift sills fixed
+  with about 20 mm screws plus rust protection
+  ([DRIVE2](https://www.drive2.ru/l/4303402/), [reference](references/drive2-facelift-sills-1984/README.md)).
+- **The other view:** one member says nothing is drilled, the cladding clips go into the old
+  trim-strip holes (w201.com 50324). A 1987 190D owner found about half the holes missing, had no
+  clips, and used countersunk self-tapping screws, filled and painted over
+  ([Листва, DRIVE2](https://www.drive2.ru/l/4290194/), [reference](references/drive2-listva-1987/README.md)).
+  Likely both are partly true: the main door clips can share old holes, the extra fixings can't.
+
+### Doors, fenders and other body parts
+
+- Late pre-facelift doors are the same as facelift doors; early front doors differ (wiring grommet
+  and access holes) (w201-ev 28708). Doors swap between pre- and post-facelift cars if the clips are
+  changed; the top edge of the board often scrapes the paint
   ([Vor-MOPF und Nach-MOPF Türen](https://w201-ev.de/forum/thread/29737-vor-mopf-und-nach-mopf-t%C3%BCren-untereinander-austauschbar/),
-  [reference](references/w201ev-tueren-vormopf-mopf/README.md)).
-- **How the boards come off** (useful in reverse): fender boards pull off from below; door boards
-  have 2 screws inside the door, clip at the bottom and slide back about 2 cm; the rear arch piece
-  has 2 clips (lift and pull back); the sill trim comes off last, after the other boards and the
-  rubber lip, and is screwed and glued. Tape `A 005 989 16 85`
+  [reference](references/w201ev-tueren-vormopf-mopf/README.md)). Fit a thin rubber lip along the
+  top edge of each board to protect the paint (w201.com 95319).
+- Russian owners say facelift side boards and sill covers fit a pre-facelift body; the rear bumper
+  must be the facelift one
+  ([рестайл и до рестайл, DRIVE2](https://www.drive2.ru/l/464251468594020540/),
+  [reference](references/drive2-restyle-vs-prerestyle/README.md)).
+- **Rear bumper pitfall:** the pre-facelift rear bumper is shorter than the facelift rear cladding
+  and leaves a visible mismatch; the fix is the facelift rear bumper (DRIVE2 4290194). See
+  [bumpers.md](bumpers.md).
+
+### Removal and fitting steps
+
+- How the boards come off (useful in reverse): fender boards pull off from below; door boards have
+  2 screws inside the door, clip at the bottom and slide back about 2 cm; the rear arch piece has 2
+  clips (lift and pull back); the sill trim comes off last, after the other boards and the rubber
+  lip, and is screwed and glued. Tape `A 005 989 16 85`
   ([Beplankung Demontieren](https://w201.com/index.php?thread/47279-beplankung-demontieren/),
   [reference](references/w201com-beplankung-demontieren/README.md)).
-- A 1984 car converted with facelift sills had them fixed to the metal with about 20 mm screws plus
-  rust protection ([DRIVE2](https://www.drive2.ru/l/4303402/),
-  [reference](references/drive2-facelift-sills-1984/README.md)).
-- Clip numbers by panel from a DRIVE2 owner: fender `A 001 988 44 81`, `49 81`, `A 006 988 35 78`;
-  door `A 001 988 47 81`, `45 81`, `46 81`; fender and door `A 001 988 50 81`, `51 81`; sill
-  `A 002 994 64 45`, `65 45`; plus a sealing strip glued to the board, `A 005 989 81 85 10`
-  (the catalog lists tape `A 005 989 16 85`)
+- Grease or wax behind the boards before fitting (DRIVE2 4290194, w201.com 95319).
+
+### Clips
+
+- Clip list with quantities per location, e.g. door clip `A 006 988 35 78` ×18 (front doors 5 each,
+  rear doors 4 each), matching the catalog count. The author says the rear fender clip
+  `A 001 988 47 81` holds poorly and suggests screws there
+  ([Крепления листвы, DRIVE2](https://www.drive2.ru/l/508220388832969915/),
+  [reference](references/drive2-krepleniya-listvy/README.md)).
+- Clip numbers by panel: fender `A 001 988 44 81`, `49 81`, `A 006 988 35 78`; door `A 001 988 47 81`,
+  `45 81`, `46 81`; fender and door `A 001 988 50 81`, `51 81`; sill `A 002 994 64 45`, `65 45`;
+  plus a sealing strip glued to the board, `A 005 989 81 85 10` (the catalog lists tape
+  `A 005 989 16 85`)
   ([КЛИПСЫ НА ЛИСТВУ ВСЕ НОМЕРА!](https://www.drive2.ru/l/8359440/),
   [reference](references/drive2-klipsy-listva/README.md)).
-- Used original boards came up at about €30–75 a set in 2010
+- Pre-facelift strip clips, for reference: `A 201 988 03 78`, `A 201 988 04 78`. A full set of
+  Sacco and sill clips was €110 at the dealer in 2012, and the order came 3 short; count them at
+  the counter
+  ([Umbau Mopf Beplankung auf Vormopf, motor-talk](https://www.motor-talk.de/forum/umbau-mopf-beplankung-auf-vormopf-t4322277.html),
+  [Wayback](https://web.archive.org/web/20240101122206/https://www.motor-talk.de/forum/umbau-mopf-beplankung-auf-vormopf-t4322277.html)).
+
+### Cost and time
+
+- About €200 for used boards and bumpers, €112 for clips and screws, about 5 hours (w201.com 50324).
+- Dealer clip kit €107 in 2006 (w201.com 24573); about €100 in 2005 (w201.com 16507).
+- Used boards about $80 without skirts (DRIVE2 4290194); €30–75 a set in 2010
   ([sacco bretter / türbeplankung](https://w201-ev.de/forum/thread/18544-sacco-bretter-t%C3%BCrbeplankung-fahrerseite/),
   [reference](references/w201ev-sacco-bretter-fahrerseite/README.md)).
 
+### Paint example
+
+- Body Surfblau 900 with cladding Andorblau 5301 (w201.com 16507), matching catalog footnote 915.
+
 ## To check before buying
 
-- [ ] What strips are on the car now, and whether the doors, fenders and sills already have the
-  holes. Expect to drill 2 holes at each door end (see above).
+- [ ] What strips are on the car now, and which holes exist. Expect to drill at the door ends, the
+  front fender piece, the rear fenders and the sills, and rust-proof every hole (see above).
+- [ ] Early or late pre-facelift front doors (grommet and access holes differ).
+- [ ] Cavity wax for the sills before fitting the skirts.
 - [ ] Panel color: No. 7738 Satograu per catalog and paint table, or body color.
 - [ ] Standard rear pieces (`75 40` / `76 40`) unless wider tyres are planned.
 

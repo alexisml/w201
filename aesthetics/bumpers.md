@@ -60,12 +60,33 @@ New on the facelift rear (15D): fastening plate `A 000 984 12 64` ×5 (104) and 
   ends in a plain curve; the facelift rear bumper is needed to match the side boards
   ([DRIVE2](https://www.drive2.ru/l/464251468594020540/),
   [reference](references/drive2-restyle-vs-prerestyle/README.md)).
-- No source found yet on the US 5 mph absorbers with facelift bumpers.
+- **Rear bumper differences:** the facelift rear bumper is taller (it reaches down to meet the
+  cladding) and wider; on a car without cladding it hangs low and sticks out at the sides. Members
+  say the mounting points are identical
+  ([Heckstoßstange Mopf/Vormopf Unterschiede](https://w201-ev.de/forum/thread/28568-hecksto%C3%9Fstange-mopf-vormopf-unterschiede/),
+  [reference](references/w201ev-heckstossstange-unterschiede/README.md)). A DRIVE2 owner disagrees:
+  the facelift rear beam is a bit wider, mounts differently with or without a tow bar, and needs an
+  extra bolt hole, pre-marked with a centre-punch on the pre-facelift body
+  ([Фаркоп от рестайла в дорестайл](https://www.drive2.ru/l/488246385724883551/),
+  [reference](references/drive2-farkop-restyle/README.md)).
+- The pre-facelift rear bumper is shorter than the facelift rear cladding, so it leaves a visible
+  mismatch if only the boards are changed
+  ([Листва, DRIVE2](https://www.drive2.ru/l/4290194/), [reference](references/drive2-listva-1987/README.md)).
+- **US bumpers:** the US rear impact strip is about 2 in. larger than the European one, and US foam
+  had to be cut to fit a European cover; the rear impact strip got wider at the facelift
+  ([Working on the kid's 1993 190e: Body kit?](https://www.benzworld.org/threads/working-on-the-kids-1993-190e-body-kit.2317961/),
+  [Wayback](https://web.archive.org/web/20250824181926/https://www.benzworld.org/threads/working-on-the-kids-1993-190e-body-kit.2317961/)).
+  Stick to US facelift parts (15D) to avoid that.
+- Facelift cars have the rear towing eye lowered on a W-shaped bracket; pre-facelift cars have it at
+  the spare-wheel well
+  ([Karosserie-Umbau: Mopf zu Vormopf??](https://w201-ev.de/forum/thread/28708-karosserie-umbau-mopf-zu-vormopf/),
+  [Wayback](https://web.archive.org/web/20160810213001/http://w201-ev.de/forum/index.php/Thread/28708-Karosserie-Umbau-Mopf-zu-Vormopf/)).
 
 ## To check before buying
 
-- [ ] Whether the facelift US bumpers bolt straight on. The mounting part numbers are the same,
-  which suggests yes, but it isn't confirmed.
+- [ ] Whether the facelift US bumpers bolt straight on. The mounting part numbers are the same and
+  some owners say the mounting points are identical, but one needed an extra (pre-marked) bolt hole
+  for the rear beam.
 - [ ] Bumper color (footnote 901 not captured).
 
 ## Shopping list
