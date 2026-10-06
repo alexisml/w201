@@ -92,6 +92,7 @@ Sources: [Removing 190E Grille? HOWTO, MBClub UK](https://forums.mbclub.co.uk/th
   02.60.152 (£123), Jumasa 21102016 (£138)
   ([autodoc](https://www.autodoc.co.uk/car-parts/oem/a2018800783), [reference](references/autodoc-a2018800783/README.md)).
   Only Van Wezel has owner feedback ("fine"); the others are untested by the sources found.
+- **This car's current grille is not original:** it is one of the cheap copies (owner, 2026-10-06).
 - **Shell construction (owner, 2026-10-06):** the outer chrome surround is **metal**; the inner
   part (the insert) is **plastic**.
 
@@ -111,6 +112,17 @@ General advice, not from the sources above. The weak points are fit, chrome and 
   satin/matt dark grey with a UV-stable paint.
 - **Best combination:** genuine metal shell (used, refurbished) + replica insert (Van Wezel) +
   genuine strips and clips. That puts the replica only where it is cheapest to fix or replace.
+
+## Finding a used genuine shell
+
+- One shell number, `A 201 880 07 83`, fits every W201 from 1984 to 1993 (all engines, pre- and
+  post-facelift, US and Euro), so any W201 breaker is a candidate. Only the **metal shell** is
+  needed; insert, strips and clips can be new.
+- Where to look: Ovoko and B-Parts (EU dismantlers), eBay.de and Kleinanzeigen.de (search
+  "Kühlergrill W201" or "2018800783"), the sale sections of w201.com and w201-ev.de, and the stores
+  in [parts-suppliers.md](../general-reference/parts-suppliers.md).
+- A shell with a damaged insert or missing strips is fine; check the chrome surround for pitting,
+  dents and broken screw mounts.
 
 ## Recommendation
 
