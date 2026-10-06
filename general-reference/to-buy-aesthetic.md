@@ -41,6 +41,19 @@ panel at the rear of the engine bay, where the hood closes against the fire wall
   **Order `A 210 628 00 98` instead.** A supplier search showed "use 210-628-00-98 instead"
   (the replacement doesn't appear in EPC 452)
 
+### Hood side edge seals
+
+EPC 88.120 Engine hood. Rubber seal on the underside of the hood, along the side edge where the hood
+meets the fender. The catalog calls it "seal at engine hood; for protection of electronic devices
+behind battery".
+
+- [ ] **Seal**: `A 201 889 05 98` (pos 156). Replaces `A 124 889 04 98`. The catalog lists **qty 1**
+  for this car (the battery side)
+- Reproduction set from [MBZ Classic Parts](https://mbzclassicparts.com/en/collections/w-201-sedan-abdichtungen-neu/products/w124-w201-abdichtungs-set-kotfluegel-neu-a2018890598)
+  ([reference](references/mbzclassicparts-hood-seal-set/README.md)): sold as a "fender sealing set",
+  2 pieces of 50 cm (left and right), for W124 and W201. The second piece would go on the other side,
+  where the catalog lists none for this car
+
 ### Sunroof side wind deflectors
 
 EPC 78.075 Sliding/lifting roof plate (electric sunroof, option 412). Side covers riveted along the
