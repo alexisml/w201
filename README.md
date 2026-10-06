@@ -142,6 +142,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-01 | [R16 / R16/1 EZL ignition reference resistor](ignition/r16-reference-resistor.md) | ignition | reference |
 | 2026-10-05 | [Mixture adjustment: CIS-E duty cycle](fuel-injection/mixture-adjustment.md) | fuel-injection | reference |
 | 2026-10-05 | [Coolant sensors and thermovalves at the thermostat](cooling/coolant-sensors.md) | cooling | reference |
+| 2026-10-06 | [Sacco side cladding, side skirts and facelift bumpers](body/sacco-cladding.md) | body | planned |
 
 ---
 

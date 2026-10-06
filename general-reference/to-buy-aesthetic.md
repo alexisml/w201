@@ -51,6 +51,16 @@ The catalog calls them "ornamental cover".
 - [ ] **Side deflector, right**: `A 140 780 04 92` (pos 47). Replaces `A 126 780 08 92`
 - [ ] **Rivets**: `N 910 001 00 3201` (pos 50), 4 needed
 
+### Sacco side cladding, side skirts, facelift bumpers
+
+Facelift (Sportline-style) wide side panels, side skirts and US facelift bumpers, with every part
+number, the clips and a clip kit comparison: see [body/sacco-cladding.md](../body/sacco-cladding.md).
+
+- [ ] Panels: 5 per side plus the side skirt and its end caps, in primer (paint before fitting)
+- [ ] Clip kit (rpm-depot ART 002359 or TrabHan C3105) plus the side skirt hardware and tape
+- [ ] Front bumper `A 201 880 15 70`, rear bumper `A 201 880 15 71` (US facelift, complete with cover)
+- [ ] *Optional:* "sportline" badges `A 201 817 13 20` (2)
+
 ## Where to buy
 
 See [parts-suppliers.md](parts-suppliers.md).
