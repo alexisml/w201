@@ -18,11 +18,24 @@ parts, the clips and what to check before buying. The matching bumpers are in
 - **Facelift cars** (from 09/88) have wide panels on the fenders and doors, a side skirt along the
   sill, and wider bumper covers. The catalogs for that are **15C** (190 E 2.3, from 09/88) and
   **15D** (190 E 2.3 USA, from 09/88). Both list the same cladding part numbers.
-- **Sportline** is option code **950** in the catalog. The only Sportline-specific part in 69.060
-  is the **"sportline" badge** on the front fender panel. The cladding itself is the same as on
-  any facelift car. The European catalog (15C) also lists **wider rear arch panels "only with wide
-  tyres"** (codes 650/651/653; the catalog doesn't name those codes). *Not confirmed:* Sportline
-  cars came with wider tyres, so a Sportline may have the wide-tyre rear panels. Not listed in the
+- **Sportline** is option code **950** in the catalog (owners also cite **951**; per a club
+  member 950 includes sport seats front and rear, 951 front only). The only Sportline-specific part
+  in 69.060 is the **"sportline" badge** on the front fender panel. The cladding itself is the
+  same as on any facelift car. Sportline arrived in June 1989: 21 mm lower, stiffer springs and
+  dampers, 7×15 alloys with 205/55 R15 tyres, 16V-style seats
+  ([Mercedes-Benz Classic archive](https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/201-series-compact-class-saloons-1988---1993.xhtml?oid=5501),
+  [Wayback](https://web.archive.org/web/20260107001722/https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/201-series-compact-class-saloons-1988---1993.xhtml?oid=5501);
+  [MBIG](https://mbig.de/autos/kompaktklasse/w201/baujahre-1988-bis-1993/),
+  [Wayback](https://web.archive.org/web/20260511125737/https://mbig.de/autos/kompaktklasse/w201/baujahre-1988-bis-1993/);
+  [mb190.de](https://www.mb190.de/sportline/), [Wayback](https://web.archive.org/web/20260417193513/https://www.mb190.de/sportline/),
+  says 22 mm; [Woran erkenne ich einen Sportline?](https://w201-ev.de/forum/thread/23990-woran-erkenne-ich-einen-sportline/),
+  [reference](references/w201ev-sportline-erkennen/README.md); a US 2.6 Sportline on 15×7 and
+  205/55 R15: [PeachParts](http://www.peachparts.com/shopforum/mercedes-benz-wheels-tires/31021-15x7-15x6-5-rims-190e-sportline-does-really-matter.html),
+  [reference](references/peachparts-sportline-rims/README.md)).
+- The European catalog (15C) lists **wider rear arch panels "only with wide tyres"** (codes
+  650/651/653; the catalog doesn't name them). **No source ties them to the Sportline**: the
+  sources above list its exterior changes as the lowering, the wheels and tyres and the fender
+  lettering only, and MBIG mentions arch changes for the Evolution models only. Not listed in the
   US catalog (15D).
 
 ## Paint
@@ -31,7 +44,17 @@ parts, the clips and what to check before buying. The matching bumpers are in
   (catalog footnote 420).
 - Catalog footnote 915 gives the factory cladding color for each paint code. For paint **147
   (Arctic White, this car)** it gives cladding color **No. 7738**, printed as "SATO GREY".
-  *From the catalog, not checked against paint charts or a real car.* Body color is also an option.
+  The MB-Baureihen paint table agrees: its "contrast color from 1989" column pairs 147 Arctic White
+  with **7738 Satograu**
+  ([BR201 Lackübersicht](https://nast-sonderfahrzeuge.de/lexicon/index.php?entry/7-br201-lack%C3%BCbersicht/),
+  [Wayback](https://web.archive.org/web/20250426123502/https://nast-sonderfahrzeuge.de/lexicon/index.php?entry/7-br201-lack%C3%BCbersicht/);
+  originally [mb-baureihen.de](https://web.archive.org/web/20241214110817/https://www.mb-baureihen.de/br201-lackcodes/)),
+  and a used original rear board for 09/88-on cars is sold in 7738 Satograu
+  ([ahbl-shop](https://ahbl-shop.de/anbauteile/kotfluegel/verkleidung-hinten-rechts-sacco-brett-mercedes-benz-w201-190-e-190-d-beplankung-seitenteil-kotfluegel-rechts-beifahrerseitig-a2016906240-a2016907640-7738-satograu/qyt000956/),
+  [reference](references/ahbl-sacco-hinten-rechts-7738/README.md)). Body color is also an option.
+- Sacco boards are normally painted without clear coat. Matching aged trim is hard because old
+  paint darkens ([Lackierung Stoßstange und Sacco Bretter](https://w201.com/index.php?thread/95959-lackierung-sto%C3%9Fstange-und-sacco-bretter/),
+  [reference](references/w201com-lackierung-sacco/README.md)).
 - Bumper colors are in catalog footnote 901, which wasn't captured.
 
 ## Panels per side
@@ -109,12 +132,45 @@ buttons `A 000 990 62 92` (191).
 **To buy separately:** the side skirt hardware above, adhesive tape `A 005 989 16 85` (about 5.2 m)
 and `A 001 988 45 81` if a kit leaves it out (only TrabHan's list skips it).
 
+## Fitting on a pre-facelift car
+
+- **Holes:** owners disagree. One says nothing is drilled: the old trim-strip clips come out and the
+  cladding clips go into the same holes. Others had to drill **2 screw holes at the door ends**
+  (where the door boards are screwed from inside). One owner spent about €200 on used boards and
+  bumpers, €112 on clips and screws, and about 5 hours
+  ([Beplankung mit Stoßstangen Mopf!](https://w201.com/index.php?thread/50324-beplankung-mit-sto%C3%9Fstangen-mopf/),
+  [reference](references/w201com-beplankung-stossstangen-mopf/README.md)).
+- Russian owners say facelift side boards and sill covers fit a pre-facelift body without changes;
+  doors are the same; the rear bumper must be the facelift one
+  ([рестайл и до рестайл, DRIVE2](https://www.drive2.ru/l/464251468594020540/),
+  [reference](references/drive2-restyle-vs-prerestyle/README.md)). Doors swap between pre- and
+  post-facelift cars if the clips are changed; the top edge of the board often scrapes the paint
+  ([Vor-MOPF und Nach-MOPF Türen](https://w201-ev.de/forum/thread/29737-vor-mopf-und-nach-mopf-t%C3%BCren-untereinander-austauschbar/),
+  [reference](references/w201ev-tueren-vormopf-mopf/README.md)).
+- **How the boards come off** (useful in reverse): fender boards pull off from below; door boards
+  have 2 screws inside the door, clip at the bottom and slide back about 2 cm; the rear arch piece
+  has 2 clips (lift and pull back); the sill trim comes off last, after the other boards and the
+  rubber lip, and is screwed and glued. Tape `A 005 989 16 85`
+  ([Beplankung Demontieren](https://w201.com/index.php?thread/47279-beplankung-demontieren/),
+  [reference](references/w201com-beplankung-demontieren/README.md)).
+- A 1984 car converted with facelift sills had them fixed to the metal with about 20 mm screws plus
+  rust protection ([DRIVE2](https://www.drive2.ru/l/4303402/),
+  [reference](references/drive2-facelift-sills-1984/README.md)).
+- Clip numbers by panel from a DRIVE2 owner: fender `A 001 988 44 81`, `49 81`, `A 006 988 35 78`;
+  door `A 001 988 47 81`, `45 81`, `46 81`; fender and door `A 001 988 50 81`, `51 81`; sill
+  `A 002 994 64 45`, `65 45`; plus a sealing strip glued to the board, `A 005 989 81 85 10`
+  (the catalog lists tape `A 005 989 16 85`)
+  ([КЛИПСЫ НА ЛИСТВУ ВСЕ НОМЕРА!](https://www.drive2.ru/l/8359440/),
+  [reference](references/drive2-klipsy-listva/README.md)).
+- Used original boards came up at about €30–75 a set in 2010
+  ([sacco bretter / türbeplankung](https://w201-ev.de/forum/thread/18544-sacco-bretter-t%C3%BCrbeplankung-fahrerseite/),
+  [reference](references/w201ev-sacco-bretter-fahrerseite/README.md)).
+
 ## To check before buying
 
-- [ ] What strips are on the car now, and whether the doors, fenders and sills already have holes
-  for the facelift clips. *Not confirmed:* converting a pre-facelift car usually means drilling
-  new holes; check the panel backs against the door skins first.
-- [ ] Panel color: No. 7738 per catalog, or body color.
+- [ ] What strips are on the car now, and whether the doors, fenders and sills already have the
+  holes. Expect to drill 2 holes at each door end (see above).
+- [ ] Panel color: No. 7738 Satograu per catalog and paint table, or body color.
 - [ ] Standard rear pieces (`75 40` / `76 40`) unless wider tyres are planned.
 
 ## Sources

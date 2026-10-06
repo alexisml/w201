@@ -41,6 +41,27 @@ New on the facelift rear (15D): fastening plate `A 000 984 12 64` ×5 (104) and 
 (65), turn lock `A 001 988 06 42` ×5 (107). Small parts: rivet `A 201 990 02 92` ×7, washer
 `A 201 990 05 40` ×11, threaded insert `A 000 984 31 25` ×8, screw `N 000000 000521` ×8.
 
+## Notes
+
+- Mercedes says the facelift bumpers came with new support elements and modified impact absorbers
+  ([Mercedes-Benz Classic archive](https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/201-series-compact-class-saloons-1988---1993.xhtml?oid=5501),
+  [Wayback](https://web.archive.org/web/20260107001722/https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/201-series-compact-class-saloons-1988---1993.xhtml?oid=5501)).
+  The US catalog shows new rails and energy absorbers but the same brackets and bolts.
+- A club member converting a pre-facelift car: the carrier differs, so fit the bumper as a complete
+  assembly. The rear is held by 2 nuts per side in the trunk (13 mm). If holes don't line up, drill
+  the plastic carrier
+  ([Umbau: Vormopfstoßstange auf Mopf](https://w201-ev.de/forum/thread/7033-umbau-vormopfsto%C3%9Fstange-auf-mopf/),
+  [reference](references/w201ev-umbau-stossstange-mopf/README.md)).
+- Pre-facelift rear bumper mounting with side brackets `A 201 880 01 14` and bolts
+  `A 201 990 15 01`, with photos; bracket layouts vary between cars
+  ([DRIVE2](https://www.drive2.ru/l/622683122697254242/),
+  [reference](references/drive2-rear-bumper-brackets/README.md)).
+- Telling them apart: the facelift front bumper continues down like a skirt, the pre-facelift one
+  ends in a plain curve; the facelift rear bumper is needed to match the side boards
+  ([DRIVE2](https://www.drive2.ru/l/464251468594020540/),
+  [reference](references/drive2-restyle-vs-prerestyle/README.md)).
+- No source found yet on the US 5 mph absorbers with facelift bumpers.
+
 ## To check before buying
 
 - [ ] Whether the facelift US bumpers bolt straight on. The mounting part numbers are the same,
