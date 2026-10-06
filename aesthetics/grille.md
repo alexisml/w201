@@ -92,8 +92,25 @@ Sources: [Removing 190E Grille? HOWTO, MBClub UK](https://forums.mbclub.co.uk/th
   02.60.152 (£123), Jumasa 21102016 (£138)
   ([autodoc](https://www.autodoc.co.uk/car-parts/oem/a2018800783), [reference](references/autodoc-a2018800783/README.md)).
   Only Van Wezel has owner feedback ("fine"); the others are untested by the sources found.
-- *Not confirmed:* whether the shell is metal or chrome-plated plastic. Owners wax and polish it
-  like metal, and one replica brand advertises a "metal outer frame".
+- **Shell construction (owner, 2026-10-06):** the outer chrome surround is **metal**; the inner
+  part (the insert) is **plastic**.
+
+## Making a cheap replica usable
+
+General advice, not from the sources above. The weak points are fit, chrome and the plastic:
+
+- **Fit:** offer it up to the hood before anything else. If holes are off, slot them with a round
+  file rather than forcing screws; a too-short shell can't really be fixed.
+- **Fasteners:** throw away the supplied clips and screws and use the genuine ones (still sold).
+- **Chrome strips:** swap the replica's strips for genuine ones; they are cheap and the replica
+  strips are usually the first thing to pit.
+- **Chrome surround:** thin replica chrome can't be made good cheaply. Wax or seal it from new
+  (inside too, with cavity wax) to slow corrosion; re-plating costs more than a good used genuine
+  shell.
+- **Insert:** if it's shiny or the wrong grey, scuff it, use plastic adhesion promoter and paint it
+  satin/matt dark grey with a UV-stable paint.
+- **Best combination:** genuine metal shell (used, refurbished) + replica insert (Van Wezel) +
+  genuine strips and clips. That puts the replica only where it is cheapest to fix or replace.
 
 ## Recommendation
 
