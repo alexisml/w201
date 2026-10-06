@@ -1,6 +1,7 @@
 # W201 facelift parts catalogs 15C / 15D: cladding and bumpers (elcats.ru)
 
 - **Original:** <https://www.elcats.ru/mercedes/> → Passenger car → 201.028
+  - 431 (190 E 2.3, to 09/88), 52.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=880c56e4-37a2-445e-a005-15ed5d7073b9&Unit=70e8bb25-6c9d-4802-9682-e330e1ef35ba&Title=x>
   - 15C (190 E 2.3, from 09/88), 69.060: <https://www.elcats.ru/mercedes/Parts.aspx?Model=50b69934-ce92-4497-bd5b-ca95b3f14015&Unit=3679c82f-0db7-41f6-9cb5-c9980d80230e&Title=x>
   - 15C, 88.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=50b69934-ce92-4497-bd5b-ca95b3f14015&Unit=77adf6e9-51e1-4a9b-a7d7-28843297346b&Title=x>
   - 15D (190 E 2.3 USA, from 09/88), 69.060: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=fd1a5666-a51f-4b5c-8863-4957763d68c1&Title=x>
@@ -9,7 +10,7 @@
   - 15D, 52.030: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=0abbdcd7-085b-453a-9659-6db07625c89b&Title=x>
   - 15D, 88.075: <https://www.elcats.ru/mercedes/Parts.aspx?Model=cd5c62e7-d48e-4634-bb77-6abfb0176cb0&Unit=2307f56c-53f3-4c12-8945-d3e5f51b12e8&Title=x>
 - **Wayback Machine:** only the catalog home page (<https://web.archive.org/web/20250825234902/http://www.elcats.ru/mercedes/>); the parts pages are not archived
-- **Full copy:** kept in the private archive (one PDF per catalog page plus the 6 diagrams). Available on request.
+- **Full copy:** kept in the private archive (one PDF per catalog page plus the 7 diagrams). Available on request.
 - **Archived:** 2026-10-06
 
 The site shows part numbers as images and the PDFs print the parts tree collapsed, so the PDFs hold
