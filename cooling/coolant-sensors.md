@@ -55,11 +55,16 @@ The catalog only labels `A 006 542 77 17` "for California" and gives no other re
 [saved copy](references/eurosporttuning-bosch-0280130044/README.md)) and is sold for many models
 ([FCP Euro](https://www.fcpeuro.com/products/mercedes-engine-coolant-temperature-sensor-mer-0065427717),
 [saved copy](references/fcpeuro-0065427717/README.md)), so it may have become the general
-replacement. A different temperature curve is likely but no source confirms it. `56 17` is the black
-version, the one on this car
+replacement. `56 17` is the black version, the one on this car
 ([BenzWorld](https://www.benzworld.org/threads/the-engine-temperature-sensors.3084442/),
-[saved copy](references/bw-engine-temperature-sensors/README.md)). The exact curves are probably in
-WIS or a Bosch data sheet.
+[saved copy](references/bw-engine-temperature-sensors/README.md)).
+
+The temperature curve is probably the **same** for all of them: the factory test page for the
+EZL/CIS-E sensor (B11/2) says the 4-pin sensor's resistances are identical to the 2-pin sensor's, and
+a W126 owner found the same table in the 190E manual
+([BenzWorld](https://www.benzworld.org/threads/coolant-temperature-sensors-tests-readings-locations-and-more.2795522/),
+[saved copy](references/bw-coolant-sensors-tests-readings/README.md)). The table is below, under
+[Resistance table](#resistance-table-ezlcis-e-sensor-b112).
 
 ### Pos 98 wiring (to check)
 
@@ -84,24 +89,37 @@ running the auxiliary fan. Not checked.
 ## Failure risk and quick tests
 
 Pos 95 and 98 are the ones most likely to fail; replace those first if doing it preventively.
-Ranking and tests are general M102 / KE-Jetronic knowledge plus forum reports, not WIS values.
+Ranking and tests are general M102 / KE-Jetronic knowledge plus forum reports; only the pos 95
+resistance values are factory data.
 
 | Pos | Part | Risk | Typical symptoms | Quick test | Basis |
 |-----|------|------|------------------|------------|-------|
-| 95 | KE-Jetronic sender (black `56 17`) | High | Hard cold start, stumbling warm-up, rich or lean mixture; often one pin dies, the other still works | Unplug, measure each pin to ground: both must read the same, about 4 kΩ at 7 °C, about 2.5 kΩ cold, 300–350 Ω warm. Zero or a big mismatch = bad | BenzWorld ([saved copy](references/bw-engine-temperature-sensors/README.md)) |
+| 95 | KE-Jetronic sender (black `56 17`) | High | Hard cold start, stumbling warm-up, rich or lean mixture; often one pin dies, the other still works | Unplug. One meter lead on the sensor body (ground), the other on each pin in turn: both pins must read the same and match the [resistance table](#resistance-table-ezlcis-e-sensor-b112) (2.5 kΩ at 20 °C, 325 Ω at 80 °C). Pin to pin reads wrong. Zero, open, or a big mismatch = bad | Factory table and BenzWorld ([saved copy](references/bw-coolant-sensors-tests-readings/README.md), [saved copy](references/bw-engine-temperature-sensors/README.md)) |
 | 98 | Fan coupling switch (dual) | High | Fan clutch never engages, overheating in traffic; or auxiliary fan never runs | Engine hot: bridge the switch terminals; clutch or aux fan should engage. Or ohmmeter on the removed switch in heated water: closes near 100–105 °C and 110 °C. Identify the terminals first | [MBClub](https://forums.mbclub.co.uk/threads/w124-230-ce-viscous-fan-not-working.155536/) ([saved copy](references/mbclub-w124-viscous-fan/README.md)), PeachParts |
 | 92 | Temp gauge sender | Medium | Gauge reads low, high, or jumps | Measure sender to ground: resistance should fall steadily as the engine warms. Compare the gauge with an IR thermometer on the thermostat housing | General, not sourced |
 | 101 | Thermovalves (vacuum) | Medium | Sticking or cracked valve, vacuum leak; affects ignition advance / EGR | Cold engine: blow through, should be closed. Hot (above 50 / 70 °C): should pass air. A hand vacuum pump makes it exact | General, not sourced |
-| 95 alt. | A/C cut-off sensor `45 17` | Low | Rarely noticed: A/C cuts out early or never cuts out | Ohmmeter at normal temperature should show its resting state; it should only change state near 130 °C (oil bath on a stove to confirm) | General, not sourced |
+| 95 alt. | A/C cut-off sensor `45 17` | Low | Rarely noticed: A/C cuts out early or never cuts out | Probably a temperature-dependent resistor, not an on/off switch: the A/C control unit reads it and cuts the A/C near 130 °C, so there is no "resting state". Unplug and measure across the 2 pins: a few kΩ cold, falling smoothly to a few hundred Ω warm. 0 Ω or open = bad. Only 0 or open and nothing between = it is a switch after all. No chart found for this part; likely close to the table below | BenzWorld (the same part, blue 2-pin, runs the aux fan on W126; [saved copy](references/bw-coolant-sensors-tests-readings/README.md)); curve not confirmed |
 
 Check the connectors before replacing anything: brittle plugs and corroded pins cause many of these
 symptoms.
+
+### Resistance table (EZL/CIS-E sensor B11/2)
+
+Factory values from the test page 07.3-121/31, for the fuel injection / ignition coolant sensor
+(pos 95). Measure one pin against the sensor body. The page says the 2-pin and 4-pin sensors share
+these values ([saved copy](references/bw-coolant-sensors-tests-readings/README.md)).
+
+| Coolant °C | -20 | -10 | 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |
+|------------|-----|-----|---|----|----|----|----|----|----|----|----|----|
+| Resistance | 15.7 kΩ | 9.2 kΩ | 5.9 kΩ | 3.7 kΩ | 2.5 kΩ | 1.7 kΩ | 1.18 kΩ | 840 Ω | 600 Ω | 435 Ω | 325 Ω | 247 Ω |
 
 ## Sources
 
 - Parts catalog, EPC 452: groups 01.065 (cylinder head & gasket kit) and 20.015 (water pump).
 - [The engine temperature sensors](https://www.benzworld.org/threads/the-engine-temperature-sensors.3084442/)
   (BenzWorld, 2021): [saved copy](references/bw-engine-temperature-sensors/README.md)
+- [Coolant Temperature Sensors, Tests, Readings, Locations, and More](https://www.benzworld.org/threads/coolant-temperature-sensors-tests-readings-locations-and-more.2795522/)
+  (BenzWorld, 2017, with the factory test page): [saved copy](references/bw-coolant-sensors-tests-readings/README.md)
 - [87 190E 2.3 overheating in traffic, post #4](https://www.peachparts.com/shopforum/568571-post4.html)
   (PeachParts, 2004): [saved copy](references/peachparts-190e-dual-temp-switch/README.md)
 - [W124 230 CE viscous fan not working](https://forums.mbclub.co.uk/threads/w124-230-ce-viscous-fan-not-working.155536/)
