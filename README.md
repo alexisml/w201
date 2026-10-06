@@ -139,6 +139,7 @@ Lessons learned, follow-ups, references.
 | 2026-09-28 | [Central locking not working (pump silent)](central-locking/2026-09-28-central-locking-not-working.md) | central-locking | open |
 | 2026-09-29 | [Throttle pedal: dead zone, step and kickdown](engine/throttle-pedal.md) | engine | reference |
 | 2026-10-01 | [Interior restoration: door panels, carpets](interior/interior-restoration.md) | interior | planned |
+| 2026-10-01 | [R16 / R16/1 EZL ignition reference resistor](ignition/r16-reference-resistor.md) | ignition | reference |
 | 2026-10-05 | [Mixture adjustment: CIS-E duty cycle](fuel-injection/mixture-adjustment.md) | fuel-injection | reference |
 
 ---
