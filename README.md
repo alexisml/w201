@@ -80,7 +80,7 @@ diagrams and scans referenced by those entries.
 ├── fuel-injection/
 ├── ignition/
 ├── cooling/
-├── electrical/
+├── electrical/               # wiring, power antenna
 ├── transmission/
 ├── suspension-steering/
 ├── brakes/
@@ -147,6 +147,8 @@ Lessons learned, follow-ups, references.
 | 2026-10-06 | [Aesthetics: cosmetic parts plan](aesthetics/README.md) (engine bay, seals, sunroof, Sacco cladding, bumpers, undertray) | aesthetics | planned |
 | 2026-10-06 | [Oil filler cap and seal](engine/oil-filler-cap.md) | engine | planned |
 | 2026-10-07 | [Wheels and tyres: stock sizes, replacing, going wider](wheels-tyres/wheels-and-tyres.md) | wheels-tyres | reference |
+| 2026-10-07 | [Power antenna: original wiring, aftermarket unit, controller plan](electrical/power-antenna.md) | electrical | planned |
+| 2026-10-07 | [Power antenna controller: ESP32 build (option A)](electrical/power-antenna-controller.md) | electrical | design |
 
 ---
 

@@ -60,7 +60,7 @@ under the hood, and a third brake light.
 | 506 | Outside mirrors left and right, heated; right one electrically adjustable (LHD) | ✅ present: both heated, right one electric |
 | 519 | Rear audio system | ✅ present |
 | 524 | Paintwork preservation | n/a (factory process) |
-| 531 | Automatic antenna | ✅ present |
+| 531 | Automatic antenna | ✅ present (original antenna replaced by an aftermarket unit, see [power antenna](../electrical/power-antenna.md)) |
 | 543 | Sun visors with make-up mirror, left and right | ✅ present |
 | 575 | Center console for 2nd seat row | ✅ present |
 | 586 | Behr air conditioning + electric windows front and rear (= 580 + 584) | ✅ present |
