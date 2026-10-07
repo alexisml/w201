@@ -84,6 +84,7 @@ diagrams and scans referenced by those entries.
 ├── transmission/
 ├── suspension-steering/
 ├── brakes/
+├── wheels-tyres/           # wheels, tyres, sizes and fitment
 ├── aesthetics/               # cosmetic parts plan: one file per group
 ├── body/
 ├── interior/
@@ -145,6 +146,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-05 | [Coolant sensors and thermovalves at the thermostat](cooling/coolant-sensors.md) | cooling | reference |
 | 2026-10-06 | [Aesthetics: cosmetic parts plan](aesthetics/README.md) (engine bay, seals, sunroof, Sacco cladding, bumpers, undertray) | aesthetics | planned |
 | 2026-10-06 | [Oil filler cap and seal](engine/oil-filler-cap.md) | engine | planned |
+| 2026-10-07 | [Wheels and tyres: stock sizes, replacing, going wider](wheels-tyres/wheels-and-tyres.md) | wheels-tyres | reference |
 
 ---
 
