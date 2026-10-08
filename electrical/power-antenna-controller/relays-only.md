@@ -118,6 +118,13 @@ actually used cost about $25–35 (more with mini ISO sockets, less with the Omr
 
 ### Building it on perfboard
 
+![Perfboard layout guide: car screw terminals on the left, K1, K2, the timer module and K3 in a row, diodes D1 to D3, antenna screw terminals on the right, with colour-coded wires](images/2026-10-08-relays-only-perfboard.svg)
+
+A placement and wiring guide, not to scale: mini ISO sockets are about 28 mm square, so with them
+the board ends up roughly 13 × 9 cm; with Omron relays it's smaller. Check the footprint of the
+sockets or relays you buy against the perfboard's 2.54 mm grid; mini ISO socket pins may need the
+holes drilled out.
+
 - **Power paths:** cheap perfboard copper is thin. Run the +12 V rail and the antenna feed (a few
   amps) with 1 mm² (18 AWG) wire soldered point to point on the back, not with solder bridges.
   Signal and coil connections can be thin wire.
