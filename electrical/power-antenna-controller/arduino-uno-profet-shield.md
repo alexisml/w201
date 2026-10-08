@@ -133,6 +133,9 @@ const float AUTO_HEIGHT = 0.5;       // AUTO height, as a fraction of full trave
 const float RUN_MA = 300;            // above this the motor is running
 const float STALL_MA = 2500;         // above this the mast has hit an end stop
 const uint32_t STALL_MS = 150;       // stall must last this long
+const uint32_t LOW_MS = 150;         // current must stay below RUN_MA this long to count as stopped
+const int MAX_TRIES = 3;             // failed moves in a row before giving up
+const uint32_t MIN_TRAVEL_MS = 2000, MAX_TRAVEL_MS = 15000;  // limits for the learned travel time
 const uint32_t BLANK_MS = 400;       // ignore the start-up current spike
 const uint32_t MAX_MOVE_MS = 20000;  // safety: never drive longer than this
 const uint32_t DEFAULT_TRAVEL_MS = 8000;
@@ -148,7 +151,9 @@ float pos = 0;          // 0 = fully down, 1 = fully up
 bool posKnown = false;
 float target = -1;      // height to stop at; -1 = none
 float afterHoming = -1; // height to go to after finding the bottom
-uint32_t moveStart = 0, lastTick = 0, stallSince = 0, runMs = 0;
+uint32_t moveStart = 0, lastTick = 0, stallSince = 0, lowSince = 0, runMs = 0;
+int fails = 0;          // failed moves in a row (timeouts, faults)
+bool downFlag = false;  // "clean shutdown, mast down" flag currently stored
 bool fromEnd = false;   // this move started at an end stop (used to learn travel time)
 uint32_t travelUp = DEFAULT_TRAVEL_MS, travelDown = DEFAULT_TRAVEL_MS;
 bool prevR = false;
@@ -166,7 +171,7 @@ bool readInput(int pin) {
 
 float readMilliamps() {
   int adc = analogRead(PIN_IS);
-  if (adc >= 1020) return 1e6;       // sense output at its limit: fault or heavy overload
+  if (adc >= 1020) return -1;        // sense output at its limit: short circuit or overload (fault)
   float volts = adc * VREF / 1023.0;
   return volts / R_IS * K_ILIS * 1000.0;
 }
@@ -179,6 +184,7 @@ void drive(Move m) {
     out(PIN_TRIG, m == UP);
     delay(20);
     out(PIN_FEED, true);             // switching IN off and on also clears a latched fault
+    if (downFlag) { EEPROM.update(EE_DOWN, 0); downFlag = false; }  // the mast is moving: no longer a clean "down"
     fromEnd = posKnown && ((m == UP && pos <= 0) || (m == DOWN && pos >= 1));
   }
   out(LED_UP, m == UP);
@@ -186,6 +192,7 @@ void drive(Move m) {
   move = m;
   moveStart = lastTick = millis();
   stallSince = 0;
+  lowSince = 0;
   runMs = 0;
 }
 
@@ -199,22 +206,30 @@ void goTo(float h) {
 
 void reachedEnd() {
   bool up = (move == UP);
-  if (fromEnd && runMs > 1000) {       // learn travel time from a full end-to-end move
+  if (fromEnd && runMs > 1000) {   // learn travel time from a full end-to-end move
     uint32_t &t = up ? travelUp : travelDown;
-    t = (t * 3 + runMs) / 4;
+    t = constrain((t * 3 + runMs) / 4, MIN_TRAVEL_MS, MAX_TRAVEL_MS);
     EEPROM.put(up ? EE_TUP : EE_TDOWN, t);
   }
   pos = up ? 1 : 0;
   posKnown = true;
+  fails = 0;
   drive(STOP);
   target = -1;
   if (!up && afterHoming >= 0) { float h = afterHoming; afterHoming = -1; goTo(h); }
+}
+
+void giveUp(const char *why) {         // stop, don't trust the position, count the failure
+  Serial.println(why);
+  drive(STOP); posKnown = false; target = -1; afterHoming = -1;
+  fails++;
 }
 
 void track() {
   if (move == STOP) return;
   uint32_t now = millis();
   float mA = readMilliamps();
+  if (mA < 0) { giveUp("Output fault: stopping, position unknown"); return; }
   uint32_t dt = now - lastTick;
   lastTick = now;
   bool blank = now - moveStart < BLANK_MS;
@@ -239,12 +254,14 @@ void track() {
       if (!stallSince) stallSince = now;
       if (now - stallSince > STALL_MS) { reachedEnd(); return; }    // hit the end stop
     } else stallSince = 0;
-    if (mA < RUN_MA) { reachedEnd(); return; }                      // antenna's own board cut the motor
+    if (mA < RUN_MA) {                                              // antenna's own board cut the motor
+      if (!lowSince) lowSince = now;
+      if (now - lowSince > LOW_MS) { reachedEnd(); return; }
+    } else lowSince = 0;
   }
 
   if (now - moveStart > MAX_MOVE_MS) {                              // safety
-    Serial.println("Timeout: stopping, position unknown");
-    drive(STOP); posKnown = false; target = -1; afterHoming = -1;
+    giveUp("Timeout: stopping, position unknown");
     return;
   }
 
@@ -253,17 +270,16 @@ void track() {
   }
 }
 
-void powerOff() {
+void powerOff(bool clean) {
   static uint32_t lastTry = 0;           // on USB power (bench) the board stays on: don't repeat
   if (lastTry && millis() - lastTry < 10000) return;
   lastTry = millis();
-  EEPROM.update(EE_DOWN, 1);             // shut down cleanly with the mast down
-  Serial.println("Mast down, powering off");
+  if (clean && !downFlag) { EEPROM.update(EE_DOWN, 1); downFlag = true; }  // shut down cleanly with the mast down
+  Serial.println(clean ? "Mast down, powering off" : "Giving up after repeated failures, powering off");
   delay(50);
-  out(PIN_HOLD, false);                  // the Arduino loses power here...
+  out(PIN_HOLD, false);                // the board loses power here...
   delay(1000);
-  out(PIN_HOLD, true);                   // ...unless the radio came back on: carry on
-  EEPROM.update(EE_DOWN, 0);
+  out(PIN_HOLD, true);                 // ...unless the radio came back on (or USB on the bench): carry on
 }
 
 void setup() {
@@ -295,10 +311,18 @@ void loop() {
   bool R = readInput(PIN_R), A = readInput(PIN_A), U = readInput(PIN_U);
   bool rRose = R && !prevR;
   prevR = R;
+  if (rRose) fails = 0;                              // turning the radio on retries after a give-up
+
+  if (fails >= MAX_TRIES) {                          // keeps failing: outputs off, give up
+    drive(STOP);
+    if (!R) powerOff(false);                         // next start finds the bottom first
+    delay(10);
+    return;
+  }
 
   if (!R) {                                          // radio off: all the way down, then off
     afterHoming = -1; target = -1;
-    if (move == STOP && posKnown && pos <= 0) powerOff();
+    if (move == STOP && posKnown && pos <= 0) powerOff(true);
     else if (move != DOWN) drive(DOWN);
   } else if (A && U) {                               // UP held or MAX: go up
     target = -1; afterHoming = -1;
@@ -324,8 +348,13 @@ What the firmware does that may need changing:
 - If the controller loses power mid-travel (for example a battery disconnect), it doesn't know where
   the mast is. On the next start it first drives down to find the bottom, then goes to the auto
   height.
-- If the shield reports a fault (short circuit or overload), the reading goes to its limit and the
-  controller treats it like an end stop and cuts the output.
+- If the shield reports a fault (short circuit or overload), the reading goes to its limit. The
+  controller stops, marks the position as unknown and doesn't learn from that move.
+- After 3 failed moves in a row (faults or timeouts) it gives up: outputs off, and with the radio off
+  it powers itself off anyway. The next start finds the bottom first. Turning the radio on again
+  also retries.
+- A low current only counts as "the antenna stopped the motor" if it lasts 150 ms, so a single noisy
+  reading can't end a move.
 
 ## Open questions (this idea)
 

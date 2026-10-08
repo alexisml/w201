@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="860" viewBox="0 0 1260 860">
-<rect width="1260" height="860" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="880" viewBox="0 0 1260 880">
+<rect width="1260" height="880" fill="#fff"/>
 <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.6" fill="#c9a96b"/></pattern></defs>
 <rect x="60" y="50" width="1100" height="600" rx="8" fill="#f6ecd4" stroke="#8a6d3b" stroke-width="2"/>
 <rect x="60" y="50" width="1100" height="600" fill="url(#g)"/>
@@ -122,16 +122,16 @@
 <circle cx="634" cy="495" r="5" fill="#0055cc"/>
 <polyline points="105,175 655,175 655,245 675,245" fill="none" stroke="#777777" stroke-width="3" stroke-linejoin="round"/>
 <polyline points="775,285 790,285 790,245 865,245" fill="none" stroke="#008b8b" stroke-width="3" stroke-linejoin="round"/>
-<polyline points="985,285 1015,285" fill="none" stroke="#e07000" stroke-width="4" stroke-linejoin="round"/>
-<circle cx="1015" cy="285" r="5" fill="#e07000"/>
+<polyline points="985,285 1015,285" fill="none" stroke="#8b4513" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="1015" cy="285" r="5" fill="#8b4513"/>
 <text x="1021" y="277" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">X</text>
-<polyline points="1015,285 1015,380" fill="none" stroke="#e07000" stroke-width="4" stroke-linejoin="round"/>
-<polygon points="1006,392.0 1024,392.0 1015,408.0" fill="#e07000"/>
-<line x1="1005" y1="408.0" x2="1025" y2="408.0" stroke="#e07000" stroke-width="3"/>
+<polyline points="1015,285 1015,380" fill="none" stroke="#8b4513" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1006,392.0 1024,392.0 1015,408.0" fill="#8b4513"/>
+<line x1="1005" y1="408.0" x2="1025" y2="408.0" stroke="#8b4513" stroke-width="3"/>
 <text x="1028" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D2</text>
 <polyline points="1015,420 1015,430" fill="none" stroke="#e07000" stroke-width="4" stroke-linejoin="round"/>
 <circle cx="1015" cy="430" r="5" fill="#e07000"/>
-<polyline points="1015,285 1060,285 1060,450" fill="none" stroke="#e07000" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1015,285 1060,285 1060,450" fill="none" stroke="#8b4513" stroke-width="3" stroke-linejoin="round"/>
 <polygon points="1051,457.0 1069,457.0 1060,473.0" fill="#0055cc"/>
 <line x1="1050" y1="473.0" x2="1070" y2="473.0" stroke="#0055cc" stroke-width="3"/>
 <text x="1073" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D3</text>
@@ -154,6 +154,8 @@
 <text x="120" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">R: radio on (car pin 5); coil diodes</text>
 <line x1="630" y1="778" x2="670" y2="778" stroke="#008b8b" stroke-width="3"/>
 <text x="680" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">timer NO to K3 coil</text>
-<text x="70" y="812" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on the back of the board. Dots are joints; lines that cross without a dot don't touch (insulated wire).</text>
-<text x="70" y="830" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Grey diode next to each relay: 1N4007 across the coil, stripe to 85. Timer and K3, D2, D3 are the optional add-on. Untested idea.</text>
+<line x1="70" y1="804" x2="110" y2="804" stroke="#8b4513" stroke-width="4"/>
+<text x="120" y="809" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">node X: K3 output to D2 and D3 (crosses the feed without touching it)</text>
+<text x="70" y="838" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on the back of the board. Dots are joints; lines that cross without a dot don't touch (insulated wire).</text>
+<text x="70" y="856" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Grey diode next to each relay: 1N4007 across the coil, stripe to 85. Timer and K3, D2, D3 are the optional add-on. Untested idea.</text>
 </svg>

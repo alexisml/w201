@@ -22,7 +22,10 @@ need a controller (see [car side wiring](#car-side-wiring-original-6-pin-antenna
 | [esp32-relay-board.md](esp32-relay-board.md) | ESP32 4-relay board (7–30 V input) | Relays | INA260 breakout | Cheaper; hobby-grade relays |
 | [relays-only.md](relays-only.md) | None: 2 automotive relays (optional timer module) | Relays | None (the antenna's own end stops) | Simplest; no programming; no automatic medium height without the timer |
 
-Everything below is common to all of them.
+Everything below is common to all of them, except where it mentions current sensing, the HOLD
+output or the firmware settings: those apply to the microcontroller ideas only. The
+[relays-only idea](relays-only.md) leaves the end stops to the antenna and has no automatic
+height without its timer add-on.
 
 ## Inputs and outputs
 
@@ -264,10 +267,27 @@ the auto height is in progress, with gU = 1 if that move is upwards.
 | AUTO, moving to the auto height | G | gU |
 
 Written out: **Feed = U·¬T + ¬A·¬B + A·¬U·G**, **Trigger = U + A·¬U·G·gU** (with ¬A taking priority if
-U = 1 and A = 0). Leaving out the AUTO move (G = 0) gives **Feed = U + ¬A** and **Trigger = U**,
-which two relays can do on their own: see [relays-only.md](relays-only.md). The firmware in each
+U = 1 and A = 0). Leaving out the AUTO move (G = 0) and letting the antenna's own board handle the
+end stops (dropping T and B) gives **Feed = U + ¬A** and **Trigger = U**, which two relays can do on
+their own: see [relays-only.md](relays-only.md). The firmware in each
 microcontroller idea follows the full version: `!R` and `!A` go down, `A && U` goes up,
 and AUTO goes to the auto height when R has just come on, and otherwise holds.
+
+## Firmware tests
+
+The two microcontroller sketches can be checked on a computer, without any hardware:
+[firmware-test/](firmware-test/) has a small C++ harness that runs each sketch (taken straight from
+its Markdown file) against a simulated car and antenna. It needs Python 3 and a C++ compiler
+(clang++ or g++):
+
+```bash
+python3 firmware-test/run.py
+```
+
+It checks normal use (AUTO height, rocking UP and DOWN, MAX, OFF, radio off and power-down), noisy
+current readings, an output fault (Uno only), end detection that fails (the controller must give up
+and power off instead of draining the battery), power lost mid-travel, and memory wear while left
+running on USB. Like everything here it checks the logic, not real parts.
 
 ## Car side wiring (original 6-pin antenna plug)
 
@@ -275,7 +295,7 @@ Colours from the original W201/W124/W126 wiring. **Check them on your car with a
 
 | Car pin | Colour | Signal | Goes to |
 |---|---|---|---|
-| 2 | red | +12 V permanent | Fuse → shield BAT+ |
+| 2 | red | +12 V permanent | Fuse → the controller's +12 V input |
 | 5 | blue/white | Radio on | Optocoupler input 1 (R), and diode → regulator input |
 | 4 | blue/green | Switch: AUTO, UP, MAX | Optocoupler input 2 (A) |
 | 1 | blue/yellow | Switch: UP, MAX | Optocoupler input 3 (U) |
@@ -287,18 +307,20 @@ it connects directly (trigger to the radio wire, +12 V, ground) with no controll
 
 ## Bypass plug
 
-Make a short adapter that connects car pin 2 → antenna +12 V, car pin 5 → antenna trigger, and
+Make a short adapter that connects car pin 2 → antenna +12 V, car pin 4 (A) → antenna trigger, and
 ground → ground. If the controller ever fails, plug this in and the antenna works the simple way
-again (up with the radio, down without).
+again: up in AUTO, UP or MAX, down in OFF, DOWN or with the radio off. (Using pin 5 instead would
+raise the mast whenever the radio is on, whatever the switch says.)
 
 ## Bench-test the antenna first
 
 With the antenna on the bench and a 12 V supply, plus a multimeter in series with the +12 V wire:
 
 1. +12 V and ground only: it should go down (or stay down). Note the idle current.
-2. Add the trigger: it should go up. Time the full travel and note the **running current** and the
-   **current when it hits the top**.
-3. Remove the trigger: it should go down. Time it.
+2. Add the trigger: it should go up. Time the full travel and note the **running current going up**
+   and the **current when it hits the top**.
+3. Remove the trigger: it should go down. Time it, and note the **running current going down**
+   (often lower than going up) and the current when it hits the bottom.
 4. **Key test:** during travel, disconnect the +12 V. The mast must **stop where it is**. Reconnect
    it with the trigger on: it should carry on up; with the trigger off: it should go down. If the
    antenna doesn't behave like this, option A won't work with it.
@@ -310,8 +332,9 @@ Power the box from the bench supply instead of the car: use a switch for "radio 
 switches for the A and U lines (or a real antenna switch). Check every row of the behaviour table.
 Watch the serial monitor for current readings, then set `RUN_MA` and `STALL_MA`:
 
-- `RUN_MA`: about halfway between the idle current and the running current.
-- `STALL_MA`: about halfway between the running current and the stall current.
+- `RUN_MA`: about halfway between the idle current and the **lower** of the two running currents
+  (up and down).
+- `STALL_MA`: about halfway between the **higher** running current and the lower stall current.
 
 ## Fit it in the car
 

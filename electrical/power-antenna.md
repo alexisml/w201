@@ -199,7 +199,7 @@ car harness (original 6-pin plug)            controller                 aftermar
 | R = 1, A = 0 | DOWN held / OFF | Goes down while the input is there (OFF holds it, so it goes all the way) |
 | R = 1, A = 1, U = 0, after a manual move | AUTO (released) | Holds where it is |
 | A comes back on (DOWN released, or OFF → AUTO), radio on | AUTO | Holds where it is. The two look the same on the wires, so the original board can't tell them apart either. Toggling the radio goes back to the auto height |
-| U = 1 with A = 0 | not possible with a working switch | Treat as a fault: hold |
+| U = 1 with A = 0 | not possible with a working switch | Treat as a wiring fault: go down (the safe direction) |
 
 ### Knowing where the mast is
 
@@ -220,8 +220,8 @@ Untested build ideas, one file per controller, with parts lists, wiring and firm
 
 - Plug into the car harness's original connector (housing `A 011 545 51 28`) instead of cutting it.
   The mating plug from the old antenna, or a scrap one, gives a clean adapter.
-- Make a **bypass plug** that wires constant to pin 2 and trigger to pin 5. If the controller fails,
-  the antenna goes back to the "dumb" behaviour it has today.
+- Make a **bypass plug** that wires constant to pin 2 and trigger to pin 4. If the controller fails,
+  the antenna goes back to the on/off behaviour it has today.
 
 ### Test on the bench first
 

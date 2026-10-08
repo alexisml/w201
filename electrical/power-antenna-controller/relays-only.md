@@ -51,7 +51,8 @@ lowered when the radio went off). Press UP or MAX to raise it, or add the
 | 6 | Waterproof box, wire | | See the [shopping list](#list) |
 
 The relay coils are powered from the switch lines, which come from the radio's antenna output. A
-typical mini relay coil draws about 150 mA, and up to two are on at once. **Measure what the radio's
+typical mini relay coil draws about 150 mA, and up to three are on at once (K1, K2 and K3, plus the
+timer module, when the radio comes on in UP or MAX with the timer fitted). **Measure what the radio's
 antenna output can supply** before using it this way. If it's weak, use relays with lower-power
 coils (the Omron G5LE draws 33 mA at 12 V, see [which relays](#which-relays)).
 
@@ -80,7 +81,7 @@ together when the radio comes on. That's what decides between the two:
 | Coil current at 12 V | about 150 mA (80–90 Ω) | 33 mA |
 | Mounting | Mini ISO PCB socket soldered to the perfboard (for example Durakool DZ85AB-5-PCB, 60 A); the relay plugs in | Soldered straight to the perfboard |
 | Price | Generic relay about $2–3 each in packs (TE about $11–13); socket about €5 each (RS Components; US price not checked) | about $2.50 each (Digi-Key) |
-| Use when | The radio output can supply about 300–400 mA | The radio output is weak, or you'd rather not load it |
+| Use when | The radio output can supply about 300 mA (about 500 mA or more with the timer add-on) | The radio output is weak, or you'd rather not load it |
 
 The antenna motor draws a few amps, so both are well oversized for the contacts. Generic mini ISO
 relays usually have **no** suppression diode and the Omron never has one: add a 1N4007 across each
@@ -221,7 +222,7 @@ it up for a few seconds:
 
 | # | Part | Example |
 |---|---|---|
-| 1 | 12 V one-shot timer: relay on for an adjustable time after it's powered (see [timer choices](#timer-choices-adjusted-with-a-screw)) **NE555 timer relay module** (trimmer screw; preferred, cheap). Finder 80.01 (dial) as a sturdier alternative |
+| 1 | 12 V one-shot timer: relay on for an adjustable time after it's powered (see [timer choices](#timer-choices-adjusted-with-a-screw)) | **NE555 timer relay module** (trimmer screw; preferred, cheap). Finder 80.01 (dial) as a sturdier alternative |
 | 2 | K3: relay, 12 V (5-pin) | Same type as K1 |
 | 3 | 2 diodes, 3 A | 1N5408 |
 
@@ -305,7 +306,7 @@ in OFF or DOWN it goes down; in UP or MAX it goes up; in AUTO it rises by the ti
 radio has just come on, and otherwise stays where it is.
 
 The same checks fail clearly when a diode is taken out: without D2, 576 of the 675 transitions end at
-the wrong height; without D1 or D3, the wiring-fault check trips (75 and 168 cases).
+the wrong height; without D1 or D3, the wiring-fault check trips (75 and 186 cases).
 
 **Taking one diode out (timer fitted):**
 
@@ -346,7 +347,7 @@ python3 relays-only-sim.py
 - [ ] What the radio's antenna output can supply (for the relay coils). Simple test: with the radio
       on, connect one relay coil (85 to the output, 86 to ground), then two. The voltage on the output
       should stay close to the battery voltage and the relays should click firmly. If it sags, use
-      option C relays.
+      the Omron G5LE relays (33 mA coils).
 - [ ] Bench test step 4 in the README: does the antenna stop when its +12 V is cut mid-travel? This
       idea depends on it as much as the others.
 

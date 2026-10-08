@@ -4,7 +4,7 @@ Untested idea: a placement and wiring guide for relays-only.md, not a measured l
 Run with: python3 relays-only-perfboard-gen.py  (writes 2026-10-08-relays-only-perfboard.svg)
 """
 
-W, H = 1260, 860
+W, H = 1260, 880
 out = []
 def add(s): out.append(s)
 def esc(s): return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -34,6 +34,7 @@ def diode(x, y1, y2, label, color="#000", up=False):
 
 RED, BLACK, ORANGE, BLUE = "#d01010", "#000000", "#e07000", "#0055cc"
 GREEN, PURPLE, GREY, TEAL = "#1f8f2f", "#8a2be2", "#777777", "#008b8b"
+BROWN = "#8b4513"   # node X (K3 output): must NOT touch the feed
 
 # lanes / rails (y)
 Y12, YU, YA, YR = 90, 125, 150, 175
@@ -134,15 +135,14 @@ wire([(xd1, 420), (xd1, YTRIG)], BLUE, 3); dot(xd1, YTRIG, BLUE)
 xr = TV[0] - 20
 wire([(TX, YR), (xr, YR), (xr, TV[1]), TV], GREY, 3)
 # timer NO -> K3 85
-xn = K3["p85"][0] - 45
 wire([TN, (TN[0] + 15, TN[1]), (TN[0] + 15, K3["p85"][1]), K3["p85"]], TEAL, 3)
 # K3 30 -> X -> D2 (feed) and D3 (trigger)
 XX = K3["p30"][0] + 30
-wire([K3["p30"], (XX, K3["p30"][1])], ORANGE, 4); dot(XX, K3["p30"][1], ORANGE)
+wire([K3["p30"], (XX, K3["p30"][1])], BROWN, 4); dot(XX, K3["p30"][1], BROWN)
 text(XX + 6, K3["p30"][1] - 8, "X", 13, weight="bold")
-wire([(XX, K3["p30"][1]), (XX, 380)], ORANGE, 4); diode(XX, 380, 420, "D2", ORANGE); wire([(XX, 420), (XX, YFEED)], ORANGE, 4); dot(XX, YFEED, ORANGE)
+wire([(XX, K3["p30"][1]), (XX, 380)], BROWN, 4); diode(XX, 380, 420, "D2", BROWN); wire([(XX, 420), (XX, YFEED)], ORANGE, 4); dot(XX, YFEED, ORANGE)
 xd3 = XX + 45
-wire([(XX, K3["p30"][1]), (xd3, K3["p30"][1]), (xd3, 450)], ORANGE, 3)
+wire([(XX, K3["p30"][1]), (xd3, K3["p30"][1]), (xd3, 450)], BROWN, 3)
 diode(xd3, 450, 480, "D3", BLUE)
 wire([(xd3, 480), (xd3, YTRIG)], BLUE, 3); dot(xd3, YTRIG, BLUE)
 # trigger line to the antenna
@@ -157,15 +157,16 @@ legend = [(RED, 5, "+12 V permanent (car pin 2, through the 5 A inline fuse outs
           (GREEN, 3, "A: AUTO/UP/MAX (car pin 4)"),
           (PURPLE, 3, "U: UP/MAX (car pin 1)"),
           (GREY, 3, "R: radio on (car pin 5); coil diodes"),
-          (TEAL, 3, "timer NO to K3 coil")]
+          (TEAL, 3, "timer NO to K3 coil"),
+          (BROWN, 4, "node X: K3 output to D2 and D3 (crosses the feed without touching it)")]
 for i, (c, w, lbl) in enumerate(legend):
     col, row = i % 2, i // 2
     x, y = LX + col * 560, LY + row * 26
     add(f'<line x1="{x}" y1="{y}" x2="{x+40}" y2="{y}" stroke="{c}" stroke-width="{w}"/>')
     text(x + 50, y + 5, lbl, 13)
-text(LX, LY + 112, "Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on the back of the board. Dots are joints; "
+text(LX, LY + 138, "Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on the back of the board. Dots are joints; "
      "lines that cross without a dot don't touch (insulated wire).", 12, style="italic")
-text(LX, LY + 130, "Grey diode next to each relay: 1N4007 across the coil, stripe to 85. Timer and K3, D2, D3 are the optional add-on. Untested idea.", 12, style="italic")
+text(LX, LY + 156, "Grey diode next to each relay: 1N4007 across the coil, stripe to 85. Timer and K3, D2, D3 are the optional add-on. Untested idea.", 12, style="italic")
 
 add("</svg>")
 open("2026-10-08-relays-only-perfboard.svg", "w").write("\n".join(out))

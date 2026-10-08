@@ -155,8 +155,8 @@ text(AX0 + 8, YFEED + 5, "+12 V", 13); text(AX0 + 8, YTRIG + 5, "trigger", 13); 
 line(1380, YG, AX0, YG)
 
 # ---------------- notes ----------------
-text(240, 735, "Relays: Bosch-style 12 V mini relays with a built-in suppression diode (85 = +, 86 = −). "
-     "D1: 1N4007. D2, D3: 1N5408. Car pin 5 (R) is only used by the timer add-on.", 13)
+text(240, 735, "Relays: 12 V mini ISO (5-pin) or Omron G5LE; each coil needs a suppression diode, built in or a 1N4007 "
+     "added (stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.", 13)
 text(240, 755, "Untested idea: check the antenna and the radio output first (see the README).", 13, style="italic")
 
 add("</svg>")

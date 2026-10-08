@@ -149,6 +149,6 @@
 <text x="1408" y="570" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">trigger</text>
 <text x="1408" y="675" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">ground</text>
 <line x1="1380" y1="670" x2="1400" y2="670" stroke="#000" stroke-width="2"/>
-<text x="240" y="735" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Relays: Bosch-style 12 V mini relays with a built-in suppression diode (85 = +, 86 = −). D1: 1N4007. D2, D3: 1N5408. Car pin 5 (R) is only used by the timer add-on.</text>
+<text x="240" y="735" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Relays: 12 V mini ISO (5-pin) or Omron G5LE; each coil needs a suppression diode, built in or a 1N4007 added (stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.</text>
 <text x="240" y="755" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Untested idea: check the antenna and the radio output first (see the README).</text>
 </svg>
