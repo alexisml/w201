@@ -1,62 +1,19 @@
-# Power antenna controller: make a 3-wire antenna work like the original
+# Power antenna controller idea: ESP32 relay board + INA260
 
 **System:** electrical
-**Status:** design, not built yet
+**Status:** untested idea
 
-A small box that makes a cheap aftermarket 3-wire power antenna (ground, +12 V, trigger) behave
-like the original Mercedes semi-automatic antenna with the dash switch (MAX / UP / AUTO / DOWN /
-OFF). It's built from off-the-shelf modules: an ESP32 relay board, a current-sensor breakout and an
-optocoupler board, wired with screw terminals and a few soldered parts. No custom PCB.
+> **Untested idea.** This is a design dump, not a finished or proven build. Nothing here has been
+> built or run yet. The wiring comes from documentation and forum reports, and the firmware has not
+> been compiled. Bench-test the antenna first (see the [README](README.md#bench-test-the-antenna-first))
+> and check everything against your own parts.
 
-Background, original wiring and sources: [power-antenna.md](power-antenna.md). This is "option A"
-there, the preferred option.
-
-> **Not tested yet.** Everything here is a design from the documented wiring and from forum tests
-> of other antennas. Do the [bench tests](#1-bench-test-the-antenna-before-building) first, and
-> adjust the settings in the firmware to your antenna.
-
-## How it works
-
-The car still sends the original signals to the antenna plug: radio on (pin 5), and the two switch
-lines (pins 4 and 1). The controller reads them and drives the aftermarket antenna with two relays:
-
-| Motion | Relay "feed" (antenna +12 V) | Relay "trigger" |
-|---|---|---|
-| Up | on | on |
-| Down | on | off |
-| Stop / hold | off | (as it was) |
-
-The aftermarket antenna needs its +12 V to move at all, so cutting it stops the mast where it is.
-That's what makes the in-between heights possible.
-
-**Position.** The antenna gives no position signal. The controller works it out:
-
-- A current sensor on the antenna's +12 V shows when the motor is running.
-- At the end of travel the motor stalls (the current jumps), or the antenna's own board cuts it
-  (the current drops). Either way the controller knows the mast is fully up or fully down. It also
-  cuts the power right away at a stall, which saves the gears.
-- In between, it counts how long the motor has run, compared with the full travel time. It learns
-  the travel time every time the mast goes from one end to the other.
-
-**Behaviour** (with the radio on):
-
-| Switch | Mast |
-|---|---|
-| Radio turns on, switch in AUTO | Goes to the "auto" height (default half) |
-| UP (held) | Goes up while held, stops when released |
-| MAX | Goes all the way up |
-| DOWN (held) | Goes down while held, stops when released |
-| OFF | Goes all the way down |
-| Radio off / key off | Goes all the way down, then the controller switches itself off |
-
-**Zero standby drain.** The controller is off when the radio is off. Turning the radio on powers it
-up through the radio's antenna wire. It then switches on a "hold" relay that keeps it powered from
-the permanent +12 V, so it can still lower the mast after the radio goes off. When the mast is down
-it releases the hold relay and powers itself off.
+An ESP32 board with 4 relays and a built-in 7–30 V supply, plus an INA260 current sensor breakout.
+Cheaper than the [Arduino + PROFET idea](arduino-uno-profet-shield.md), with hobby-grade relays and a
+separate current sensor instead of automotive-grade switches. How the controller behaves, the car
+wiring and the bench tests are in the [README](README.md).
 
 ## Parts
-
-Example parts are given; any equivalent works.
 
 | # | Part | What for | Example |
 |---|---|---|---|
@@ -69,29 +26,10 @@ Example parts are given; any equivalent works.
 | 7 | Waterproof box with cable glands | Housing in the trunk | ABS box, IP65, about 150 × 100 × 70 mm |
 | 8 | Lever connectors or screw terminals | Wiring inside the box | WAGO 221 |
 | 9 | Wire: 1 mm² (red, brown) for power and ground; 0.5 mm² for signals | | Automotive (FLRY) wire |
-| 10 | Optional: matching 6-pin plug from an old antenna | Plugs into the car harness without cutting it | Harness side is housing `A 011 545 51 28` (EPC 82.345) |
 
-Tools: soldering iron, heat-shrink, multimeter, a USB cable for the ESP32, a 12 V bench supply
-(2–3 A) or a car battery for testing.
+## Wiring inside the box
 
-## Wiring
-
-### Car side (original 6-pin antenna plug)
-
-Colours from the original W201/W124/W126 wiring. **Check them on your car with a multimeter.**
-
-| Car pin | Colour | Signal | Goes to |
-|---|---|---|---|
-| 2 | red | +12 V permanent | Fuse → hold relay and feed relay |
-| 5 | blue/white | Radio on | Optocoupler input 1 (R), and diode → board power |
-| 4 | blue/green | Switch: AUTO, UP, MAX | Optocoupler input 2 (A) |
-| 1 | blue/yellow | Switch: UP, MAX | Optocoupler input 3 (U) |
-| 6 | brown | Ground | Ground bus |
-
-Cars without the dash switch (or later 4-wire harnesses) only have pins R, +12 V and ground. Leave A
-and U unconnected and the controller acts as "AUTO" all the time.
-
-### Inside the box
+Car-side colours and pins: see the [README](README.md#car-side-wiring-original-6-pin-antenna-plug).
 
 ```
  +12 V permanent (pin 2) ── fuse 5 A ──┬── relay HOLD (COM) ── NO ──►|── board power in (+)
@@ -107,7 +45,7 @@ and U unconnected and the controller acts as "AUTO" all the time.
  switch (pin 1) ───── optocoupler IN3+
  optocoupler IN- (all) ── ground
 
- ground (pin 6) ── ground bus ── board GND, optocoupler input ground, antenna ground (brown/black)
+ ground (pin 6) ── ground bus ── board GND, optocoupler input ground, antenna ground
 
  ESP32 3.3 V ── optocoupler output VCC, INA260 VIN
  ESP32 GND   ── optocoupler output GND, INA260 GND
@@ -115,59 +53,24 @@ and U unconnected and the controller acts as "AUTO" all the time.
  INA260 SDA / SCL ── ESP32 GPIO 21 / 22
 ```
 
-Notes:
-
 - The relay GPIOs differ between boards. Common ones are 32, 33, 25 and 26; check your board's
   listing and set them at the top of the firmware.
 - Use the relays' **NO** (normally open) contacts, so everything is off when the board is off.
-- The two diodes make sure the radio wire can power the board, but the hold relay can't push
-  +12 V back into the radio wire.
+- The ESP32 board draws a few mA through its regulator and LEDs even when idle, which is why it
+  also powers itself off completely instead of using deep sleep.
+- The two diodes let the radio wire power the board, but stop the hold relay from pushing +12 V back
+  into the radio wire.
 - Keep the feed and ground wires to the antenna short and 1 mm² or thicker.
 
-### Bypass plug
+## Programming
 
-Make a short adapter that connects car pin 2 → antenna +12 V, car pin 5 → antenna trigger, and
-ground → ground. If the controller ever fails, plug this in and the antenna works the simple way
-again (up with the radio, down without).
-
-## Build steps
-
-### 1. Bench-test the antenna before building
-
-With the antenna on the bench and a 12 V supply, plus a multimeter in series with the +12 V wire:
-
-1. +12 V and ground only: it should go down (or stay down). Note the idle current.
-2. Add the trigger: it should go up. Time the full travel and note the **running current** and the
-   **current when it hits the top**.
-3. Remove the trigger: it should go down. Time it.
-4. **Key test:** during travel, disconnect the +12 V. The mast must **stop where it is**. Reconnect
-   it with the trigger on: it should carry on up; with the trigger off: it should go down. If the
-   antenna doesn't behave like this, option A won't work with it.
-5. Measure the current on the trigger wire too. It should be small (a signal, not motor current).
-
-### 2. Program the ESP32 before wiring the car
-
-1. Install the Arduino IDE (or PlatformIO), add the ESP32 boards package, and install the
-   **Adafruit INA260** library.
+1. Install the Arduino IDE, add the ESP32 boards package, and install the **Adafruit INA260**
+   library.
 2. Set the pins and the settings at the top of the sketch below.
-3. Upload over USB. Open the serial monitor at 115200 baud.
+3. Upload over USB. Open the serial monitor at 115200 baud, then follow the
+   [bench test](README.md#test-the-controller-on-the-bench).
 
-### 3. Test on the bench
-
-Power the box from the bench supply instead of the car: use a switch for "radio on", and two more
-switches for the A and U lines (or a real antenna switch). Check every row of the behaviour table.
-Watch the serial monitor for current readings, then set `RUN_MA` and `STALL_MA`:
-
-- `RUN_MA`: about halfway between the idle current and the running current.
-- `STALL_MA`: about halfway between the running current and the stall current.
-
-### 4. Fit it in the car
-
-Mount the box in the trunk near the antenna, away from water. Connect it to the car's antenna plug
-(or splice into the harness with soldered, heat-shrunk joints), and the antenna to the box. Test
-again with the real radio and switch.
-
-## Firmware (ESP32, Arduino core)
+## Firmware
 
 ```cpp
 // Power antenna controller: drives a 3-wire aftermarket antenna like the original
@@ -366,22 +269,7 @@ void loop() {
 }
 ```
 
-What the firmware does that may need changing:
+## Open questions (this idea)
 
-- After DOWN is released, or the switch goes from OFF back to AUTO, the mast **stays where it is**.
-  The original board can't tell these two apart either. Turning the radio off and on sends it back
-  to the auto height.
-- If the controller loses power mid-travel (for example a battery disconnect), it doesn't know where
-  the mast is. On the next start it first drives down to find the bottom, then goes to the auto
-  height.
-- Wi-Fi is off. The ESP32's Wi-Fi or Bluetooth could later be used to set the auto height or read
-  the logs from a phone.
-
-## Open questions
-
-- [ ] Does the aftermarket antenna stop when its +12 V is cut mid-travel? (Bench test 4.)
-- [ ] Running and stall current of the antenna, to set `RUN_MA` and `STALL_MA`.
-- [ ] How much current the radio's antenna output can supply. It has to power the ESP32 board for
-      about half a second at start-up, until the hold relay closes (roughly 100–200 mA at 12 V).
-      If it's too weak, add a small 12 V relay driven by the radio wire to switch on the board.
 - [ ] Relay GPIOs on the chosen board.
+- [ ] Radio wire start-up current for the ESP32 board (more than the Uno; measure it).

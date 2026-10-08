@@ -148,7 +148,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-06 | [Oil filler cap and seal](engine/oil-filler-cap.md) | engine | planned |
 | 2026-10-07 | [Wheels and tyres: stock sizes, replacing, going wider](wheels-tyres/wheels-and-tyres.md) | wheels-tyres | reference |
 | 2026-10-07 | [Power antenna: original wiring, aftermarket unit, controller plan](electrical/power-antenna.md) | electrical | planned |
-| 2026-10-07 | [Power antenna controller: ESP32 build (option A)](electrical/power-antenna-controller.md) | electrical | design |
+| 2026-10-07 | [Power antenna controller ideas (untested): Arduino + PROFET, ESP32](electrical/power-antenna-controller/README.md) | electrical | ideas |
 
 ---
 

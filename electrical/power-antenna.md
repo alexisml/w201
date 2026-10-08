@@ -5,7 +5,8 @@
 
 The car has the factory automatic antenna option (code 531). The original antenna has been replaced
 by an aftermarket 3-wire unit. It works, but in the simplest way: up when it gets a signal, down when
-the signal goes away. The dash switch no longer does anything. This note records how the original
+the signal goes away. The dash switch still works, but only as on/off: OFF lowers the mast, AUTO
+raises it all the way. This note records how the original
 worked, how the aftermarket unit works, and a plan for a small controller that makes the 3-wire
 unit behave like the original.
 
@@ -16,9 +17,14 @@ unit behave like the original.
 | Option | **531, automatic antenna**: present | [Data card](../general-reference/data-card.md) |
 | Antenna fitted now | **Aftermarket 3-wire unit** (ground, +12 V, trigger). Works: up with a signal, down without | Owner |
 | Make / model of the aftermarket unit | Not recorded yet | |
-| Which car wires it's connected to | Not recorded yet | |
-| Dash switch | Fitted; not used by the aftermarket unit | Owner |
+| Which car wires it's connected to | Trigger probably on **pin 4 (blue/green)**, the switch's AUTO/UP/MAX line. Not checked yet | Owner |
+| Dash switch | In use, but only on/off: **OFF** lowers the mast, **AUTO** raises it all the way (no medium height) | Owner |
 | Location | Rear left, front corner of the trunk, bracket on the wheelhouse | EPC 82.345; 1990 US 190E wiring diagram listing |
+
+With the trigger on pin 4, the antenna follows the switch's first section. Pin 4 is live in AUTO, UP
+and MAX, so the mast goes all the way up in any of them, and all the way down in OFF, DOWN or with the
+radio off. Holding DOWN should lower it, and letting go should send it all the way up again (expected,
+not tried). The second switch section (pin 1) and the radio line (pin 5) aren't used.
 
 ### Parts (EPC 452)
 
@@ -150,7 +156,7 @@ side. The radio only gives a +12 V antenna output.
 
 ### Three ways to do it
 
-**Preferred: option A**, built from off-the-shelf modules (an ESP32 relay board and breakouts, no custom PCB).
+**Preferred: option A**, built from off-the-shelf boards (an Arduino Uno with Infineon's automotive-grade PROFET+2 switch shield; an ESP32 relay board as a cheaper alternative). No custom PCB.
 
 | Option | What | For | Against |
 |---|---|---|---|
@@ -205,7 +211,8 @@ The 3-wire unit gives no position feedback. Two options:
 
 ### Build
 
-Parts list, wiring and firmware: [power-antenna-controller.md](power-antenna-controller.md).
+Untested build ideas, one file per controller, with parts lists, wiring and firmware:
+[power-antenna-controller/](power-antenna-controller/README.md).
 
 ### Keep it reversible
 
@@ -224,7 +231,7 @@ Parts list, wiring and firmware: [power-antenna-controller.md](power-antenna-con
 ## To check on the car
 
 - [ ] Make and model of the aftermarket antenna, and its wire colours.
-- [ ] Which car wires it's connected to now (probably pin 5 blue/white or the radio blue wire, pin 2
+- [ ] Confirm which car wires it's connected to now (trigger probably pin 4 blue/green; pin 2
       red, pin 6 brown).
 - [ ] The original 6-pin plug: still there? Colours as in the table above?
 - [ ] Measure pins 5, 4 and 1 with the radio on, in each switch position.
