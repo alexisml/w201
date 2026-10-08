@@ -43,18 +43,18 @@ lowered when the radio went off). Press UP or MAX to raise it, or add the
 
 | # | Part | What for | Example |
 |---|---|---|---|
-| 1 | **K1: changeover relay, 12 V** (5-pin: 30, 87, 87a, 85, 86) | Feed when A is off (normally-closed contact) | See [which relays](#which-relays) |
+| 1 | **K1: changeover relay, 12 V** (5-pin: 30, 87, 87a, 85, 86) | 30 takes the fused +12 V. 87a (closed when A is off) feeds the antenna. 87 (closed when A is on) gives the timer add-on its +12 V | See [which relays](#which-relays) |
 | 2 | **K2: relay, 12 V** | Feed when U is on (normally-open contact) | Same type as K1 |
-| 3 | Perfboard, screw terminals, and mini ISO PCB sockets (if using mini ISO relays) | Holds everything; car and antenna wires go to screw terminals | See [building it on perfboard](#building-it-on-perfboard) |
+| 3 | Perfboard and screw terminals | Holds everything (the relays solder straight on); car and antenna wires go to screw terminals | See [building it on perfboard](#building-it-on-perfboard) |
 | 4 | Inline blade fuse holder + 5 A fuse | Protects the +12 V permanent feed | Any automotive inline holder |
 | 5 | D1: diode, 1 A or more | Stops +12 V from the timer add-on feeding back into the U switch line. Optional without the timer, **needed with it** (see [simulation](#simulation)) | 1N4007 |
 | 6 | Waterproof box, wire | | See the [shopping list](#list) |
 
 The relay coils are powered from the switch lines, which come from the radio's antenna output. A
-typical mini relay coil draws about 150 mA, and up to three are on at once (K1, K2 and K3, plus the
-timer module, when the radio comes on in UP or MAX with the timer fitted). **Measure what the radio's
-antenna output can supply** before using it this way. If it's weak, use relays with lower-power
-coils (the Omron G5LE draws 33 mA at 12 V, see [which relays](#which-relays)).
+suggested JQC-3FF relay coil draws about 30 mA (a mini ISO car relay about 150 mA), and up to two
+are on at once (K1 and K2, in UP or MAX). The timer add-on is powered from the radio wire too. See
+[which relays](#which-relays) for the totals, and **check what the radio's antenna output can supply**
+(test in the [open questions](#open-questions-this-idea)).
 
 Use relays with a built-in suppression diode (and connect 85/86 the right way round), or add a diode
 across each coil. Without it, the coil's switch-off spike goes back into the radio's output.
@@ -66,27 +66,35 @@ and most parts come in packs, so one order leaves spares.
 
 ### Which relays
 
-**Suggested build: on perfboard**, with one of two relay types (see [building it](#building-it-on-perfboard)):
+**Suggested: the same relay as the timer module**, a **JQC-3FF 12 V changeover** PCB relay (the
+"sugar cube" relay, for example Tongling JQC-3FF-S-Z or Hongfa JQC-3FF/12VDC-1ZS), soldered on
+perfboard (see [building it](#building-it-on-perfboard)). One part type for the whole box, cheap, and
+with a low coil current, which matters because the relay coils are powered from the switch lines, so
+from the **radio's antenna output**.
 
-- **Mini ISO relays in PCB sockets**: standard car relays that unplug for replacement.
-- **Omron G5LE PCB relays**: small and cheap, with the lowest coil current; soldered in.
+Buy the **changeover** version: 5 pins, marked `Z` or `1ZS`. The `H` / `1HS` version has 4 pins and
+no normally-closed contact, and K1 needs one.
 
-The relay coils are powered from the switch lines, so from the **radio's antenna output**. In UP or
-MAX two coils are on at once (K1 and K2), and with the timer add-on K1, K3 and the timer module are on
-together when the radio comes on. That's what decides between the two:
+| | **JQC-3FF 12 V changeover** (suggested) | Omron G5LE-1-E DC12 (alternative) | Mini ISO relay + PCB socket (alternative) |
+|---|---|---|---|
+| What it is | PCB relay, the same type as on the NE555 timer module | Brand-name PCB relay of the same size class | Standard plug-in car relay (generic "Bosch-style", or TE V23134 with built-in diode) |
+| Coil current at 12 V | about 30 mA (400 Ω, 0.36 W; a 0.45 W version draws about 38 mA) | 33 mA | about 150 mA |
+| Contacts | 10 A 250 VAC, up to 30 VDC | 16 A | 30/40 A |
+| Temperature | −40 to +85 °C | −40 to +85 °C | −40 to +125 °C (TE) |
+| Mounting | Soldered to the perfboard | Soldered to the perfboard | PCB socket soldered to the perfboard (for example Durakool DZ85AB-5-PCB); the relay unplugs |
+| Price | about $0.45 each (LCSC); a few dollars for a pack on eBay | about $2.50 each (Digi-Key) | relay about $2–3 in packs; socket about €5 (RS Components) |
 
-| | **Mini ISO relay + PCB socket** (suggested) | **Omron G5LE-1-E DC12** (suggested) |
-|---|---|---|
-| Relay | 12 V, 5-pin SPDT (changeover) mini ISO: generic "Bosch-style" 30/40 A, or TE Connectivity V23134 (40 A, built-in suppression diode, −40 to 125 °C) | 12 V SPDT PCB relay, 16 A |
-| Coil current at 12 V | about 150 mA (80–90 Ω) | 33 mA |
-| Mounting | Mini ISO PCB socket soldered to the perfboard (for example Durakool DZ85AB-5-PCB, 60 A); the relay plugs in | Soldered straight to the perfboard |
-| Price | Generic relay about $2–3 each in packs (TE about $11–13); socket about €5 each (RS Components; US price not checked) | about $2.50 each (Digi-Key) |
-| Use when | The radio output can supply about 300 mA (about 500 mA or more with the timer add-on) | The radio output is weak, or you'd rather not load it |
+**Pin names:** PCB relays are labelled COM, NO and NC instead of car relay numbers. In this design
+COM = 30, NO = 87, NC = 87a, and the two coil pins are 85 (+) and 86 (−).
 
-The antenna motor draws a few amps, so both are well oversized for the contacts. Generic mini ISO
-relays usually have **no** suppression diode and the Omron never has one: add a 1N4007 across each
-coil (stripe/cathode to the + side, 85; other end to 86). The TE relay has it built in, so mind its
-polarity.
+The antenna motor draws a few amps, so all three are well oversized for the contacts. None of the
+PCB relays has a suppression diode: add a 1N4007 across each coil (stripe/cathode to the + side, 85;
+other end to 86). The TE mini ISO relay has it built in, so mind its polarity.
+
+**Load on the radio's antenna output** with the suggested relays: up to two coils at once (K1 and K2
+in UP or MAX), about 60–90 mA, plus the timer module (about 20 mA, plus its own relay coil) when the
+add-on is fitted: roughly 100–150 mA in all. With mini ISO relays it's about 300 mA (about 400 mA
+with the timer).
 
 Other ways to mount them, if perfboard isn't wanted:
 
@@ -100,48 +108,149 @@ Other ways to mount them, if perfboard isn't wanted:
 
 | Qty | Part | Search for | Rough US price |
 |---|---|---|---|
-| 2 (3 with the timer) | Relays, see [above](#which-relays) | Mini ISO: "12V 5 pin SPDT mini relay 40A" · Omron: "G5LE-1-E DC12" | Mini ISO: about $2–3 each in packs · Omron: about $2.50 each |
-| 2 (3 with the timer) | Mini ISO PCB sockets (mini ISO relays only) | "mini ISO relay PCB socket" (e.g. Durakool DZ85AB-5-PCB) | about €5 each (US price not checked) |
+| 2 (3 for the discrete build with the timer) | Relays, see [above](#which-relays): JQC-3FF 12 V **changeover** (5 pins, `Z` / `1ZS`) | "JQC-3FF-S-Z 12VDC" or "JQC-3FF/12VDC-1ZS" | about $0.45 each (LCSC); a few dollars for a pack (eBay) |
 | 1 | Perfboard, about 10 × 7 cm or bigger | "perfboard" / "prototype PCB" | about $5 for a pack |
 | 1 set | 5 mm PCB screw terminals (2- and 3-way), for the car and antenna wires | "5mm PCB screw terminal block" | about $5–8 for a pack |
-| 1 | NE555 delay relay module, 12 V, 0–60 s (timer add-on) | "DC 12V NE555 0-60 seconds delay relay module" | about $2.30–3 (eBay US); more on Amazon |
+| 1 | NE555 delay relay module, 12 V, **0–10 s** preferred (0–60 s also works) (timer add-on) | "DC 12V NE555 0-10s delay relay module" | about $1.50–3 shipped from China; about $9 plus shipping from a US eBay seller ([example](../references/ebay-ne555-0-10s-delay-relay-module/README.md)) |
 | 1 | Diode assortment with 1N4007 and 1N5408 | "diode assortment kit 1N4007 1N5408 100pcs" | about $7 (Walmart) |
 | 1 | Inline blade fuse holder + 5 A blade fuse | "inline blade fuse holder waterproof 5 pack" | about $10 for a 5-pack |
 | 1 | Small waterproof box, with standoffs for the board | "IP65 ABS junction box" (about 120 × 80 × 60 mm or bigger) | about $7–11 |
 | — | Wire (1 mm² / 18 AWG red and brown, 0.5 mm² / 20 AWG for signals), heat-shrink | | about $10, or what you have |
 
-The timer module is the common 67 × 17 × 17 mm board: the relay pulls in at power-up and releases
-after the set time ([reference](../references/grobotronics-ne555-delay-relay-module/README.md)).
-Check the listing says the same.
+Timer modules come in two kinds (relay on at power-up for T, or relay on only after T); both work,
+using the NO or NC contact. See [timer choices](#timer-choices-adjusted-with-a-screw) for how to tell
+them apart on the bench. References: the 0–60 s board
+([GRobotronics](../references/grobotronics-ne555-delay-relay-module/README.md)) and a 0–10 s board
+([Phipps](../references/phipps-ne555-0-10s-delay-relay-module/README.md)).
 
-**Rough total, from scratch:** about $45–60, timer included, with plenty left over. The parts
-actually used cost about $25–35 (more with mini ISO sockets, less with the Omron relays).
+**Rough total, from scratch:** about $35–50, timer included, with plenty left over. The parts
+actually used cost about $15–25 with the suggested relays. No relay sockets are needed: the
+JQC-3FF relays solder straight onto the perfboard. (Only the mini ISO alternative needs PCB sockets,
+about €5 each, for example Durakool DZ85AB-5-PCB.)
 
 ### Building it on perfboard
 
-![Perfboard layout guide: car screw terminals on the left, K1, K2, the timer module and K3 in a row, diodes D1 to D3, antenna screw terminals on the right, with colour-coded wires](images/2026-10-08-relays-only-perfboard.svg)
+**Module build** (suggested):
 
-A placement and wiring guide, not to scale: mini ISO sockets are about 28 mm square, so with them
-the board ends up roughly 13 × 9 cm; with Omron relays it's smaller. Check the footprint of the
-sockets or relays you buy against the perfboard's 2.54 mm grid; mini ISO socket pins may need the
-holes drilled out.
+![Perfboard layout guide, module build: car screw terminals on the left, K1, K2 and the timer module in a row, diodes D1 to D3, antenna screw terminals on the right, with colour-coded wires](images/2026-10-08-relays-only-module-perfboard.svg)
+
+**Discrete build:**
+
+![Perfboard layout guide, discrete build: car screw terminals on the left, K1, K2, the timer module and K3 in a row, diodes D1 to D3, antenna screw terminals on the right, with colour-coded wires](images/2026-10-08-relays-only-discrete-perfboard.svg)
+
+A placement and wiring guide, not to scale. With JQC-3FF relays (about 19 × 15 mm each) the board
+fits in roughly 10 × 7 cm. Check the relay footprint against the perfboard's 2.54 mm grid: PCB relay
+pins usually fit, sometimes with a slight bend. (With the mini ISO alternative, its sockets are about
+28 mm square, make the board bigger, and their pins may need the holes drilled out.) Pins are labelled with
+both names (30 COM, 87 NO, 87a NC).
 
 - **Power paths:** cheap perfboard copper is thin. Run the +12 V rail and the antenna feed (a few
   amps) with 1 mm² (18 AWG) wire soldered point to point on the back, not with solder bridges.
   Signal and coil connections can be thin wire.
 - **Connections in and out:** 5 mm screw terminals for the car side (pins 2, 1, 4, 5, 6) and the
   antenna side (+12 V, trigger, ground), so nothing is soldered to the harness.
-- **On the board:** the relays (or their sockets), a 1N4007 across each coil, D1, D2 and D3. The
+- **On the board:** the relays (soldered in), a 1N4007 across each coil, D1, D2 and D3. The
   timer module can sit on standoffs next to it and connect with short wires to its screw terminals.
 - **In the box:** mount the board on standoffs, add strain relief where the cables enter, and keep
   the box in a dry spot in the trunk. A conformal coating on the board helps against damp.
 
 ## Wiring
 
-### Black-box view
+### Without the timer
 
-What connects to what, with each part as a box. The dotted lines belong to the optional timer
-add-on (timer module, K3, D2 and D3).
+| From | To |
+|---|---|
+| Car pin 2 (+12 V permanent) | Fuse 5 A → K1 pin 30 **and** K2 pin 87 |
+| Car pin 4 (A, blue/green) | K1 pin 85 (coil +) |
+| Car pin 1 (U, blue/yellow) | K2 pin 85 (coil +) **and** D1 anode; D1 cathode → antenna trigger |
+| K1 pin 87a **and** K2 pin 30 | Antenna +12 V (red) |
+| K1 pin 87 | Not used (only by the module build of the timer add-on) |
+| K1 pin 86, K2 pin 86 | Ground |
+| Car pin 6 (ground) | Ground bus and antenna ground |
+| Car pin 5 (R, blue/white) | Not used (only by the timer add-on) |
+
+Relay pins use the usual automotive numbers: 85 and 86 are the coil, 30 is the common contact, 87 is
+normally open and 87a is normally closed (on PCB relays: COM = 30, NO = 87, NC = 87a).
+
+How it reads:
+
+- K1's 30–87a contact is **closed when its coil is off**, so the antenna gets +12 V whenever A is
+  off: radio off, OFF, or DOWN held. When A comes on (AUTO, UP, MAX), it opens.
+- K2 closes when U is on (UP, MAX), so the antenna gets +12 V again for going up, even though K1 is
+  open.
+- The trigger comes straight from U, so the antenna only goes up in UP or MAX.
+
+### With the timer: two builds
+
+The [timer add-on](#optional-medium-height-when-the-radio-comes-on) can be built two ways. Both
+behave the same and both pass the same [simulation](#simulation):
+
+| | **Module build** (suggested) | **Discrete build** |
+|---|---|---|
+| Idea | Reuse what the timer module already has: its own relay switches the antenna current | Separate parts: the timer module only drives the coil of an extra relay, K3 |
+| Relays | K1, K2 (and the timer module's relay) | K1, K2, K3 (and the timer module's relay) |
+| Gating (timer does nothing in OFF) | K1's spare contact (87) feeds the timer's contact | The timer's contact carries the A line to K3's coil |
+| Timer contact carries | Antenna motor current (a few amps; the module's relay is rated 10 A) | Only K3's coil current |
+| Load on the radio output | Lower (one coil fewer) | One more relay coil |
+
+#### Module build (suggested)
+
+What connects to what, with each part as a box. The dotted lines belong to the timer add-on.
+
+```mermaid
+flowchart LR
+    subgraph CAR["Car: original antenna plug"]
+        C2["pin 2 · red<br/>+12 V permanent"]
+        C1["pin 1 · blue/yellow<br/>U: UP / MAX"]
+        C4["pin 4 · blue/green<br/>A: AUTO / UP / MAX"]
+        C5["pin 5 · blue/white<br/>R: radio on"]
+        C6["pin 6 · brown<br/>ground"]
+    end
+
+    subgraph BOX["Relay box"]
+        F1["fuse 5 A"]
+        K1["K1 changeover relay<br/>coil from A<br/>87a: +12 V → feed (A off)<br/>87: +12 V → G (A on)"]
+        K2["K2 relay<br/>coil from U<br/>NO contact: +12 V → feed"]
+        D1["diode D1"]
+        TMR["timer module with its own relay<br/>powered by R<br/>connects G → X for T seconds"]
+        D23["diodes D2, D3<br/>X → feed, X → trigger"]
+    end
+
+    subgraph ANT["Aftermarket 3-wire antenna"]
+        A12["+12 V (feed)"]
+        ATR["trigger"]
+        AG["ground"]
+    end
+
+    C2 --> F1
+    F1 --> K1
+    F1 --> K2
+    C4 -- "coil" --> K1
+    C1 -- "coil" --> K2
+    C1 --> D1
+    C5 -.-> TMR
+    K1 -. "G" .-> TMR
+    TMR -. "X" .-> D23
+    K1 --> A12
+    K2 --> A12
+    D1 --> ATR
+    D23 -.-> A12
+    D23 -.-> ATR
+    C6 --> AG
+```
+
+![Relays-only schematic, module build: car plug, fuse, relays K1 and K2, diode D1, the timer module whose own relay feeds node X, diodes D2 and D3, and the antenna](images/2026-10-08-relays-only-module-schematic.svg)
+
+Added connections:
+
+| From | To |
+|---|---|
+| Car pin 5 (R) | Timer module VCC; timer GND to ground |
+| K1 pin 87 (node G: +12 V only while A is on) | Timer module COM |
+| Timer module NO (one-shot board) or NC (delay-on board) | Node X |
+| Node X | D2 anode (cathode → antenna +12 V) **and** D3 anode (cathode → antenna trigger) |
+
+#### Discrete build
 
 ```mermaid
 flowchart LR
@@ -188,50 +297,46 @@ flowchart LR
     C6 --> AG
 ```
 
-### Circuit
+![Relays-only schematic, discrete build: car plug, fuse, relays K1 and K2, diode D1, the timer module driving relay K3, diodes D2 and D3, and the antenna](images/2026-10-08-relays-only-discrete-schematic.svg)
 
-![Relays-only schematic: car plug, fuse, relays K1 and K2, diode D1, optional timer with K3 and diodes D2 and D3, and the antenna](images/2026-10-08-relays-only-schematic.svg)
+In this drawing K1's +12 V is on 87a and the feed on 30: on a changeover relay that's the same
+contact as in the table above, just drawn the other way round.
 
-Relay pins use the usual automotive numbers: 85 and 86 are the coil, 30 is the common contact, 87 is
-normally open and 87a is normally closed.
-
-### Connection list (without the timer)
+Added connections:
 
 | From | To |
 |---|---|
-| Car pin 2 (+12 V permanent) | Fuse 5 A → K1 pin 87a **and** K2 pin 87 |
-| Car pin 4 (A, blue/green) | K1 pin 85 (coil +) |
-| Car pin 1 (U, blue/yellow) | K2 pin 85 (coil +) **and** D1 anode; D1 cathode → antenna trigger |
-| K1 pin 30 **and** K2 pin 30 | Antenna +12 V (red) |
-| K1 pin 86, K2 pin 86 | Ground |
-| Car pin 6 (ground) | Ground bus and antenna ground |
-| Car pin 5 (R, blue/white) | Not used (only by the timer add-on) |
-
-How it reads:
-
-- K1 is **closed when its coil is off**, so the antenna gets +12 V whenever A is off: radio off,
-  OFF, or DOWN held. When A comes on (AUTO, UP, MAX), K1 opens.
-- K2 closes when U is on (UP, MAX), so the antenna gets +12 V again for going up, even though K1 is
-  open.
-- The trigger comes straight from U, so the antenna only goes up in UP or MAX.
+| Car pin 5 (R) | Timer module VCC; timer GND to ground |
+| Car pin 4 (A) | Timer module COM |
+| Timer module NO (one-shot board) or NC (delay-on board) | K3 pin 85 (coil +); K3 pin 86 to ground |
+| Fuse (+12 V) | K3 pin 87 |
+| K3 pin 30 (node X) | D2 anode (cathode → antenna +12 V) **and** D3 anode (cathode → antenna trigger) |
 
 ## Optional: medium height when the radio comes on
 
 To raise the mast part way automatically when the radio comes on in AUTO, add a timer that drives
-it up for a few seconds:
+it up for a few seconds. Wiring for both builds is [above](#with-the-timer-two-builds).
 
 | # | Part | Example |
 |---|---|---|
-| 1 | 12 V one-shot timer: relay on for an adjustable time after it's powered (see [timer choices](#timer-choices-adjusted-with-a-screw)) | **NE555 timer relay module** (trimmer screw; preferred, cheap). Finder 80.01 (dial) as a sturdier alternative |
-| 2 | K3: relay, 12 V (5-pin) | Same type as K1 |
-| 3 | 2 diodes, 3 A | 1N5408 |
+| 1 | 12 V timer relay module whose contact is closed for an adjustable time after it's powered (see [timer choices](#timer-choices-adjusted-with-a-screw)) | **NE555 delay relay module, 0–10 s** (trimmer screw; preferred, cheap). Finder 80.01 (dial) as a sturdier alternative |
+| 2 | 2 diodes, 3 A (D2, D3) | 1N5408 |
+| 3 | Discrete build only: K3, relay 12 V | Same type as K1 |
 
-- Power the timer from **car pin 5 (R)**, set to "relay on for T seconds after power-on".
-- Its contact passes **car pin 4 (A)** to **K3's coil**. So K3 only pulls in if the switch is in
-  AUTO (or higher) during those first seconds, not in OFF.
-- K3's contact (87) is fed from the fused +12 V. Its output (30) goes through D2 to the antenna
-  +12 V and through D3 to the antenna trigger. All three diodes are needed once the timer is fitted
-  (checked in the [simulation](#simulation)):
+- Power the timer from **car pin 5 (R)**, so it starts every time the radio comes on. Its contact is
+  closed for the first T seconds after power-up (NO or NC, see
+  [timer choices](#timer-choices-adjusted-with-a-screw)).
+- **Module build:** the timer module's own relay (COM, NO, NC; 10 A) switches the motor current
+  itself. Its COM takes **K1 pin 87**, which is +12 V only while A is on (AUTO, UP or MAX), and its
+  output is node **X**.
+- **Discrete build:** the timer's contact passes **car pin 4 (A)** to **K3's coil**, and K3 switches
+  the fused +12 V to node **X**. The timer's contact only carries coil current.
+- Either way, X has +12 V only for the first T seconds after the radio comes on, and only if the
+  switch isn't in OFF or DOWN. Feeding the timer's contact straight from the fuse would raise the
+  mast for T seconds even in OFF. (Powering the timer from A instead of R would also avoid a relay,
+  but then letting go of DOWN would start the timer and push the mast back up.)
+- X goes through D2 to the antenna +12 V and through D3 to the antenna trigger. All three diodes are
+  needed once the timer is fitted, in both builds (checked in the [simulation](#simulation)):
   - **D2** stops K1's feed from reaching the trigger, which would send the mast up instead of down.
   - **D3** stops the U line from feeding the antenna motor through D1 and D2, which would load the
     radio's output with motor current.
@@ -243,27 +348,45 @@ This adds the timer module's own current (tens of mA) to the radio's output whil
 
 ### Timer choices (adjusted with a screw)
 
-**Preferred: the NE555 module**, as the cheap option. The Finder is the sturdier, more expensive
-alternative. Both set the time, and so the height, with a screwdriver. Pick one whose mode is **"relay on for the
-set time after power is applied, then off"** (also called interval, single pulse or one-shot).
+**Preferred: an NE555 delay relay module with a 0–10 s range**, as the cheap option. The 0–10 s
+range suits an antenna that takes well under 10 s to go fully up: a full turn of the screw covers
+it, so the height is easier to set than on a 0–60 s board. The Finder is the sturdier, more
+expensive alternative. All of them set the time, and so the height, with a screwdriver.
+
+What matters is a contact that is **closed for the set time after power is applied, then opens**.
+NE555 boards come in two kinds, and both work if you use the right contact:
+
+| Module behaviour at power-up | Also sold as | Use contact |
+|---|---|---|
+| Relay pulls in at once, releases after T | one-shot, single pulse, interval (the common 0–60 s board) | **NO** (COM–NO) |
+| Relay stays off, pulls in after T and stays in | delay-on, "delay closure" (common on 0–10 s boards) | **NC** (COM–NC) |
+
+Listings aren't always clear about which kind they are, so check on the bench: power the module
+with 12 V and watch the relay LED (or listen for the click). If it clicks at once and again after T,
+it's the first kind; if it clicks only after T, it's the second.
+
+Example: the 0–10 s board in [this eBay listing](../references/ebay-ne555-0-10s-delay-relay-module/README.md)
+is sold as a "delay turn-on" module, so it's the second kind: wire G to its COM and X to its **NC**.
+Its own relay is a JQC-3FF-S-Z 12 V, the same as the suggested K1 and K2, and the time is set with a
+multi-turn trimmer, which makes fine adjustment easy.
 
 | | **NE555 timer relay module** (preferred) | Finder 80.01 multifunction timer (alternative) |
 |---|---|---|
 | What it is | Small hobby board with a relay and a blue trimmer potentiometer | Industrial timer relay for a DIN rail, 17.5 mm wide |
-| Adjusting | Turn the trimmer screw; usually about 0–25 s or 0–60 s | Rotary dials: one for the function, one for the time scale, one for the time |
-| Mode to use | The common 0–60 s board does it by default: relay on at power-up, off after the set time (some other boards need a trigger pulse; check the listing) | **DI (interval)**: contact closes when powered, opens after the set time |
+| Adjusting | Turn the trimmer screw; 0–10 s boards (preferred) or 0–25 s / 0–60 s | Rotary dials: one for the function, one for the time scale, one for the time |
+| Mode to use | Works on power-up with no extra trigger; use NO or NC as in the table above (a few boards need a separate trigger pulse instead; avoid those) | **DI (interval)**: contact closes when powered, opens after the set time |
 | Supply | 12 V DC | 12–240 V AC/DC |
 | Contact | 1 changeover, about 10 A | 1 changeover, 16 A |
 | Robustness | Bare board; needs the waterproof box | Industrial build, enclosed |
-| Price | Cheap | More expensive |
+| Price | Cheap (about $1.50–3) | More expensive |
 | Notes | A multi-turn trimmer makes fine adjustment easier | Time scales from 0.1 s up to hours; use the shortest that covers the antenna's travel time |
 
 How to set it: time the full travel from down to up on the bench, then set the timer to the fraction
 you want (half the time for about half height). The height won't be exact: the motor runs a little
 faster or slower with battery voltage, temperature and how stiff the mast is.
 
-With the Finder, its 16 A contact could switch the antenna's +12 V directly. K3 is still needed,
-because it's what makes the timer do nothing when the switch is in OFF.
+Both have a changeover contact rated well above the antenna's few amps, so the timer's own relay
+switches the antenna current directly (fed from K1 pin 87).
 
 ## Simulation
 
@@ -274,7 +397,9 @@ the radio comes on) and the antenna (moves only while its +12 V is on; up with t
 without; full travel 8 s). It also flags two wiring faults: +12 V **backfeeding** into a switch
 line, and a switch line (the radio's output) being able to **feed the antenna motor**.
 
-**Result with D1, D2, D3 and the timer (T = 4 s, about half height): all 12 scenarios pass.**
+Both builds of the timer add-on are simulated, and they give identical results.
+
+**Result with D1, D2, D3 and the timer (T = 4 s, about half height), both builds: all 12 scenarios pass.**
 
 | Scenario | Expected | Simulated |
 |---|---|---|
@@ -308,11 +433,11 @@ radio has just come on, and otherwise stays where it is.
 The same checks fail clearly when a diode is taken out: without D2, 576 of the 675 transitions end at
 the wrong height; without D1 or D3, the wiring-fault check trips (75 and 186 cases).
 
-**Taking one diode out (timer fitted):**
+**Taking one diode out (timer fitted, same in both builds):**
 
 | Missing | What goes wrong |
 |---|---|
-| D1 | +12 V backfeeds into the U line (and so the switch and the radio) whenever K3 is on |
+| D1 | +12 V backfeeds into the U line (and so the switch and the radio) while the timer is feeding node X |
 | D2 | K1's feed reaches the trigger through D3: the mast goes **up** in OFF, DOWN and with the radio off |
 | D3 | The mast still moves right, but in UP and MAX the U line (radio output) can feed the antenna motor through D1 and D2 |
 
@@ -338,7 +463,7 @@ python3 relays-only-sim.py
 | Stops the motor as soon as it stalls | No (the antenna's own board does it, as today) | No | Yes |
 | Learns the travel time | No | No | Yes |
 | Programming | None | None (set a time) | Yes |
-| Parts | 2 relays | + timer, relay, 2 diodes | Board, sensor/shield, optocouplers, supply |
+| Parts | 2 relays | + timer module, 2 diodes | Board, sensor/shield, optocouplers, supply |
 | Standby drain | None added (same as today) | None added | Almost none |
 | Load on the radio's antenna output | 1–2 relay coils | + timer module | Optocoupler inputs (a few mA) and the start-up current |
 
@@ -346,13 +471,24 @@ python3 relays-only-sim.py
 
 - [ ] What the radio's antenna output can supply (for the relay coils). Simple test: with the radio
       on, connect one relay coil (85 to the output, 86 to ground), then two. The voltage on the output
-      should stay close to the battery voltage and the relays should click firmly. If it sags, use
-      the Omron G5LE relays (33 mA coils).
+      should stay close to the battery voltage and the relays should click firmly. The suggested
+      JQC-3FF relays (about 30 mA each) load it much less than mini ISO relays (about 150 mA).
 - [ ] Bench test step 4 in the README: does the antenna stop when its +12 V is cut mid-travel? This
       idea depends on it as much as the others.
 
 ## References
 
+- Phipps Electronics: 12V Adjustable 0 to 10 Second Delay Relay Module, NE555 (specs: 0–10 s by
+  screw potentiometer, 10 A relay, 68 × 21 mm): [original](https://www.phippselectronics.com/product/12v-adjustable-0-10-second-delay-relay-module-ne555/)
+  · [Wayback](https://web.archive.org/web/20251113230833/https://www.phippselectronics.com/product/12v-adjustable-0-10-second-delay-relay-module-ne555/)
+  · [reference](../references/phipps-ne555-0-10s-delay-relay-module/README.md)
+
+- eBay listing 226055953064: DC 12V NE555 Time Delay Relay Shield Timer Control Switch Adjustable
+  Module (delay turn-on, 0–10 s, JQC-3FF-S-Z relay): [original](https://www.ebay.com/itm/226055953064)
+  · [reference](../references/ebay-ne555-0-10s-delay-relay-module/README.md)
+- Tongling Electronics: JQC-3FF (T73) PCB relay datasheet (contact forms, coil data, ratings):
+  [original](https://atta.szlcsc.com/upload/public/pdf/source/20250908/8BE250189D647BBAA75B858103AEA1C3.pdf)
+  · [reference](../references/tongling-jqc-3ff-datasheet/README.md)
 - GRobotronics: Relay Module, 1 channel 12 V with adjustable delay time (NE555 delay relay module;
   how it behaves at power-up): [original](https://grobotronics.com/relay-module-1-channel-12v-with-adjustable-delay-time.html)
   · [Wayback](https://web.archive.org/web/20250813224724/https://grobotronics.com/relay-module-1-channel-12v-with-adjustable-delay-time.html)

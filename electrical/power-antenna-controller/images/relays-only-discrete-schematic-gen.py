@@ -1,10 +1,10 @@
-"""Draw the relays-only schematic as a plain SVG (white background, works in GitHub light/dark).
+"""Draw the relays-only schematic, discrete build (separate relay K3 for the timer), as a plain SVG (white background, works in GitHub light/dark).
 
 Untested idea: the circuit from relays-only.md.
-Run with: python3 relays-only-schematic-gen.py  (writes 2026-10-08-relays-only-schematic.svg)
+Run with: python3 relays-only-discrete-schematic-gen.py  (writes 2026-10-08-relays-only-discrete-schematic.svg)
 """
 
-W, H = 1540, 760
+W, H = 1540, 775
 out = []
 def add(s): out.append(s)
 def line(x1, y1, x2, y2, dash=False, w=2):
@@ -120,13 +120,13 @@ rect(890, 235, 470, 300, dash=True, sw=1.5)
 text(1350, 255, "optional timer add-on", 14, "end", style="italic")
 TX0, TY0, TW, TH = 940, RY, 140, 100
 rect(TX0, TY0, TW, TH)
-text(TX0 + TW / 2, TY0 + 42, "one-shot timer", 14, "middle", "bold")
+text(TX0 + TW / 2, TY0 + 42, "timer module", 14, "middle", "bold")
 text(TX0 + TW / 2, TY0 + 60, "NE555 module", 12, "middle")
 text(TX0 + TW / 2, TY0 + 78, "time set by screw", 12, "middle")
 tv, tg, tno = TY0 + 25, TY0 + 75, TY0 + 50
 text(TX0 + 5, tv + 4, "+", 12); text(TX0 + 5, tg + 4, "−", 12)
 text(TX0 - 6, tv - 6, "VCC", 11, "end"); text(TX0 - 6, tg - 6, "GND", 11, "end")
-text(1010 + 6, TY0 - 6, "COM", 11); text(TX0 + TW + 6, tno - 6, "NO", 11)
+text(1010 + 6, TY0 - 6, "COM", 11); text(TX0 + TW + 6, tno - 6, "NO / NC*", 11)
 poly((920, YR), (920, tv), (TX0, tv)); dot(920, YR)
 poly((TX0, tg), (925, tg), (925, YG)); dot(925, YG)
 line(1010, YA, 1010, TY0)
@@ -155,9 +155,11 @@ text(AX0 + 8, YFEED + 5, "+12 V", 13); text(AX0 + 8, YTRIG + 5, "trigger", 13); 
 line(1380, YG, AX0, YG)
 
 # ---------------- notes ----------------
-text(240, 735, "Relays: 12 V mini ISO (5-pin) or Omron G5LE; each coil needs a suppression diode, built in or a 1N4007 "
-     "added (stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.", 13)
-text(240, 755, "Untested idea: check the antenna and the radio output first (see the README).", 13, style="italic")
+text(240, 727, "Relays: JQC-3FF 12 V changeover (COM = 30, NO = 87, NC = 87a), or Omron G5LE / mini ISO; each coil needs a 1N4007 "
+     "(stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.", 13)
+text(240, 745, "* Timer contact: NO on a one-shot module (relay on at power-up, off after T), NC on a delay-on module "
+     "(relay off at power-up, on after T).", 13)
+text(240, 763, "Untested idea: check the antenna and the radio output first (see the README).", 13, style="italic")
 
 add("</svg>")
-open("2026-10-08-relays-only-schematic.svg", "w").write("\n".join(out))
+open("2026-10-08-relays-only-discrete-schematic.svg", "w").write("\n".join(out))

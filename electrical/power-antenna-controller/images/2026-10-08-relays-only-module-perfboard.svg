@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="880" viewBox="0 0 1100 880">
+<rect width="1100" height="880" fill="#fff"/>
+<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.6" fill="#c9a96b"/></pattern></defs>
+<rect x="60" y="50" width="960" height="600" rx="8" fill="#f6ecd4" stroke="#8a6d3b" stroke-width="2"/>
+<rect x="60" y="50" width="960" height="600" fill="url(#g)"/>
+<text x="70" y="38" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Module build: perfboard, top view (placement and wiring guide, not to scale)</text>
+<rect x="65" y="70" width="55" height="125" rx="0" fill="#2a6fdb" stroke="#123d7a" stroke-width="2"/>
+<rect x="65" y="570" width="55" height="40" rx="0" fill="#2a6fdb" stroke="#123d7a" stroke-width="2"/>
+<circle cx="105" cy="90" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="82" y="95" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">2</text>
+<circle cx="105" cy="125" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="82" y="130" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">1</text>
+<circle cx="105" cy="150" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="82" y="155" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">4</text>
+<circle cx="105" cy="175" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="82" y="180" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">5</text>
+<circle cx="105" cy="590" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="82" y="595" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">6</text>
+<text x="55" y="635" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">CAR</text>
+<text x="55" y="652" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">screw terminals</text>
+<rect x="960" y="410" width="55" height="200" rx="0" fill="#2a6fdb" stroke="#123d7a" stroke-width="2"/>
+<circle cx="975" cy="430" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1002" y="435" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">+12</text>
+<circle cx="975" cy="495" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1002" y="500" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">TRG</text>
+<circle cx="975" cy="590" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1002" y="595" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#fff">GND</text>
+<text x="958" y="635" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">ANTENNA</text>
+<text x="958" y="652" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">screw terminals</text>
+<rect x="230" y="210" width="150" height="150" rx="6" fill="#fdfdfd" stroke="#333" stroke-width="2"/>
+<text x="330" y="350" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K1</text>
+<text x="305.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">JQC-3FF 12 V changeover</text>
+<text x="305.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(or Omron G5LE / mini ISO)</text>
+<circle cx="245" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="255" y="250" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">85</text>
+<circle cx="245" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="255" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">86</text>
+<circle cx="305" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="315" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">30 COM</text>
+<circle cx="365" cy="255" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="355" y="260" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">87 NO</text>
+<circle cx="365" cy="315" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="355" y="320" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">87a NC</text>
+<polyline points="245,245 275,245 275,265" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="245,325 275,325 275,305" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="266,293.0 284,293.0 275,277.0" fill="#777777"/>
+<line x1="265" y1="277.0" x2="285" y2="277.0" stroke="#777777" stroke-width="3"/>
+<text x="288" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000"></text>
+<rect x="450" y="210" width="150" height="150" rx="6" fill="#fdfdfd" stroke="#333" stroke-width="2"/>
+<text x="550" y="350" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K2</text>
+<text x="525.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">JQC-3FF 12 V changeover</text>
+<text x="525.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(or Omron G5LE / mini ISO)</text>
+<circle cx="465" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="475" y="250" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">85</text>
+<circle cx="465" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="475" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">86</text>
+<circle cx="525" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="535" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87 NO</text>
+<circle cx="585" cy="285" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="575" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30 COM</text>
+<polyline points="465,245 495,245 495,265" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="465,325 495,325 495,305" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="486,293.0 504,293.0 495,277.0" fill="#777777"/>
+<line x1="485" y1="277.0" x2="505" y2="277.0" stroke="#777777" stroke-width="3"/>
+<text x="508" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000"></text>
+<rect x="690" y="210" width="130" height="150" rx="6" fill="#eaf4ff" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="770" y="310" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">timer</text>
+<text x="770" y="326" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">module</text>
+<text x="770" y="342" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(on standoffs)</text>
+<circle cx="705" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="715" y="250" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">VCC</text>
+<circle cx="705" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="715" y="330" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">GND</text>
+<circle cx="755.0" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="765.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">COM</text>
+<circle cx="805" cy="285" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="805" y="273" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">NO/NC</text>
+<polyline points="105,90 525,90 525,225" fill="none" stroke="#d01010" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="305,90 305,225" fill="none" stroke="#d01010" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="305" cy="90" r="5" fill="#d01010"/>
+<polyline points="105,590 975,590" fill="none" stroke="#000000" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="245,325 220,325 220,590" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="220" cy="590" r="5" fill="#000"/>
+<polyline points="465,325 440,325 440,590" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="440" cy="590" r="5" fill="#000"/>
+<polyline points="705,325 680,325 680,590" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="680" cy="590" r="5" fill="#000"/>
+<polyline points="365,315 395,315 395,430" fill="none" stroke="#e07000" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="395" cy="430" r="5" fill="#e07000"/>
+<polyline points="585,285 605,285 605,430" fill="none" stroke="#e07000" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="605" cy="430" r="5" fill="#e07000"/>
+<polyline points="395,430 975,430" fill="none" stroke="#e07000" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="105,150 200,150 200,245 245,245" fill="none" stroke="#1f8f2f" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="105,125 634,125 634,380" fill="none" stroke="#8a2be2" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="420,125 420,245 465,245" fill="none" stroke="#8a2be2" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="420" cy="125" r="5" fill="#8a2be2"/>
+<polygon points="625,392.0 643,392.0 634,408.0" fill="#8a2be2"/>
+<line x1="624" y1="408.0" x2="644" y2="408.0" stroke="#8a2be2" stroke-width="3"/>
+<text x="647" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D1</text>
+<polyline points="634,420 634,495" fill="none" stroke="#0055cc" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="634" cy="495" r="5" fill="#0055cc"/>
+<polyline points="105,175 685,175 685,245 705,245" fill="none" stroke="#777777" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="365,255 387,255 387,195 755.0,195 755.0,225" fill="none" stroke="#c89400" stroke-width="4" stroke-linejoin="round"/>
+<text x="480" y="189" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">G</text>
+<polyline points="805,285 840,285" fill="none" stroke="#8b4513" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="840" cy="285" r="5" fill="#8b4513"/>
+<text x="846" y="277" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">X</text>
+<polyline points="840,285 840,380" fill="none" stroke="#8b4513" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="831,392.0 849,392.0 840,408.0" fill="#8b4513"/>
+<line x1="830" y1="408.0" x2="850" y2="408.0" stroke="#8b4513" stroke-width="3"/>
+<text x="853" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D2</text>
+<polyline points="840,420 840,430" fill="none" stroke="#e07000" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="840" cy="430" r="5" fill="#e07000"/>
+<polyline points="840,285 885,285 885,450" fill="none" stroke="#8b4513" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="876,457.0 894,457.0 885,473.0" fill="#0055cc"/>
+<line x1="875" y1="473.0" x2="895" y2="473.0" stroke="#0055cc" stroke-width="3"/>
+<text x="898" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D3</text>
+<polyline points="885,480 885,495" fill="none" stroke="#0055cc" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="885" cy="495" r="5" fill="#0055cc"/>
+<polyline points="634,495 975,495" fill="none" stroke="#0055cc" stroke-width="3" stroke-linejoin="round"/>
+<line x1="70" y1="700" x2="110" y2="700" stroke="#d01010" stroke-width="5"/>
+<text x="120" y="705" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+12 V permanent (car pin 2, through the 5 A inline fuse outside the box)</text>
+<line x1="550" y1="700" x2="590" y2="700" stroke="#000000" stroke-width="5"/>
+<text x="600" y="705" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">ground</text>
+<line x1="70" y1="726" x2="110" y2="726" stroke="#e07000" stroke-width="5"/>
+<text x="120" y="731" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">antenna feed (+12 V to the antenna)</text>
+<line x1="550" y1="726" x2="590" y2="726" stroke="#0055cc" stroke-width="3"/>
+<text x="600" y="731" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">antenna trigger</text>
+<line x1="70" y1="752" x2="110" y2="752" stroke="#1f8f2f" stroke-width="3"/>
+<text x="120" y="757" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">A: AUTO/UP/MAX (car pin 4)</text>
+<line x1="550" y1="752" x2="590" y2="752" stroke="#8a2be2" stroke-width="3"/>
+<text x="600" y="757" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">U: UP/MAX (car pin 1)</text>
+<line x1="70" y1="778" x2="110" y2="778" stroke="#777777" stroke-width="3"/>
+<text x="120" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">R: radio on (car pin 5); coil diodes</text>
+<line x1="550" y1="778" x2="590" y2="778" stroke="#c89400" stroke-width="4"/>
+<text x="600" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">G: K1 pin 87 to timer COM (+12 V only while A is on)</text>
+<line x1="70" y1="804" x2="110" y2="804" stroke="#8b4513" stroke-width="4"/>
+<text x="120" y="809" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">X: timer output (NO or NC) to D2 and D3; crosses the feed without touching it</text>
+<text x="70" y="838" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on the back of the board. Dots are joints; lines that cross without a dot don't touch (insulated wire).</text>
+<text x="70" y="856" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Grey diode next to each relay: 1N4007 across the coil, stripe to 85. The timer, the G wire, D2 and D3 are the optional add-on. Untested idea.</text>
+</svg>

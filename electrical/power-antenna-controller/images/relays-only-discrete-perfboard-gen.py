@@ -1,7 +1,7 @@
-"""Draw the relays-only perfboard layout guide (not to scale) as an SVG.
+"""Draw the relays-only perfboard layout guide, discrete build (not to scale), as an SVG.
 
 Untested idea: a placement and wiring guide for relays-only.md, not a measured layout.
-Run with: python3 relays-only-perfboard-gen.py  (writes 2026-10-08-relays-only-perfboard.svg)
+Run with: python3 relays-only-discrete-perfboard-gen.py  (writes 2026-10-08-relays-only-discrete-perfboard.svg)
 """
 
 W, H = 1260, 880
@@ -49,7 +49,7 @@ add('<defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse">
     '<circle cx="10" cy="10" r="1.6" fill="#c9a96b"/></pattern></defs>')
 rect(BX0, BY0, BX1 - BX0, BY1 - BY0, fill="#f6ecd4", stroke="#8a6d3b", sw=2, rx=8)
 add(f'<rect x="{BX0}" y="{BY0}" width="{BX1-BX0}" height="{BY1-BY0}" fill="url(#g)"/>')
-text(BX0 + 10, BY0 - 12, "Perfboard, top view (placement and wiring guide, not to scale)", 15, weight="bold")
+text(BX0 + 10, BY0 - 12, "Discrete build: perfboard, top view (placement and wiring guide, not to scale)", 15, weight="bold")
 
 # ---------- car screw terminals (left) ----------
 rect(BX0 + 5, Y12 - 20, 55, (YR - Y12) + 40, fill="#2a6fdb", stroke="#123d7a")
@@ -75,15 +75,15 @@ def relay(x0, name, contact):
     y0, w, h = 210, 150, 150
     rect(x0, y0, w, h, fill="#fdfdfd", stroke="#333", sw=2, rx=6)
     text(x0 + 100, y0 + 62, name, 18, "middle", "bold")
-    text(x0 + w / 2, y0 + h + 16, "mini ISO socket", 11, "middle", color="#555")
-    text(x0 + w / 2, y0 + h + 30, "or Omron G5LE", 11, "middle", color="#555")
+    text(x0 + w / 2, y0 + h + 16, "JQC-3FF 12 V changeover", 11, "middle", color="#555")
+    text(x0 + w / 2, y0 + h + 30, "(or Omron G5LE / mini ISO)", 11, "middle", color="#555")
     p = dict(c=(x0 + w / 2, y0 + 15), p85=(x0 + 15, y0 + 35), p86=(x0 + 15, y0 + 115), p30=(x0 + w - 15, y0 + 75))
     for k, (x, y) in p.items():
         pad(x, y)
-    text(p["c"][0] + 10, p["c"][1] + 5, "87a" if contact == "NC" else "87", 12)
+    text(p["c"][0] + 10, p["c"][1] + 5, "87a NC" if contact == "NC" else "87 NO", 12)
     text(p["p85"][0] + 10, p["p85"][1] + 5, "85", 12)
     text(p["p86"][0] + 10, p["p86"][1] + 5, "86", 12)
-    text(p["p30"][0] - 10, p["p30"][1] + 5, "30", 12, "end")
+    text(p["p30"][0] - 10, p["p30"][1] + 5, "30 COM", 12, "end")
     # coil diode across 85 (cathode) and 86 (anode), on the board next to the relay
     dx = x0 + 45
     wire([p["p85"], (dx, p["p85"][1]), (dx, p["p85"][1] + 20)], GREY, 2)
@@ -98,12 +98,13 @@ K3 = relay(850, "K3", "NO")
 # timer module (sits on standoffs; short wires to these pads)
 TMX0, TMY0, TMW, TMH = 660, 210, 130, 150
 rect(TMX0, TMY0, TMW, TMH, fill="#eaf4ff", stroke="#333", sw=2, rx=6, dash="7 5")
-text(TMX0 + TMW / 2, TMY0 + 70, "timer", 16, "middle", "bold")
-text(TMX0 + TMW / 2, TMY0 + 88, "module", 12, "middle")
-text(TMX0 + TMW / 2, TMY0 + 104, "(on standoffs)", 11, "middle", color="#555")
+text(TMX0 + 82, TMY0 + 100, "timer", 16, "middle", "bold")
+text(TMX0 + 82, TMY0 + 116, "module", 12, "middle")
+text(TMX0 + 82, TMY0 + 132, "(on standoffs)", 11, "middle", color="#555")
 TV, TG, TC, TN = (TMX0 + 15, TMY0 + 35), (TMX0 + 15, TMY0 + 115), (TMX0 + TMW / 2, TMY0 + 15), (TMX0 + TMW - 15, TMY0 + 75)
-for (x, y), lbl, anc, dx in ((TV, "VCC", "start", 10), (TG, "GND", "start", 10), (TC, "COM", "start", 10), (TN, "NO", "end", -10)):
+for (x, y), lbl, anc, dx in ((TV, "VCC", "start", 10), (TG, "GND", "start", 10), (TC, "COM", "start", 10)):
     pad(x, y); text(x + dx, y + 5, lbl, 11, anc)
+pad(*TN); text(TN[0] - 8, TN[1] - 12, "NO/NC", 11, "middle")
 
 # ---------- wires ----------
 # +12 V (fused outside the box) -> 87a / 87 of K1, K2, K3
@@ -157,7 +158,7 @@ legend = [(RED, 5, "+12 V permanent (car pin 2, through the 5 A inline fuse outs
           (GREEN, 3, "A: AUTO/UP/MAX (car pin 4)"),
           (PURPLE, 3, "U: UP/MAX (car pin 1)"),
           (GREY, 3, "R: radio on (car pin 5); coil diodes"),
-          (TEAL, 3, "timer NO to K3 coil"),
+          (TEAL, 3, "timer NO or NC to K3 coil (A while the timer runs)"),
           (BROWN, 4, "node X: K3 output to D2 and D3 (crosses the feed without touching it)")]
 for i, (c, w, lbl) in enumerate(legend):
     col, row = i % 2, i // 2
@@ -169,4 +170,4 @@ text(LX, LY + 138, "Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on t
 text(LX, LY + 156, "Grey diode next to each relay: 1N4007 across the coil, stripe to 85. Timer and K3, D2, D3 are the optional add-on. Untested idea.", 12, style="italic")
 
 add("</svg>")
-open("2026-10-08-relays-only-perfboard.svg", "w").write("\n".join(out))
+open("2026-10-08-relays-only-discrete-perfboard.svg", "w").write("\n".join(out))

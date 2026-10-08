@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="775" viewBox="0 0 1540 775">
+<rect x="0" y="0" width="1540" height="775" fill="#fff"/>
+<rect x="20" y="30" width="195" height="670" fill="none" stroke="#000" stroke-width="2"/>
+<text x="117.5" y="22" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Car: original antenna plug</text>
+<text x="207" y="75" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">+12 V permanent (red)</text>
+<text x="221" y="64" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">2</text>
+<text x="207" y="135" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">U: UP / MAX (blue/yellow)</text>
+<text x="221" y="124" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">1</text>
+<text x="207" y="170" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">A: AUTO / UP / MAX (blue/green)</text>
+<text x="221" y="159" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">4</text>
+<text x="207" y="205" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">R: radio on (blue/white)</text>
+<text x="221" y="194" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">5</text>
+<text x="207" y="675" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">ground (brown)</text>
+<text x="221" y="664" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">6</text>
+<rect x="250" y="61" width="70" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+<line x1="250" y1="70" x2="320" y2="70" stroke="#000" stroke-width="1"/>
+<text x="285.0" y="54" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">F1  5 A</text>
+<line x1="215" y1="70" x2="250" y2="70" stroke="#000" stroke-width="2"/>
+<line x1="320" y1="70" x2="685" y2="70" stroke="#000" stroke-width="2"/>
+<text x="335" y="60" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+12 V (fused)</text>
+<line x1="215" y1="670" x2="1380" y2="670" stroke="#000" stroke-width="2"/>
+<line x1="240" y1="670" x2="240" y2="682" stroke="#000" stroke-width="2"/>
+<line x1="226" y1="682" x2="254" y2="682" stroke="#000" stroke-width="2"/>
+<line x1="231" y1="688" x2="249" y2="688" stroke="#000" stroke-width="2"/>
+<line x1="236" y1="694" x2="244" y2="694" stroke="#000" stroke-width="2"/>
+<line x1="215" y1="130" x2="860" y2="130" stroke="#000" stroke-width="2"/>
+<line x1="215" y1="165" x2="330" y2="165" stroke="#000" stroke-width="2"/>
+<line x1="215" y1="200" x2="920" y2="200" stroke="#000" stroke-width="2"/>
+<rect x="370" y="270" width="130" height="100" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="390" y="305" width="18" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+<polyline points="370,295 399,295 399,305" fill="none" stroke="#000" stroke-width="2"/>
+<polyline points="370,345 399,345 399,335" fill="none" stroke="#000" stroke-width="2"/>
+<text x="364" y="289" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">85</text>
+<text x="364" y="339" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">86</text>
+<line x1="435" y1="270" x2="435" y2="292" stroke="#000" stroke-width="2"/>
+<circle cx="435" cy="294" r="4.5" fill="#000"/>
+<line x1="500" y1="300" x2="474" y2="300" stroke="#000" stroke-width="2"/>
+<circle cx="471" cy="300" r="3" fill="#fff" stroke="#000" stroke-width="2"/>
+<line x1="500" y1="340" x2="474" y2="340" stroke="#000" stroke-width="2"/>
+<circle cx="471" cy="340" r="3" fill="#fff" stroke="#000" stroke-width="2"/>
+<line x1="435" y1="294" x2="469" y2="337" stroke="#000" stroke-width="2"/>
+<line x1="410" y1="320" x2="440" y2="314" stroke="#000" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="441" y="264" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">30</text>
+<text x="506" y="294" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87</text>
+<text x="506" y="334" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87a</text>
+<text x="435" y="390" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K1  (changeover)</text>
+<text x="435" y="408" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">30–87a when A is off, 30–87 when A is on</text>
+<rect x="620" y="270" width="130" height="100" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="640" y="305" width="18" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+<polyline points="620,295 649,295 649,305" fill="none" stroke="#000" stroke-width="2"/>
+<polyline points="620,345 649,345 649,335" fill="none" stroke="#000" stroke-width="2"/>
+<text x="614" y="289" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">85</text>
+<text x="614" y="339" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">86</text>
+<line x1="750" y1="320" x2="720" y2="320" stroke="#000" stroke-width="2"/>
+<circle cx="720" cy="320" r="4.5" fill="#000"/>
+<line x1="685" y1="270" x2="685" y2="292" stroke="#000" stroke-width="2"/>
+<circle cx="685" cy="294" r="3" fill="#fff" stroke="#000" stroke-width="2"/>
+<line x1="720" y1="320" x2="691" y2="310" stroke="#000" stroke-width="2"/>
+<line x1="660" y1="320" x2="702" y2="308" stroke="#000" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="691" y="264" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87</text>
+<text x="756" y="314" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">30</text>
+<text x="685" y="390" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K2</text>
+<text x="685" y="408" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">closed when U is on</text>
+<line x1="435" y1="270" x2="435" y2="70" stroke="#000" stroke-width="2"/>
+<circle cx="435" cy="70" r="4.5" fill="#000"/>
+<line x1="685" y1="270" x2="685" y2="70" stroke="#000" stroke-width="2"/>
+<polyline points="370,345 352,345 352,670" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="352" cy="670" r="4.5" fill="#000"/>
+<polyline points="620,345 602,345 602,670" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="602" cy="670" r="4.5" fill="#000"/>
+<polyline points="330,165 330,295 370,295" fill="none" stroke="#000" stroke-width="2"/>
+<polyline points="580,130 580,295 620,295" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="580" cy="130" r="4.5" fill="#000"/>
+<polyline points="500,340 535,340 535,500" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="535" cy="500" r="4.5" fill="#000"/>
+<polyline points="750,320 785,320 785,500" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="785" cy="500" r="4.5" fill="#000"/>
+<line x1="860" y1="130" x2="860" y2="420" stroke="#000" stroke-width="2"/>
+<line x1="860" y1="420" x2="860" y2="428" stroke="#000" stroke-width="2"/>
+<polygon points="849,428 871,428 860,462" fill="#000"/>
+<line x1="848" y1="462" x2="872" y2="462" stroke="#000" stroke-width="3"/>
+<line x1="860" y1="462" x2="860" y2="470" stroke="#000" stroke-width="2"/>
+<text x="876" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D1</text>
+<line x1="860" y1="470" x2="860" y2="565" stroke="#000" stroke-width="2"/>
+<circle cx="860" cy="565" r="4.5" fill="#000"/>
+<rect x="890" y="225" width="330" height="310" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="8 6"/>
+<text x="1210" y="245" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" font-style="italic" fill="#000">optional timer add-on</text>
+<rect x="940" y="270" width="140" height="100" fill="none" stroke="#000" stroke-width="2"/>
+<text x="1010.0" y="312" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">timer module</text>
+<text x="1010.0" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">NE555, own relay</text>
+<text x="1010.0" y="348" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">time set by screw</text>
+<text x="945" y="299" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+</text>
+<text x="945" y="349" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">−</text>
+<text x="934" y="289" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">VCC</text>
+<text x="934" y="339" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">GND</text>
+<text x="1016" y="264" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">COM</text>
+<text x="1086" y="314" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">NO / NC*</text>
+<polyline points="920,200 920,295 940,295" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="920" cy="200" r="4.5" fill="#000"/>
+<polyline points="940,345 925,345 925,670" fill="none" stroke="#000" stroke-width="2"/>
+<circle cx="925" cy="670" r="4.5" fill="#000"/>
+<polyline points="500,300 515,300 515,240 1010,240 1010,270" fill="none" stroke="#000" stroke-width="2"/>
+<text x="700" y="234" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">G (+12 V only while A is on)</text>
+<line x1="1080" y1="320" x2="1130" y2="320" stroke="#000" stroke-width="2"/>
+<circle cx="1130" cy="320" r="4.5" fill="#000"/>
+<text x="1138" y="338" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">X</text>
+<line x1="1130" y1="320" x2="1130" y2="420" stroke="#000" stroke-width="2"/>
+<line x1="1130" y1="420" x2="1130" y2="428" stroke="#000" stroke-width="2"/>
+<polygon points="1119,428 1141,428 1130,462" fill="#000"/>
+<line x1="1118" y1="462" x2="1142" y2="462" stroke="#000" stroke-width="3"/>
+<line x1="1130" y1="462" x2="1130" y2="470" stroke="#000" stroke-width="2"/>
+<text x="1146" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D2</text>
+<line x1="1130" y1="470" x2="1130" y2="500" stroke="#000" stroke-width="2"/>
+<circle cx="1130" cy="500" r="4.5" fill="#000"/>
+<polyline points="1130,320 1175,320 1175,420" fill="none" stroke="#000" stroke-width="2"/>
+<line x1="1175" y1="420" x2="1175" y2="428" stroke="#000" stroke-width="2"/>
+<polygon points="1164,428 1186,428 1175,462" fill="#000"/>
+<line x1="1163" y1="462" x2="1187" y2="462" stroke="#000" stroke-width="3"/>
+<line x1="1175" y1="462" x2="1175" y2="470" stroke="#000" stroke-width="2"/>
+<text x="1191" y="450.0" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">D3</text>
+<line x1="1175" y1="470" x2="1175" y2="565" stroke="#000" stroke-width="2"/>
+<circle cx="1175" cy="565" r="4.5" fill="#000"/>
+<line x1="535" y1="500" x2="1400" y2="500" stroke="#000" stroke-width="2"/>
+<line x1="860" y1="565" x2="1400" y2="565" stroke="#000" stroke-width="2"/>
+<text x="1360" y="492" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="end" font-weight="bold" font-style="normal" fill="#000">FEED</text>
+<text x="1360" y="557" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="end" font-weight="bold" font-style="normal" fill="#000">TRIGGER</text>
+<rect x="1400" y="455" width="125" height="245" fill="none" stroke="#000" stroke-width="2"/>
+<text x="1462" y="428" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Aftermarket</text>
+<text x="1462" y="446" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">3-wire antenna</text>
+<text x="1408" y="505" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+12 V</text>
+<text x="1408" y="570" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">trigger</text>
+<text x="1408" y="675" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">ground</text>
+<line x1="1380" y1="670" x2="1400" y2="670" stroke="#000" stroke-width="2"/>
+<text x="240" y="727" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Relays: JQC-3FF 12 V changeover (COM = 30, NO = 87, NC = 87a), or Omron G5LE / mini ISO; each coil needs a 1N4007 (stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.</text>
+<text x="240" y="745" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">* Timer output: NO on a one-shot module (relay on at power-up, off after T), NC on a delay-on module (relay off at power-up, on after T).</text>
+<text x="240" y="763" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Untested idea: check the antenna and the radio output first (see the README).</text>
+</svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="760" viewBox="0 0 1540 760">
-<rect x="0" y="0" width="1540" height="760" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="775" viewBox="0 0 1540 775">
+<rect x="0" y="0" width="1540" height="775" fill="#fff"/>
 <rect x="20" y="30" width="195" height="670" fill="none" stroke="#000" stroke-width="2"/>
 <text x="117.5" y="22" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Car: original antenna plug</text>
 <text x="207" y="75" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">+12 V permanent (red)</text>
@@ -85,7 +85,7 @@
 <rect x="890" y="235" width="470" height="300" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="8 6"/>
 <text x="1350" y="255" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="normal" font-style="italic" fill="#000">optional timer add-on</text>
 <rect x="940" y="270" width="140" height="100" fill="none" stroke="#000" stroke-width="2"/>
-<text x="1010.0" y="312" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">one-shot timer</text>
+<text x="1010.0" y="312" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">timer module</text>
 <text x="1010.0" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">NE555 module</text>
 <text x="1010.0" y="348" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">time set by screw</text>
 <text x="945" y="299" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+</text>
@@ -93,7 +93,7 @@
 <text x="934" y="289" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">VCC</text>
 <text x="934" y="339" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">GND</text>
 <text x="1016" y="264" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">COM</text>
-<text x="1086" y="314" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">NO</text>
+<text x="1086" y="314" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">NO / NC*</text>
 <polyline points="920,200 920,295 940,295" fill="none" stroke="#000" stroke-width="2"/>
 <circle cx="920" cy="200" r="4.5" fill="#000"/>
 <polyline points="940,345 925,345 925,670" fill="none" stroke="#000" stroke-width="2"/>
@@ -149,6 +149,7 @@
 <text x="1408" y="570" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">trigger</text>
 <text x="1408" y="675" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">ground</text>
 <line x1="1380" y1="670" x2="1400" y2="670" stroke="#000" stroke-width="2"/>
-<text x="240" y="735" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Relays: 12 V mini ISO (5-pin) or Omron G5LE; each coil needs a suppression diode, built in or a 1N4007 added (stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.</text>
-<text x="240" y="755" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Untested idea: check the antenna and the radio output first (see the README).</text>
+<text x="240" y="727" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Relays: JQC-3FF 12 V changeover (COM = 30, NO = 87, NC = 87a), or Omron G5LE / mini ISO; each coil needs a 1N4007 (stripe to 85). D1: 1N4007. D2, D3: 1N5408. Pin 5 (R) only feeds the timer.</text>
+<text x="240" y="745" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">* Timer contact: NO on a one-shot module (relay on at power-up, off after T), NC on a delay-on module (relay off at power-up, on after T).</text>
+<text x="240" y="763" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Untested idea: check the antenna and the radio output first (see the README).</text>
 </svg>

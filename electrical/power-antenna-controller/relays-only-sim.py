@@ -3,10 +3,20 @@
 Untested idea: this checks the wiring logic of relays-only.md, not real parts.
 Run with: python3 relays-only-sim.py  (Python 3, no extra libraries)
 
-Netlist taken from the schematic (images/2026-10-08-relays-only-schematic.svg):
-  B12 (fused +12 V) -> K1 87a (NC), K2 87 (NO), K3 87 (NO)
-  K1 30, K2 30 -> FEED ; K3 30 -> X ; X -D2-> FEED ; X -D3-> TRIG ; U -D1-> TRIG
-  K1 coil: A ; K2 coil: U ; timer VCC: R ; timer COM: A ; timer NO -> K3 coil
+Two builds, netlists taken from the schematics in images/:
+
+Module build (2026-10-08-relays-only-module-schematic.svg), the timer module's own relay:
+  K1 (changeover, coil from A): 30 = B12 (fused +12 V); 87a (A off) -> FEED; 87 (A on) -> G
+  K2 (coil from U): 87 = B12, 30 -> FEED
+  Timer module (powered from R): its own relay connects G -> X for T seconds after power-up
+    (COM-NO on a one-shot board, COM-NC on a delay-on board)
+
+Discrete build (2026-10-08-relays-only-discrete-schematic.svg), a separate relay K3:
+  K1 (coil from A): 87a = B12, 30 -> FEED      K2 (coil from U): 87 = B12, 30 -> FEED
+  Timer module (powered from R): its relay passes A to K3's coil for T seconds after power-up
+  K3: 87 = B12, 30 -> X
+
+Both: X -D2-> FEED ; X -D3-> TRIG ; U -D1-> TRIG
   Antenna: FEED (+12 V), TRIG (trigger), ground.
 The switch lines R, A, U are driven by the radio/switch (high) or open (not driven).
 A node is "high" if a +12 V source reaches it through closed contacts (both ways) or diodes
@@ -16,15 +26,25 @@ A node is "high" if a +12 V source reaches it through closed contacts (both ways
 TRAVEL = 8.0      # s, full travel time of the antenna
 TIMER_T = 4.0     # s, timer setting (about half height)
 DT = 0.1
+BUILD = "module"  # "module" or "discrete"; set by run()
+
+def contacts(k1_on, k2_on, k3_on, timer_closed):
+    """Closed contacts (both ways) for the current relay states."""
+    e = []
+    if not k1_on: e.append(("B12", "FEED"))              # K1: +12 V to the feed while A is off
+    elif BUILD == "module": e.append(("B12", "G"))       # K1 30-87 (A on): gate for the timer
+    if k2_on: e.append(("B12", "FEED"))                  # K2 87-30
+    if BUILD == "module":
+        if timer_closed: e.append(("G", "X"))            # timer module's own relay
+    else:
+        if timer_closed: e.append(("A", "K3COIL"))       # timer passes A to K3's coil
+        if k3_on: e.append(("B12", "X"))                 # K3 87-30
+    return e
 
 def solve(drive, k1_on, k2_on, k3_on, timer_closed, diodes):
     """Return the set of high nodes. drive: dict of driven lines {'R','A','U'} -> bool."""
-    edges_bi = []      # closed contacts, both ways
+    edges_bi = contacts(k1_on, k2_on, k3_on, timer_closed)   # closed contacts, both ways
     edges_uni = []     # diodes: anode -> cathode
-    if not k1_on: edges_bi.append(("B12", "FEED"))        # K1 NC: 87a-30
-    if k2_on:     edges_bi.append(("B12", "FEED"))        # K2 NO: 87-30
-    if k3_on:     edges_bi.append(("B12", "X"))           # K3 NO: 87-30
-    if timer_closed: edges_bi.append(("A", "K3COIL"))     # timer COM-NO
     if "D1" in diodes: edges_uni.append(("U", "TRIG"))
     else:              edges_bi.append(("U", "TRIG"))     # diode replaced by a wire
     if "D2" in diodes: edges_uni.append(("X", "FEED"))
@@ -45,8 +65,8 @@ def solve(drive, k1_on, k2_on, k3_on, timer_closed, diodes):
 
 def reach_from(src, k1_on, k2_on, k3_on, timer_closed, diodes):
     """Nodes reachable from one switch line alone (the +12 V rail is ignored)."""
-    edges_bi, edges_uni = [], []
-    if timer_closed: edges_bi.append(("A", "K3COIL"))
+    edges_bi = [e for e in contacts(k1_on, k2_on, k3_on, timer_closed) if "B12" not in e]
+    edges_uni = []
     (edges_uni if "D1" in diodes else edges_bi).append(("U", "TRIG"))
     (edges_uni if "D2" in diodes else edges_bi).append(("X", "FEED"))
     (edges_uni if "D3" in diodes else edges_bi).append(("X", "TRIG"))
@@ -67,8 +87,10 @@ def lines_for(radio_on, sw):
             "A": sw in ("AUTO", "UP", "MAX"),
             "U": sw in ("UP", "MAX")}
 
-def run(script, diodes=("D1", "D2", "D3"), with_timer=True, pos0=0.0, verbose=False):
-    """script: list of (seconds, radio_on, switch). Returns (pos trace per step, problems)."""
+def run(script, diodes=("D1", "D2", "D3"), with_timer=True, pos0=0.0, build=None):
+    """script: list of (seconds, radio_on, switch). Returns (final pos, problems, trace)."""
+    global BUILD
+    if build: BUILD = build
     pos = pos0
     radio_prev = False
     t_power = None
@@ -89,7 +111,7 @@ def run(script, diodes=("D1", "D2", "D3"), with_timer=True, pos0=0.0, verbose=Fa
             drive = lines_for(radio_on, sw)
             for _ in range(5):                      # let relays settle
                 high = solve(drive, k1, k2, k3, timer_closed, diodes)
-                n1, n2, n3 = "A" in high, "U" in high, ("K3COIL" in high and with_timer)
+                n1, n2, n3 = "A" in high, "U" in high, "K3COIL" in high
                 if (n1, n2, n3) == (k1, k2, k3):
                     break
                 k1, k2, k3 = n1, n2, n3
@@ -234,5 +256,8 @@ def exhaustive():
     for f in bad2[:10]:
         print("  BAD", f)
 
-main()
-exhaustive()
+for b in ("module", "discrete"):
+    BUILD = b
+    print(f"\n################ {b.upper()} BUILD ################")
+    main()
+    exhaustive()

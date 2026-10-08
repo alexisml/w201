@@ -3,7 +3,7 @@
 <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.6" fill="#c9a96b"/></pattern></defs>
 <rect x="60" y="50" width="1100" height="600" rx="8" fill="#f6ecd4" stroke="#8a6d3b" stroke-width="2"/>
 <rect x="60" y="50" width="1100" height="600" fill="url(#g)"/>
-<text x="70" y="38" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Perfboard, top view (placement and wiring guide, not to scale)</text>
+<text x="70" y="38" font-family="Helvetica, Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Discrete build: perfboard, top view (placement and wiring guide, not to scale)</text>
 <rect x="65" y="70" width="55" height="125" rx="0" fill="#2a6fdb" stroke="#123d7a" stroke-width="2"/>
 <rect x="65" y="570" width="55" height="40" rx="0" fill="#2a6fdb" stroke="#123d7a" stroke-width="2"/>
 <circle cx="105" cy="90" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
@@ -29,16 +29,16 @@
 <text x="1098" y="652" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">screw terminals</text>
 <rect x="230" y="210" width="150" height="150" rx="6" fill="#fdfdfd" stroke="#333" stroke-width="2"/>
 <text x="330" y="272" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K1</text>
-<text x="305.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">mini ISO socket</text>
-<text x="305.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">or Omron G5LE</text>
+<text x="305.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">JQC-3FF 12 V changeover</text>
+<text x="305.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(or Omron G5LE / mini ISO)</text>
 <circle cx="305.0" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="245" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="245" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="365" cy="285" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="315.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87a</text>
+<text x="315.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87a NC</text>
 <text x="255" y="250" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">85</text>
 <text x="255" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">86</text>
-<text x="355" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30</text>
+<text x="355" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30 COM</text>
 <polyline points="245,245 275,245 275,265" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
 <polyline points="245,325 275,325 275,305" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
 <polygon points="266,293.0 284,293.0 275,277.0" fill="#777777"/>
@@ -46,16 +46,16 @@
 <text x="288" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000"></text>
 <rect x="450" y="210" width="150" height="150" rx="6" fill="#fdfdfd" stroke="#333" stroke-width="2"/>
 <text x="550" y="272" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K2</text>
-<text x="525.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">mini ISO socket</text>
-<text x="525.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">or Omron G5LE</text>
+<text x="525.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">JQC-3FF 12 V changeover</text>
+<text x="525.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(or Omron G5LE / mini ISO)</text>
 <circle cx="525.0" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="465" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="465" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="585" cy="285" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="535.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87</text>
+<text x="535.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87 NO</text>
 <text x="475" y="250" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">85</text>
 <text x="475" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">86</text>
-<text x="575" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30</text>
+<text x="575" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30 COM</text>
 <polyline points="465,245 495,245 495,265" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
 <polyline points="465,325 495,325 495,305" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
 <polygon points="486,293.0 504,293.0 495,277.0" fill="#777777"/>
@@ -63,25 +63,25 @@
 <text x="508" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000"></text>
 <rect x="850" y="210" width="150" height="150" rx="6" fill="#fdfdfd" stroke="#333" stroke-width="2"/>
 <text x="950" y="272" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">K3</text>
-<text x="925.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">mini ISO socket</text>
-<text x="925.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">or Omron G5LE</text>
+<text x="925.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">JQC-3FF 12 V changeover</text>
+<text x="925.0" y="390" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(or Omron G5LE / mini ISO)</text>
 <circle cx="925.0" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="865" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="865" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <circle cx="985" cy="285" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="935.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87</text>
+<text x="935.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">87 NO</text>
 <text x="875" y="250" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">85</text>
 <text x="875" y="330" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">86</text>
-<text x="975" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30</text>
+<text x="975" y="290" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30 COM</text>
 <polyline points="865,245 895,245 895,265" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
 <polyline points="865,325 895,325 895,305" fill="none" stroke="#777777" stroke-width="2" stroke-linejoin="round"/>
 <polygon points="886,293.0 904,293.0 895,277.0" fill="#777777"/>
 <line x1="885" y1="277.0" x2="905" y2="277.0" stroke="#777777" stroke-width="3"/>
 <text x="908" y="290.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000"></text>
 <rect x="660" y="210" width="130" height="150" rx="6" fill="#eaf4ff" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/>
-<text x="725.0" y="280" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">timer</text>
-<text x="725.0" y="298" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">module</text>
-<text x="725.0" y="314" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(on standoffs)</text>
+<text x="742" y="310" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">timer</text>
+<text x="742" y="326" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">module</text>
+<text x="742" y="342" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#555">(on standoffs)</text>
 <circle cx="675" cy="245" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <text x="685" y="250" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">VCC</text>
 <circle cx="675" cy="325" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
@@ -89,7 +89,7 @@
 <circle cx="725.0" cy="225" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
 <text x="735.0" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">COM</text>
 <circle cx="775" cy="285" r="6" fill="#fff" stroke="#000" stroke-width="2"/>
-<text x="765" y="290" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">NO</text>
+<text x="767" y="273" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">NO/NC</text>
 <polyline points="105,90 925.0,90 925.0,225" fill="none" stroke="#d01010" stroke-width="5" stroke-linejoin="round"/>
 <polyline points="305.0,90 305.0,225" fill="none" stroke="#d01010" stroke-width="5" stroke-linejoin="round"/>
 <circle cx="305.0" cy="90" r="5" fill="#d01010"/>
@@ -153,7 +153,7 @@
 <line x1="70" y1="778" x2="110" y2="778" stroke="#777777" stroke-width="3"/>
 <text x="120" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">R: radio on (car pin 5); coil diodes</text>
 <line x1="630" y1="778" x2="670" y2="778" stroke="#008b8b" stroke-width="3"/>
-<text x="680" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">timer NO to K3 coil</text>
+<text x="680" y="783" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">timer NO or NC to K3 coil (A while the timer runs)</text>
 <line x1="70" y1="804" x2="110" y2="804" stroke="#8b4513" stroke-width="4"/>
 <text x="120" y="809" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">node X: K3 output to D2 and D3 (crosses the feed without touching it)</text>
 <text x="70" y="838" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">Thick lines (+12 V, ground, feed): 1 mm² / 18 AWG wire on the back of the board. Dots are joints; lines that cross without a dot don't touch (insulated wire).</text>
