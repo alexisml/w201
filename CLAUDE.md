@@ -1,8 +1,9 @@
 # W201 logbook — repo rules
 
 A logbook for a Mercedes-Benz 190 E 2.3 8V (W201, variant 201.028, engine M102.985).
-It holds no code, only Markdown notes and images organized in topic folders. See README.md for
-the layout and conventions.
+It holds Markdown notes and images organized in topic folders. Small helper scripts (for example a
+simulation that checks a wiring idea) are fine next to the note that uses them; no apps or build
+systems. See README.md for the layout and conventions.
 
 ## Private data
 

@@ -10,7 +10,8 @@
 
 The goal: make a cheap aftermarket 3-wire power antenna (ground, +12 V, trigger) behave like the
 original Mercedes semi-automatic antenna with the dash switch (MAX / UP / AUTO / DOWN / OFF), using
-off-the-shelf boards and no custom PCB. This is "option A" (the preferred option) in
+off-the-shelf boards and no custom PCB. It's only for cars with that switch; cars without it don't
+need a controller (see [car side wiring](#car-side-wiring-original-6-pin-antenna-plug)). This is "option A" (the preferred option) in
 [power-antenna.md](../power-antenna.md), which also has the original wiring and the sources.
 
 ## Ideas
@@ -19,6 +20,7 @@ off-the-shelf boards and no custom PCB. This is "option A" (the preferred option
 |---|---|---|---|---|
 | [arduino-uno-profet-shield.md](arduino-uno-profet-shield.md) | Arduino Uno R3 + Infineon PROFET+2 12V shield | Automotive-grade smart high-side switches | Built into the switches | Preferred: protected outputs, fewer parts |
 | [esp32-relay-board.md](esp32-relay-board.md) | ESP32 4-relay board (7–30 V input) | Relays | INA260 breakout | Cheaper; hobby-grade relays |
+| [relays-only.md](relays-only.md) | None: 2 automotive relays (optional timer module) | Relays | None (the antenna's own end stops) | Simplest; no programming; no automatic medium height without the timer |
 
 Everything below is common to all of them.
 
@@ -31,6 +33,9 @@ The box sits between the car's original antenna plug and the aftermarket antenna
   the feed and the trigger are switched.
 - **3 switched outputs** in total, so 3 relays (or 3 PROFET channels). 2 drive the antenna, and the
   third is the "hold" that keeps the controller itself powered.
+- The [relays-only idea](relays-only.md) is different: it has no controller to keep powered, so it
+  needs no HOLD output, and the switch lines drive the relays directly. The rest of this section is
+  about the microcontroller ideas.
 
 ```mermaid
 flowchart LR
@@ -101,7 +106,7 @@ The 3 signals never go straight into the microcontroller. It runs at 3.3 or 5 V,
 | **3: HOLD** | +12 V | The controller's own supply (through a diode) | From wake-up until the mast is down and the radio is off. Off = the controller powers itself down |
 
 All three switch +12 V (high side), so the antenna and the box share one ground. Each can be a
-relay (normally-open contact) or a PROFET smart switch channel; both ideas need 3. The ESP32 relay
+relay (normally-open contact) or a PROFET smart switch channel; both microcontroller ideas need 3. The ESP32 relay
 board and the PROFET shield both have 4, so one is spare.
 
 Why the feed and the trigger are separate: the trigger only chooses the direction (up or down). The
@@ -259,7 +264,9 @@ the auto height is in progress, with gU = 1 if that move is upwards.
 | AUTO, moving to the auto height | G | gU |
 
 Written out: **Feed = U·¬T + ¬A·¬B + A·¬U·G**, **Trigger = U + A·¬U·G·gU** (with ¬A taking priority if
-U = 1 and A = 0). The firmware in each idea follows this: `!R` and `!A` go down, `A && U` goes up,
+U = 1 and A = 0). Leaving out the AUTO move (G = 0) gives **Feed = U + ¬A** and **Trigger = U**,
+which two relays can do on their own: see [relays-only.md](relays-only.md). The firmware in each
+microcontroller idea follows the full version: `!R` and `!A` go down, `A && U` goes up,
 and AUTO goes to the auto height when R has just come on, and otherwise holds.
 
 ## Car side wiring (original 6-pin antenna plug)
@@ -274,10 +281,9 @@ Colours from the original W201/W124/W126 wiring. **Check them on your car with a
 | 1 | blue/yellow | Switch: UP, MAX | Optocoupler input 3 (U) |
 | 6 | brown | Ground | Ground bus |
 
-Cars without the dash switch (or later 4-wire harnesses) only have R, +12 V and ground. Connect R to
-**both** optocoupler inputs 1 and 2 (R and A) and leave U unconnected. The controller then acts as if
-the switch were always in AUTO. (Leaving A unconnected would read as OFF, see the
-[logic](#control-logic-truth-table-and-karnaugh-maps).)
+**Cars without the dash switch** (or with the later 4-wire harness) only have R, +12 V and ground.
+This guide doesn't apply to them: a 3-wire aftermarket antenna already works like their original, so
+it connects directly (trigger to the radio wire, +12 V, ground) with no controller.
 
 ## Bypass plug
 

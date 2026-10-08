@@ -60,7 +60,8 @@ always check against the data card and factory service manual.
 
 ## Repo structure
 
-No code here — just Markdown notes and images, organized by topic folder.
+Markdown notes and images, organized by topic folder. A few notes have a small helper script next to
+them (for example a wiring simulation).
 Each topic folder holds its own entries plus an `images/` subfolder for photos,
 diagrams and scans referenced by those entries.
 

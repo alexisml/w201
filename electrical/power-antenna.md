@@ -96,7 +96,8 @@ antenna stops the motor where it is when the signal goes back to AUTO.
 
 **Later cars:** around 1990–1992 the switch was dropped. Those antennas have a 4-wire plug: blue
 (radio command), two red/yellow (+12 V, one passes on to the trunk lamp) and brown (ground). That
-was reported on a 1992 W124 and fits the 1993 190E "red, blue, brown" description.
+was reported on a 1992 W124 and fits the 1993 190E "red, blue, brown" description. On those cars a 3-wire
+aftermarket antenna connects directly and needs no controller.
 
 **Even older cars** (W123/early W126) used a relay-type antenna with a cam contact that stopped the
 mast at about 30 cm in the middle position. That's where the "medium height" idea comes from.
