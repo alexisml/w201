@@ -167,6 +167,7 @@ def main():
 
 # ---------------- exhaustive check: car state x switch, every transition ----------------
 CAR_STATES = [("key off", False), ("key on, radio off", False), ("key on, radio on", True)]
+KEY_OFF_DELAY = 3.0   # s: on this car the radio stays on for a few seconds after the key is turned off
 # "radio on" here means the radio's antenna output is on (some radios switch it off in CD/AUX mode,
 # which is the same as "radio off" for the antenna). With the key off the radio is off.
 SWITCHES = ["OFF", "DOWN", "AUTO", "UP", "MAX"]
@@ -191,7 +192,10 @@ def exhaustive():
         for a in STATES:
             for b in STATES:
                 n += 1
-                script = [(LONG, a[1], a[2]), (LONG, b[1], b[2])]
+                script = [(LONG, a[1], a[2])]
+                if a[1] and b[0] == "key off":          # radio keeps running briefly after key off
+                    script.append((KEY_OFF_DELAY, True, b[2]))
+                script.append((LONG, b[1], b[2]))
                 pos, probs, _ = run(script, pos0=p0)
                 pa = spec(p0, False, a[1], a[2])
                 exp = spec(pa, a[1], b[1], b[2])
@@ -199,7 +203,7 @@ def exhaustive():
                     fails.append((p0, a, b, exp, pos))
                 if probs:
                     faults.append((p0, a, b, probs[0]))
-    print(f"Long transitions: {n} checked, {len(fails)} wrong height, {len(faults)} wiring faults")
+    print(f"Long transitions (radio stays on {KEY_OFF_DELAY:.0f} s after key off): {n} checked, {len(fails)} wrong height, {len(faults)} wiring faults")
     for f in fails[:10]:
         print("  WRONG", f)
     for f in faults[:10]:
@@ -213,11 +217,20 @@ def exhaustive():
             for b in STATES:
                 for c in STATES:
                     n2 += 1
-                    script = [(1.0, a[1], a[2]), (1.0, b[1], b[2]), (1.0, c[1], c[2]), (LONG, False, c[2])]
+                    script = []
+                    prev_on = False
+                    for st in (a, b, c):
+                        if prev_on and st[0] == "key off":
+                            script.append((min(1.0, KEY_OFF_DELAY), True, st[2]))
+                        script.append((1.0, st[1], st[2]))
+                        prev_on = st[1]
+                    if prev_on:                               # key off at the end
+                        script.append((KEY_OFF_DELAY, True, c[2]))
+                    script.append((LONG, False, c[2]))
                     pos, probs, _ = run(script, pos0=p0)
                     if probs or pos > 0.001:
                         bad2.append((p0, a, b, c, pos, probs[:1]))
-    print(f"Fast sequences then key off: {n2} checked, {len(bad2)} problems")
+    print(f"Fast sequences then key off (radio stays on {KEY_OFF_DELAY:.0f} s after key off): {n2} checked, {len(bad2)} problems")
     for f in bad2[:10]:
         print("  BAD", f)
 

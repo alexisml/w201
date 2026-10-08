@@ -257,12 +257,13 @@ line, and a switch line (the radio's output) being able to **feed the antenna mo
 
 **Every combination.** The car can be in three states: key off, key on with the radio off (or in a
 mode that switches its antenna output off, like CD or AUX on some radios), and key on with the radio
-on. With the 5 switch positions that's 15 states.
+on. With the 5 switch positions that's 15 states. On this car the radio stays on for a few seconds after the key is
+turned off, so the simulation keeps the radio's output on for 3 s after every key-off.
 
 | Check | Cases | Result |
 |---|---|---|
 | Every change from one state to another, held long enough to settle, starting with the mast down, half up and fully up | 675 | All settle where the design says; no wiring faults |
-| Every sequence of three quick changes (1 s each, so the mast is mid-travel and the timer may still be running), then key off | 10,125 | The mast always ends fully down; no wiring faults |
+| Every sequence of three quick changes (1 s each, so the mast is mid-travel and the timer may still be running), then key off | 10,125 | The mast always ends fully down (it starts lowering when the radio switches off, a few seconds after the key); no wiring faults |
 
 "Where the design says": with the radio off (any switch position, key on or off) the mast goes down;
 in OFF or DOWN it goes down; in UP or MAX it goes up; in AUTO it rises by the timer's amount if the

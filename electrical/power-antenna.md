@@ -18,6 +18,7 @@ unit behave like the original.
 | Antenna fitted now | **Aftermarket 3-wire unit** (ground, +12 V, trigger). Works: up with a signal, down without | Owner |
 | Make / model of the aftermarket unit | Not recorded yet | |
 | Which car wires it's connected to | Trigger probably on **pin 4 (blue/green)**, the switch's AUTO/UP/MAX line. Not checked yet | Owner |
+| Radio after key off | Stays on for a few seconds, then switches off (so the mast goes down a few seconds after the key comes out) | Owner |
 | Dash switch | In use, but only on/off: **OFF** lowers the mast, **AUTO** raises it all the way (no medium height) | Owner |
 | Location | Rear left, front corner of the trunk, bracket on the wheelhouse | EPC 82.345; 1990 US 190E wiring diagram listing |
 
