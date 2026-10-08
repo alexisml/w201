@@ -44,16 +44,16 @@ lowered when the radio went off). Press UP or MAX to raise it, or add the
 | # | Part | What for | Example |
 |---|---|---|---|
 | 1 | **K1: changeover relay, 12 V** (5-pin: 30, 87, 87a, 85, 86) | Feed when A is off (normally-closed contact) | See [which relays](#which-relays) |
-| 2 | **K2: relay, 12 V** (4- or 5-pin) | Feed when U is on (normally-open contact) | Same type as K1 |
-| 3 | 2 relay sockets with leads | No soldering on the relays | Automotive relay socket, 5-pin |
+| 2 | **K2: relay, 12 V** | Feed when U is on (normally-open contact) | Same type as K1 |
+| 3 | Perfboard, screw terminals, and mini ISO PCB sockets (if using mini ISO relays) | Holds everything; car and antenna wires go to screw terminals | See [building it on perfboard](#building-it-on-perfboard) |
 | 4 | Inline blade fuse holder + 5 A fuse | Protects the +12 V permanent feed | Any automotive inline holder |
 | 5 | D1: diode, 1 A or more | Stops +12 V from the timer add-on feeding back into the U switch line. Optional without the timer, **needed with it** (see [simulation](#simulation)) | 1N4007 |
-| 6 | Waterproof box, connectors, wire | | As in the other ideas |
+| 6 | Waterproof box, wire | | See the [shopping list](#list) |
 
 The relay coils are powered from the switch lines, which come from the radio's antenna output. A
 typical mini relay coil draws about 150 mA, and up to two are on at once. **Measure what the radio's
 antenna output can supply** before using it this way. If it's weak, use relays with lower-power
-coils (some PCB relays draw about 30 mA at 12 V) or a relay module with an optocoupler input.
+coils (the Omron G5LE draws 33 mA at 12 V, see [which relays](#which-relays)).
 
 Use relays with a built-in suppression diode (and connect 85/86 the right way round), or add a diode
 across each coil. Without it, the coil's switch-off spike goes back into the radio's output.
@@ -65,40 +65,68 @@ and most parts come in packs, so one order leaves spares.
 
 ### Which relays
 
+**Suggested build: on perfboard**, with one of two relay types (see [building it](#building-it-on-perfboard)):
+
+- **Mini ISO relays in PCB sockets**: standard car relays that unplug for replacement.
+- **Omron G5LE PCB relays**: small and cheap, with the lowest coil current; soldered in.
+
 The relay coils are powered from the switch lines, so from the **radio's antenna output**. In UP or
 MAX two coils are on at once (K1 and K2), and with the timer add-on K1, K3 and the timer module are on
-together when the radio comes on. So the choice depends on what that output can supply:
+together when the radio comes on. That's what decides between the two:
 
-| Option | Relay | Coil current at 12 V | Contacts | Mounting | US price | Use when |
-|---|---|---|---|---|---|---|
-| **A. Recommended (easy)** | Generic "Bosch-style" 12 V 30/40 A 5-pin SPDT (changeover) relay, sold with pigtail sockets | about 150 mA (typically 80–90 Ω) | 30/40 A | Plugs into its socket; crimp or solder the pigtails | 5-pack with sockets: about $9–14 | The radio output can supply about 300–400 mA |
-| B. Brand-name equivalent | TE Connectivity V23134 mini ISO relay, 12 V SPDT, **with built-in suppression diode** | about 150 mA (90 Ω, 1.6 W) | 40 A | Same mini ISO socket as option A | about $11–13 each | Same as A, when you'd rather have a known make (rated −40 to 125 °C) |
-| C. Low coil current | Omron G5LE-1-E DC12 (PCB relay, SPDT) | 33 mA | 16 A | Solder on perfboard with screw terminals | about $2.50 each | The radio output is weak, or you'd rather not load it |
+| | **Mini ISO relay + PCB socket** (suggested) | **Omron G5LE-1-E DC12** (suggested) |
+|---|---|---|
+| Relay | 12 V, 5-pin SPDT (changeover) mini ISO: generic "Bosch-style" 30/40 A, or TE Connectivity V23134 (40 A, built-in suppression diode, −40 to 125 °C) | 12 V SPDT PCB relay, 16 A |
+| Coil current at 12 V | about 150 mA (80–90 Ω) | 33 mA |
+| Mounting | Mini ISO PCB socket soldered to the perfboard (for example Durakool DZ85AB-5-PCB, 60 A); the relay plugs in | Soldered straight to the perfboard |
+| Price | Generic relay about $2–3 each in packs (TE about $11–13); socket about €5 each (RS Components; US price not checked) | about $2.50 each (Digi-Key) |
+| Use when | The radio output can supply about 300–400 mA | The radio output is weak, or you'd rather not load it |
 
-The antenna motor draws a few amps, so all three are well oversized for the contacts. Option A's
-cheap relays usually have **no** suppression diode, and option C never has one: add a 1N4007 across
-each coil (stripe/cathode to the + side, 85; other end to 86). Option B has it built in, so mind its
+The antenna motor draws a few amps, so both are well oversized for the contacts. Generic mini ISO
+relays usually have **no** suppression diode and the Omron never has one: add a 1N4007 across each
+coil (stripe/cathode to the + side, 85; other end to 86). The TE relay has it built in, so mind its
 polarity.
+
+Other ways to mount them, if perfboard isn't wanted:
+
+- **Relays with pigtail sockets**, joined with WAGO connectors: no board at all (5-pack of relays
+  with sockets about $9–14), but messier.
+- **A ready-made waterproof relay/fuse box** (about $24–76): tidy, but they usually come with 4-pin
+  relays wired to the normally-open contact only. K1 needs the normally-closed contact (87a), so it
+  would need a 5-pin relay and an extra wire.
 
 ### List
 
 | Qty | Part | Search for | Rough US price |
 |---|---|---|---|
-| 2 (3 with the timer) | Relays, see [above](#which-relays) | "12V 40A 5 pin SPDT relay harness socket 5 pack" | about $9–14 for a 5-pack with sockets (option A) |
+| 2 (3 with the timer) | Relays, see [above](#which-relays) | Mini ISO: "12V 5 pin SPDT mini relay 40A" · Omron: "G5LE-1-E DC12" | Mini ISO: about $2–3 each in packs · Omron: about $2.50 each |
+| 2 (3 with the timer) | Mini ISO PCB sockets (mini ISO relays only) | "mini ISO relay PCB socket" (e.g. Durakool DZ85AB-5-PCB) | about €5 each (US price not checked) |
+| 1 | Perfboard, about 10 × 7 cm or bigger | "perfboard" / "prototype PCB" | about $5 for a pack |
+| 1 set | 5 mm PCB screw terminals (2- and 3-way), for the car and antenna wires | "5mm PCB screw terminal block" | about $5–8 for a pack |
 | 1 | NE555 delay relay module, 12 V, 0–60 s (timer add-on) | "DC 12V NE555 0-60 seconds delay relay module" | about $2.30–3 (eBay US); more on Amazon |
 | 1 | Diode assortment with 1N4007 and 1N5408 | "diode assortment kit 1N4007 1N5408 100pcs" | about $7 (Walmart) |
 | 1 | Inline blade fuse holder + 5 A blade fuse | "inline blade fuse holder waterproof 5 pack" | about $10 for a 5-pack |
-| 1 | Small waterproof box | "IP65 ABS junction box" (about 100 × 70 × 50 mm or bigger) | about $7–11 |
-| 1 set | Lever connectors or a screw terminal strip | "WAGO 221" or "terminal block strip" | about $8–15 |
+| 1 | Small waterproof box, with standoffs for the board | "IP65 ABS junction box" (about 120 × 80 × 60 mm or bigger) | about $7–11 |
 | — | Wire (1 mm² / 18 AWG red and brown, 0.5 mm² / 20 AWG for signals), heat-shrink | | about $10, or what you have |
-| (option C only) | Perfboard and 5 mm screw terminals | "perfboard" + "5mm PCB screw terminal" | about $5–8 |
 
 The timer module is the common 67 × 17 × 17 mm board: the relay pulls in at power-up and releases
 after the set time ([reference](../references/grobotronics-ne555-delay-relay-module/README.md)).
 Check the listing says the same.
 
-**Rough total, from scratch:** about $45–55 with option A relays, timer included, with plenty left
-over. The parts actually used cost about $20.
+**Rough total, from scratch:** about $45–60, timer included, with plenty left over. The parts
+actually used cost about $25–35 (more with mini ISO sockets, less with the Omron relays).
+
+### Building it on perfboard
+
+- **Power paths:** cheap perfboard copper is thin. Run the +12 V rail and the antenna feed (a few
+  amps) with 1 mm² (18 AWG) wire soldered point to point on the back, not with solder bridges.
+  Signal and coil connections can be thin wire.
+- **Connections in and out:** 5 mm screw terminals for the car side (pins 2, 1, 4, 5, 6) and the
+  antenna side (+12 V, trigger, ground), so nothing is soldered to the harness.
+- **On the board:** the relays (or their sockets), a 1N4007 across each coil, D1, D2 and D3. The
+  timer module can sit on standoffs next to it and connect with short wires to its screw terminals.
+- **In the box:** mount the board on standoffs, add strain relief where the cables enter, and keep
+  the box in a dry spot in the trunk. A conformal coating on the board helps against damp.
 
 ## Wiring
 
