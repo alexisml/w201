@@ -22,6 +22,102 @@ off-the-shelf boards and no custom PCB. This is "option A" (the preferred option
 
 Everything below is common to all of them.
 
+## Inputs and outputs
+
+The box sits between the car's original antenna plug and the aftermarket antenna.
+
+- **5 wires from the car:** 2 for power (+12 V permanent and ground) and 3 signals (R, A, U).
+- **3 wires to the antenna:** +12 V feed, trigger and ground. Ground goes straight through; only
+  the feed and the trigger are switched.
+- **3 switched outputs** in total, so 3 relays (or 3 PROFET channels). 2 drive the antenna, and the
+  third is the "hold" that keeps the controller itself powered.
+
+```mermaid
+flowchart LR
+    subgraph CAR["Car: original antenna plug"]
+        P2["pin 2 · red<br/>+12 V permanent"]
+        P5["pin 5 · blue/white<br/>R: radio on"]
+        P4["pin 4 · blue/green<br/>A: AUTO/UP/MAX"]
+        P1["pin 1 · blue/yellow<br/>U: UP/MAX"]
+        P6["pin 6 · brown<br/>ground"]
+    end
+
+    subgraph BOX["Controller box"]
+        FUSE["fuse 5 A"]
+        OPTO["optocoupler board<br/>3 inputs, 12 V → logic"]
+        MCU["microcontroller<br/>Arduino / ESP32"]
+        K1["output 1: FEED<br/>+ current sensing"]
+        K2["output 2: TRIGGER"]
+        K3["output 3: HOLD"]
+        PSU["diodes + TVS<br/>+ 5 V supply"]
+    end
+
+    subgraph ANT["Aftermarket 3-wire antenna"]
+        A12["+12 V"]
+        ATR["trigger"]
+        AGND["ground"]
+    end
+
+    P2 --> FUSE
+    FUSE --> K1
+    FUSE --> K2
+    FUSE --> K3
+    P5 --> OPTO
+    P4 --> OPTO
+    P1 --> OPTO
+    OPTO -- "R, A, U" --> MCU
+    MCU -- "on/off" --> K1
+    MCU -- "on/off" --> K2
+    MCU -- "on/off" --> K3
+    K1 -- "current reading" --> MCU
+    K1 --> A12
+    K2 --> ATR
+    P6 --> AGND
+    P5 -- "wakes it up" --> PSU
+    K3 -- "keeps it on" --> PSU
+    PSU -- "5 V" --> MCU
+```
+
+### Inputs
+
+| From the car | Car pin | Kind | Used for |
+|---|---|---|---|
+| +12 V permanent | 2 (red) | Power | Feeds the 3 switched outputs (through a 5 A fuse) |
+| Ground | 6 (brown) | Power | Common ground for the box and the antenna |
+| **R**: radio on | 5 (blue/white) | Signal, 0 or 12 V | Wakes the controller (through a diode to its supply) and is read through the optocoupler |
+| **A**: switch AUTO/UP/MAX | 4 (blue/green) | Signal, 0 or 12 V | Read through the optocoupler |
+| **U**: switch UP/MAX | 1 (blue/yellow) | Signal, 0 or 12 V | Read through the optocoupler |
+
+The 3 signals never go straight into the microcontroller. It runs at 3.3 or 5 V, and car voltage
+(up to about 14.5 V, plus spikes) would destroy it. Each signal goes through one channel of an
+**optocoupler board**: the 12 V side lights an LED, and the logic side gives a clean on/off.
+
+### Outputs
+
+| Output | Switches | Goes to | On when |
+|---|---|---|---|
+| **1: FEED** | +12 V | Antenna +12 V wire | The mast should move (up or down). Off = the mast stops where it is. Its current is measured to find the end stops |
+| **2: TRIGGER** | +12 V | Antenna trigger wire | Moving up. Off while moving down |
+| **3: HOLD** | +12 V | The controller's own supply (through a diode) | From wake-up until the mast is down and the radio is off. Off = the controller powers itself down |
+
+All three switch +12 V (high side), so the antenna and the box share one ground. Each can be a
+relay (normally-open contact) or a PROFET smart switch channel; both ideas need 3. The ESP32 relay
+board and the PROFET shield both have 4, so one is spare.
+
+Why the feed and the trigger are separate: the trigger only chooses the direction (up or down). The
+feed is what makes the motor run at all, so switching it off is how the controller stops the mast at
+any height.
+
+### Power path
+
+The controller needs no power when parked. It gets power two ways, joined by two diodes so neither
+can back-feed the other:
+
+1. **The radio wire (R):** when the radio comes on, it powers the controller just long enough to start.
+2. **The HOLD output:** the first thing the controller does is switch HOLD on, which keeps it powered
+   from the permanent +12 V. That's why it can still lower the mast after the radio goes off. When
+   the mast is down, it switches HOLD off and powers itself down.
+
 ## How it works
 
 The car still sends the original signals to the antenna plug: radio on (pin 5), and the two switch
