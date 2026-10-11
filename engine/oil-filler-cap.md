@@ -3,21 +3,29 @@
 **System:** engine
 **Status:** planned
 
-Replace the oil filler cap on the cylinder head cover, or at least its seal. Part numbers come from
+Replace the oil filler cap on the cylinder head cover, with a new seal. Part numbers come from
 EPC catalog 452 (190 E 2.3 USA, 1988, this car), group 01.075 Cylinder Head Cover, via the private
 parts catalog (available on request).
 
+## On the car
+
+- **Seal fitted:** measured 2026-10-11, about **47 × 59 mm** (inner × outer). That is the later
+  seal, **`A 111 018 00 80`** (47.5 × 59 mm).
+- **Cap fitted:** so it is the later cap (`A 111 018 03 02` or newer). Number on the cap not read yet.
+
+## Plan
+
+Replace the whole cap, with a new seal.
+
 ## Shopping list
 
-- [ ] **Check first:** which cap is on the car. Measure the inner diameter of the old seal
-  (38.5 mm or 47.5 mm) or read the number on the cap. That decides which seal fits.
-- [ ] **Seal only**, pick by the cap that is fitted:
-  - Early cap (`A 102 018 08 02` and older): **`A 102 018 03 80`**, 38.5 × 59 mm (pos 38).
-    Replaces `A 102 018 00 80`
-  - Later cap (`A 111 018 03 02` and newer, including `A 000 010 02 85`): **`A 111 018 00 80`**,
-    47.5 × 59 mm (pos 38)
-- [ ] **New cap** (pos 35): **`A 000 010 02 85`**, the latest number in EPC 452. Use the
-  `A 111 018 00 80` seal with it.
+- [ ] **Cap** (pos 35): **`A 000 010 02 85`**, the latest number in EPC 452. Check the current
+  number with the dealer first (see notes).
+- [ ] **Seal** (pos 38): **`A 111 018 00 80`**, 47.5 × 59 mm. Aftermarket caps usually come with
+  one; buy it anyway if the cap doesn't.
+
+Not needed: the early seal `A 102 018 03 80` (38.5 × 59 mm, replaces `A 102 018 00 80`) fits only
+the early caps (`A 102 018 08 02` and older).
 
 ## Supersession
 

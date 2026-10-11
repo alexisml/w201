@@ -73,6 +73,31 @@ under the hood, and a third brake light.
 
 **On the car**: ✅ present (owner confirmed), ❌ fitted at the factory, was removed from the car, ? not yet checked.
 
+## Data plate on the car
+
+Photo of the factory data plate in the front of the car (2026-10-10):
+
+![Factory data plate](images/data-plate-engine-bay.webp)
+
+**Verified by reading the photo.** The plate lists only 10 option codes, all of which match the table above:
+
+| Code | Description |
+|------|-------------|
+| 412 | Electric sliding roof |
+| 420 | Automatic transmission, 4-speed |
+| 444 | Cruise control and airbag |
+| 491 | U.S. version |
+| 519 | Rear audio system |
+| 531 | Automatic antenna |
+| 586 | Behr A/C + electric windows |
+| 600 | Headlamp cleaning (removed from the car) |
+| 240 | Outside temperature indicator |
+| 808 | Model-year change code |
+
+Other fields on the plate: model `201028`, interior `177`, paint `147`. These agree with the VIN decode.
+
+The remaining plate numbers (first line, the short `12`, `31` and `8` fields, and the six-digit serial) are **not decoded**. They don't match any identifier in `.env`. The other option codes from the decode (467, 506, 543, 575, 593, 640, 876 and so on) are not on the plate.
+
 ### Option code sources
 
 The blank descriptions from ilcats were filled in from two Mercedes option code lists, using the
