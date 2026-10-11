@@ -595,11 +595,30 @@ the 1-pin connector from temperature switch (16) and connect it to ground, so th
 runs". So the **loose round 1-pin plug is very likely the auxiliary fan stage of switch 16**, left
 unplugged when the 2-pin switch was fitted.
 
-**Test (owner, not yet done):** ignition on, engine off, connect the loose round plug's terminal to
-ground with a fused jumper. If the electric auxiliary fan in front of the radiator runs, the plug is
-confirmed. If nothing happens, check relay 20 and its fuse. (Caution: the same manual uses a 1-pin
-connector on the 110 °C compressor cut-out switch, item 23; grounding that one would only switch off
-the compressor with the engine running.)
+**Wiring diagram for this exact model (Tempomatic manual, Fig. 83/5 "Wiring diagram, Tempmatic climate
+control, model 201.028", model year 1987):** the 100/110 °C switch is **S25/4**, with 3 terminals:
+
+| S25/4 terminal | Wire (0.75 mm²) | Goes to | Job |
+|---|---|---|---|
+| 1 | **black/blue/green** (sw/bl/gn) | X48/2, circuit 15 (switched +12 V) | Common feed |
+| 2 | **black/blue** (sw/bl), two wires | X15 "connector, engine fan / 100 °C temp switch" → fan clutch Y2; and the double-contact relay K8 | 100 °C stage: +12 V to the clutch |
+| 3 (round pin) | **black/green** (sw/gn) | auxiliary fan relay, high (K9), terminal 4 | 110 °C stage: +12 V to the K9 coil |
+
+The fan clutch Y2 is grounded through a brown wire to W11. So on this car the switch **switches +12 V**
+(this matches the owner's readings: 12 V on the single wire, the two-wire terminal is the output). The
+"connect to ground" tests in the manual's A/C chapter are for the 1-pin switches of other engines and
+years; **don't ground the round plug**, it would do nothing. The connector the clutch plugs into
+(under the intake manifold) is probably X15.
+
+**Test (owner, not yet done):** check the loose round plug's wire is black/green. Ignition on, engine
+off: with a fused jumper (5 A), connect the round plug's terminal to the switch plug's single
+black/blue/green wire (+12 V) for a few seconds. K9 should click and the auxiliary fan should run on
+high. If not: K9 (its coil is between terminal 4, black/green, and terminal 5, brown to ground W3), its
+fuse, or the fan.
+
+**Fan clutch, from the same diagram:** jumping terminals 1 and 2 sends +12 V through X15 to the clutch.
+The relay K8 clicked but the clutch didn't engage (2026-10-11), so check that path: X15 connector, the
+clutch coil, and its brown ground to W11.
 
 Earlier notes:
 
