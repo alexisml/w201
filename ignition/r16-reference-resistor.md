@@ -1,7 +1,7 @@
 # R16 / R16/1: EZL ignition reference resistor
 
 **System:** ignition
-**Status:** reference (value on this car not measured yet)
+**Status:** reference (EZL reads open circuit on this car, see below)
 
 A resistor plugged into the EZL ignition module's wiring tells the module which ignition timing map
 to use. Mercedes made two kinds:
@@ -17,8 +17,8 @@ to use. Mercedes made two kinds:
 | Ignition control unit (EZL) | `A 007 545 47 32` or `A 007 545 48 32` | EPC 452, 54.255 pos 5 |
 | EZL cable harness | `A 201 540 87 10` | EPC 452, 54.255 pos 14 |
 | R16/1 resistor | **Not listed in EPC 452** | Probably supplied as part of a harness |
-| Resistance fitted | **Not measured yet** | |
-| Location | **Not checked yet** | See below |
+| Resistance fitted | **OL (open)** at EZL contact 3 to ground, ignition off. Resistor missing, open, or not grounded | Owner, 2026-10-11 |
+| Location | **Not found yet.** A sealed 2-wire part by the battery is a candidate, not confirmed: [battery frame entry](../body/2026-10-11-battery-frame-replacement.md#found-near-the-battery-sealed-2-wire-part-unidentified) | |
 
 **Location (forum reports, not checked on this car):** taped to the wiring harness, wrapped in black
 tape. One BenzWorld post says: remove the battery and the plastic cover behind it, and look on the

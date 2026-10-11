@@ -69,6 +69,7 @@ diagrams and scans referenced by those entries.
 .
 ├── README.md                 # car overview + index
 ├── CLAUDE.md                 # repo rules (links, private data)
+├── TODO.md                   # open jobs, each linked to its entry
 ├── .env.example              # template for VIN / engine number (.env is git-ignored)
 ├── general-reference/        # whole-car info: data card, specs, manuals
 ├── art/                      # posters, drawings, blueprints
@@ -151,11 +152,13 @@ Lessons learned, follow-ups, references.
 | 2026-10-07 | [Power antenna: original wiring, aftermarket unit, controller plan](electrical/power-antenna.md) | electrical | planned |
 | 2026-10-07 | [Power antenna controller ideas (untested): Arduino + PROFET, ESP32](electrical/power-antenna-controller/README.md) | electrical | ideas |
 | 2026-10-11 | [Suspension: refresh and sport upgrade](suspension-steering/suspension.md) (top mounts, H&R / Bilstein) | suspension-steering | planned |
+| 2026-10-11 | [Battery frame replacement](body/2026-10-11-battery-frame-replacement.md) (parts, sizes; sealed part found by the battery) | body | open |
 
 ---
 
 ## Resources
 
+- [TODO](TODO.md): open jobs, each linked to its entry
 - [Parts suppliers](general-reference/parts-suppliers.md): stores worth checking for W201 parts
 - [Aesthetics](aesthetics/README.md): cosmetic parts to replace or add, one file per group, with part numbers
 - Mercedes-Benz WIS / EPC (factory service info and parts catalog)
