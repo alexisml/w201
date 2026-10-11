@@ -422,6 +422,37 @@ Basis: general, not sourced.
 
 ### Thermovalve, pos 101 (vacuum)
 
+**Factory manual (ignition, group 15, job 15-543 "Testing ignition advance in warm-up phase (only
+TSZ)", engine 102.961 basic version; [saved copy](../ignition/references/mb-service-manual-15-electrical-engine/README.md)).**
+The only factory description of a coolant thermovalve in the manuals we have:
+
+- **Purpose:** extra ignition advance while the engine warms up: 8–12° crank angle through the
+  distributor's vacuum unit, on top of the centrifugal advance, up to about 60 °C coolant.
+- **Layout (diagram):** intake manifold → restrictor (1) → check valve (2) → distributor vacuum unit.
+  The thermovalve (3), screwed into the coolant, has **two ports**: one goes to a side port of the check
+  valve (2) (that hose end is marked white), the other to a port on the **throttle housing**.
+- **Function:** below about 60 °C the valve is closed, so full manifold vacuum is held at the vacuum
+  unit (the check valve keeps it there even when accelerating) → more advance. Above about 60 °C the
+  valve opens and bleeds the vacuum to the throttle housing port, so the extra advance stops at idle.
+  The restrictor keeps the other vacuum users from leaking through this circuit at idle.
+- **Test:** engine at about 80 °C, idle, timing light on. Pull the **white/red** line at the
+  thermovalve: timing must not change. Plug the thermovalve port: timing should advance about 8–12°.
+  If not, check the restrictor, the check valve and the vacuum unit for leaks. The valve must pass air
+  above about 60 °C.
+
+**What it means for this car (not confirmed):** the manual's version is the earlier TSZ engine
+(102.961) with a vacuum unit on the distributor. This car has the EZL (102.985), whose ignition point
+table also lists values with and without vacuum, so the EZL takes a vacuum signal; the EPC lists a
+thermovalve line to "the ignition distributor (branch fitting) and the throttle housing" and a
+thermovalve-to-throttle-housing pipe (460–500 mm). So this car's thermovalve is **probably the same
+warm-up advance valve, feeding the EZL's vacuum line instead of a distributor**, and **not** the
+charcoal canister purge valve assumed below from forum posts. The owner's report that a valve hose
+goes to the EZL fits this. The **disconnected 40–50 cm hose** then most likely runs from the thermovalve
+to a nipple on the **throttle housing**. With it open, the warm engine has a small vacuum leak through
+the restrictor and the EZL may see the wrong vacuum. Its marking `50` would mean it opens at 50 °C, not
+the manual's 60 °C (a different version). The fuel smell is then probably unrelated to this valve.
+
+
 **What it is.** A temperature-controlled on/off valve for the vacuum line to the **fuel-vapour purge
 (charcoal canister regeneration) valve**. Below 50 °C it is **closed**; above 50 °C it passes vacuum.
 So the cold state is closed, as sources agree
