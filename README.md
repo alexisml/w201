@@ -36,6 +36,14 @@ Decoded from the VIN. Details in [general-reference/data-card.md](general-refere
 | Options no longer fitted | Headlamp cleaning (600) and seatback luggage nets (286), both removed from the car |
 | Options not verifiable | Green tinted glass (part of 593); the windows are not original |
 
+### Aftermarket equipment
+
+Not on the factory data card. Verified by the owner.
+
+| Item | Status |
+|------|--------|
+| Cellular car phone (transceiver unit in the trunk) | **Removed by the owner.** Two disconnected wires labeled "Bell Atlantic" are still in the trunk, kept for possible reuse (for example, a subwoofer). What they carry has not been measured. Bell Atlantic Mobile was a US mid-Atlantic/Northeast carrier of the late 1980s and 1990s, so this was most likely a period install (inferred from the label, not verified) |
+
 ### To be confirmed
 
 Fill these in as they get verified (VIN plate, engine stamping, service book).
@@ -55,6 +63,9 @@ always check against the data card and factory service manual.
 - **Timing drive:** single-row timing chain
 - **Power:** ~130–136 PS depending on year/market and catalyst
 - **Production:** mid-1980s to 1993
+- **Tyre pressures, cold (factory, 201.028):** partial load front 1.8 bar / 26 psi, rear 2.0 bar /
+  29 psi; full load front 2.0 bar / 29 psi, rear 2.3 bar / 33 psi. More specs:
+  [factory specs](general-reference/factory-specs.md)
 
 ---
 
@@ -159,6 +170,7 @@ Lessons learned, follow-ups, references.
 ## Resources
 
 - [TODO](TODO.md): open jobs, each linked to its entry
+- [Factory specs](general-reference/factory-specs.md): capacities, temperatures, torques and intervals from the factory manuals
 - [Parts suppliers](general-reference/parts-suppliers.md): stores worth checking for W201 parts
 - [Aesthetics](aesthetics/README.md): cosmetic parts to replace or add, one file per group, with part numbers
 - Mercedes-Benz WIS / EPC (factory service info and parts catalog)
