@@ -49,6 +49,34 @@ option.
   measure the clutch coil, and check for 12 V at the clutch plug while the switch is jumped. See
   [Fan clutch circuit](#fan-clutch-circuit-2026-10-11).
 
+### Wire colours (factory diagrams)
+
+From the wiring diagram for this exact model (Tempomatic manual, Fig. 83/5 "Wiring diagram, Tempmatic
+climate control, model 201.028", model year 1987) and the ignition manual (group 15, 15-540). Mercedes
+codes: sw black, bl blue, gn green, br brown, ws white, rt red. Sizes in mm². Compare with what is on
+the car before trusting any of it: this car is a 1988 and parts have been changed.
+
+| Part on the car | Factory item | Terminal | Wire | Goes to |
+|---|---|---|---|---|
+| Red fan switch (item 3; should be 3-pin) | S25/4, 100/110 °C switch | 1 | 0.75 **black/blue/green** | X48/2, circuit 15 (ignition +12 V): common feed |
+| | | 2 | 0.75 **black/blue** (two wires) | X15 connector → fan clutch Y2 (100 °C stage); and double-contact relay K8 |
+| | | 3 (round pin) | 0.75 **black/green** | auxiliary fan relay high K9, terminal 4 (110 °C stage) |
+| Fan clutch | Y2 | feed / ground | 0.75 black from X15 / 0.75 **brown** to ground W11 | |
+| Aux fan relay high | K9 | 4 / 5 | black/green from S25/4 / 0.75 brown to ground W3 (coil) | |
+| Black 1-wire sender (item 4) | B13, coolant temperature gauge sensor | 1 pin | 0.75 **green** | electrical center F1 (U4), then 0.5 green to the gauge A1p1; body is ground |
+| Blue sensor (item 2)? | S25/3, 110 °C compressor cut-out switch | 1 pin | 0.75 **brown/white** | A/C compressor control unit N6; body is ground |
+| Green 2-pin sensor (item 5) | B11/2, coolant temperature sensor (EZL / CIS-E) | — | 4-pin version from 09/89 only: EZL signal 0.75 **green/black**, CIS-E signal 0.75 **green/red**, plus brown and brown/white grounds | ignition module N1/2 and CIS-E control unit N3. The 2-pin version on this car isn't drawn; its two wires are probably the green/black and green/red signal wires (unconfirmed) |
+| Thermovalve (item 1) | — | — | no wires (vacuum only) | |
+
+**Open points against the car:**
+
+- The **blue sensor** has **green and brown** wires, but the factory compressor cut-out switch S25/3
+  is a 1-pin part with a **brown/white** wire. Check whether the blue's "brown" is brown/white, and
+  where its green goes. It may not be S25/3.
+- The **black gauge sender** should have a **green** wire.
+- The **loose round plug** should be **black/green**; the switch plug's single wire black/blue/green and
+  its two wires black/blue.
+
 ### Wiring seen so far
 
 **Item 3, red fan switch (pos 98).** 2 pins and 3 wires, all black with a blue stripe. One wire runs
