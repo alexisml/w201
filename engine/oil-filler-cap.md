@@ -19,8 +19,16 @@ Replace the whole cap, with a new seal.
 
 ## Shopping list
 
-- [ ] **Cap** (pos 35): **`A 000 010 02 85`**, the latest number in EPC 452. Check the current
-  number with the dealer first (see notes).
+- [ ] **Cap** (pos 35): an original cap **`A 000 010 03 01`** was ordered 2026-10-11 and then
+  **cancelled**; still to buy. Notes on that cap: The
+  seller's cross-reference list includes this car's numbers `A 000 010 02 85`, `A 111 018 03 02`,
+  `A 102 018 08 02`, `A 102 018 04 02` and `A 102 018 03 02`, plus `A 000 010 12 85` to `16 85`
+  (the list also has non-Mercedes numbers, so it's a generic fitment list). `A 000 010 03 01` is
+  not in EPC 452; it is newer than the catalog. That listing said it comes with a seal.
+  **Fit: likely, medium-high confidence.** Search results list `000 010 03 01 64` for W201 through
+  W202/W203 (Pelican Parts, not checked: Cloudflare, no Wayback copy), and the seller groups it with
+  this car's cap numbers. Not confirmed by Mercedes. Check against the old cap before fitting any cap: same
+  twist lugs and diameter, and the seal should match the 47.5 × 59 mm one on the car.
 - [ ] **Seal** (pos 38): **`A 111 018 00 80`**, 47.5 × 59 mm. Aftermarket caps usually come with
   one; buy it anyway if the cap doesn't.
 
@@ -50,3 +58,9 @@ Pos 38 (seal): `A 102 018 00 80` → **`A 102 018 03 80`**. `A 111 018 00 80` is
 - Aftermarket: the cap under `A 000 010 02 85` / `A 111 018 03 02` is common (URO, Febi, Meyle,
   and others), usually sold with a seal. Seals `102 018 03 80` and `111 018 00 80` are made by
   Elring and Victor Reinz. Not verified on this car.
+- `A 000 010 14 85` (asked 2026-10-11): probably fits, same plastic twist-on family. AutohausAZ
+  sells it under the same listing as `000 010 02 85`, `000 010 03 01`, `000 010 12 85` and
+  `102 018 08 02`, with 190E 2.3 84–93 in its fitment list ("for reference only")
+  ([page](https://www.autohausaz.com/pn/0000101485),
+  [Wayback](https://web.archive.org/web/20250226124330/https://www.autohausaz.com/pn/0000101485)).
+  MB Parts Giant lists its successor `000 010 14 85 64` only for 2006–2017 cars. Confidence: medium.
