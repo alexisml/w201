@@ -150,6 +150,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-07 | [Wheels and tyres: stock sizes, replacing, going wider](wheels-tyres/wheels-and-tyres.md) | wheels-tyres | reference |
 | 2026-10-07 | [Power antenna: original wiring, aftermarket unit, controller plan](electrical/power-antenna.md) | electrical | planned |
 | 2026-10-07 | [Power antenna controller ideas (untested): Arduino + PROFET, ESP32](electrical/power-antenna-controller/README.md) | electrical | ideas |
+| 2026-10-11 | [Suspension: refresh and sport upgrade](suspension-steering/suspension.md) (top mounts, H&R / Bilstein) | suspension-steering | planned |
 
 ---
 
