@@ -452,6 +452,18 @@ to a nipple on the **throttle housing**. With it open, the warm engine has a sma
 the restrictor and the EZL may see the wrong vacuum. Its marking `50` would mean it opens at 50 °C, not
 the manual's 60 °C (a different version). The fuel smell is then probably unrelated to this valve.
 
+**Caveat (same manual, job 15-515, test setup for cars with the EZL "distributor ignition system
+(DI)"):** its drawing shows the EZL's vacuum line (2) running straight from the throttle housing area
+to the EZL, with **no thermovalve** in it. The drawing is a simplified test setup, so it doesn't rule
+a thermovalve out, but it weakens the "feeds the EZL" reading above. What the valve does on this car is
+still **not confirmed**.
+
+**Where to look for the routing:** none of the manuals has a photo of this car's vacuum hoses. US cars
+carry an **information tag "Vacuum line routing for emission control system"** under the hood, at the
+front left, near the headlamp, per the manual's tag location drawing (00-015; the manual labels it
+"California version"). If it is still on the car, it shows where the thermovalve's hoses go.
+
+
 
 **What it is.** A temperature-controlled on/off valve for the vacuum line to the **fuel-vapour purge
 (charcoal canister regeneration) valve**. Below 50 °C it is **closed**; above 50 °C it passes vacuum.
