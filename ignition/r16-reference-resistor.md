@@ -17,7 +17,7 @@ to use. Mercedes made two kinds:
 | Ignition control unit (EZL) | `A 007 545 47 32` or `A 007 545 48 32` | EPC 452, 54.255 pos 5 |
 | EZL cable harness | `A 201 540 87 10` | EPC 452, 54.255 pos 14 |
 | R16/1 resistor | **`A 000 540 24 81`, 750 Ω** (marked "24 81" on the part). Matches the factory spec for USA 102.985, 1987–1989: fixed reference resistor 750 Ω (job 15-515, table below). Not listed in EPC 452 | Owner, 2026-10-11; service manual group 15 |
-| Location | **Below the air filter.** Located from the factory manual and seen on the car by the owner. Type (fixed R16/1 or adjustable plug) and resistance not yet recorded | Owner, 2026-10-11; service manual group 15 |
+| Location | **Below the air filter.** Located from the factory manual and seen on the car by the owner | Owner, 2026-10-11; service manual group 15 |
 
 **Found 2026-10-11:** below the air filter (owner). The sealed 2-wire part by the battery
 ([battery frame entry](../body/2026-10-11-battery-frame-replacement.md#found-near-the-battery-sealed-2-wire-part-unidentified))
@@ -74,17 +74,18 @@ Fixed R16/1 reference resistors:
 | 2400 Ω | `A 000 540 26 81` |
 
 Adjustable R16 plug positions (same resistor network in every plug; only the printed markings
-differ):
+differ; WIS 15-0020 table). **S** = premium ("Super"), **N** = regular ("Normal"). The same
+letter sits on a different resistance depending on the plug, so a resistance alone doesn't say which fuel it is for:
 
-| Position | Resistance | "EZL-KAT" plug marking |
-|---|---|---|
-| 1 (A) | open, no pin | — |
-| 2 (B) | 2.4 kΩ | |
-| 3 (C) | 1.3 kΩ | |
-| 4 (D) | 750 Ω | **S** (premium) |
-| 5 (E) | 470 Ω | |
-| 6 (F) | 220 Ω | **N** (regular) |
-| 7 (G) | 0 Ω | |
+| Pin | Resistance | "EZL-ECE" | "EZL-KAT" | "EZL" (102.983 Std., 103.980 Std., 117.968 Std.) | "EZ-ECE-S" (102.983 RÜF) | "EZL-KAT MECHANISCH" | "EZL-KAT AUTOMATISCH" |
+|---|---|---|---|---|---|---|---|
+| A | open, no pin | **S** | 1 | 1 | 1 | – | – |
+| B | 2.4 kΩ | 2 | 2 | 2 | **S** | – | **S** |
+| C | 1.3 kΩ | **N** | 3 | 3 | **N** | **S** | – |
+| D | 750 Ω | 4 | **S** | 4 | 4 | 4 | 4 |
+| E | 470 Ω | 5 | 5 | 5 | 5 | **N** | **N** |
+| F | 220 Ω | 6 | **N** | 6 | 6 | 6 | 6 |
+| G | 0 Ω | 7 | 7 | 7 | 7 | – | – |
 
 Other points from the WIS document:
 
@@ -95,6 +96,38 @@ Other points from the WIS document:
   102.983/99 with automatic), so it must not be used there.
 - Cars with the adjustable R16 plug must run on premium fuel. Best output and consumption come with
   premium.
+
+## Which fuel goes with which resistance
+
+Mercedes gives RON numbers for a plug position in only one place found so far: factory job 15-520
+(German), for engine **117.968 Std.** (V8, 220 kW) with the white "EZL" plug, premium fuel only, 2°
+crank angle later per plug step
+([saved copy](references/mb-15-520-ezl-plug-fuel/README.md)):
+
+| Position | Resistance (WIS table) | Fuel |
+|---|---|---|
+| 1 | open | Leaded premium (98 RON) or unleaded "Super Plus" (98 RON) |
+| 3 | 1.3 kΩ | Unleaded premium (95 RON) |
+
+The same job, for the other plugs (letters only, no RON):
+
+- **"EZL-ECE"** (white, "RÜF" cars: prepared for a catalytic converter but sold without one):
+  S = leaded/unleaded premium, N = leaded/unleaded regular. Workshop position 2 (2.4 kΩ) = 3° later than S, for poor premium.
+- **"EZL-KAT"** (green, catalytic converter, unleaded only): S (750 Ω) = unleaded premium, N
+  (220 Ω) = unleaded regular. Workshop positions: 5 (470 Ω) = 3° later than S, for poor unleaded
+  premium; 7 (0 Ω) = 3° later than N, for poor unleaded regular.
+- **US and Australian cars** got a fixed R16/1 instead of the plug. No fuel is named for it.
+
+So lower resistance does not always mean more advance: on the EZL-KAT plug, 470 Ω is later than
+750 Ω, and 0 Ω later than 220 Ω.
+
+**Inferred, not stated by Mercedes:** German pump grades of that time were about 98 RON for leaded
+"Super", 95 RON for unleaded "Super" and 91 RON for "Normal". One W124 wiki page says the KAT
+setting was retarded for unleaded 95 RON compared to the original 98 RON tuning (not checked;
+[saved copy](references/mb124-abgleichstecker-ezl-ke/README.md)).
+
+**For this car:** the fitted 750 Ω is the EZL-KAT "S" (unleaded premium) value, and job 15-515
+lists 750 Ω for the US 102.985. 95 and 97 RON are fine; keep it.
 
 ## Forum findings (not verified on this car)
 
@@ -132,4 +165,10 @@ check the timing with a timing light.
 - BenzWorld: R16 Resistor Revisited, page 2, 2011: [original](https://benzworld.org/forums/w201-190-class/1572759-r16-resistor-revisited-2.html)
   · [Wayback](https://web.archive.org/web/20140228143310/http://www.benzworld.org/forums/w201-190-class/1572759-r16-resistor-revisited-2.html)
   · [reference](references/bw-r16-resistor-revisited/README.md)
+- Mercedes-Benz job 15-520, adapting the ignition point to the fuel with the EZL plug (German): [original](http://www.gehner.de/560sel/images/ezl_anpassung_an_spritqualitaet_mit_stecker.pdf)
+  · [Wayback](https://web.archive.org/web/20261011200059/http://www.gehner.de/560sel/images/ezl_anpassung_an_spritqualitaet_mit_stecker.pdf)
+  · [reference](references/mb-15-520-ezl-plug-fuel/README.md)
+- W124-Archiv wiki: Abgleichstecker EZL / KE, 2007 (German): [original](https://archiv.mb124.de/index.php?title=Abgleichstecker_EZL_/_KE)
+  · [Wayback](https://web.archive.org/web/20261011200121/https://archiv.mb124.de/index.php?title=Abgleichstecker_EZL_%2F_KE)
+  · [reference](references/mb124-abgleichstecker-ezl-ke/README.md)
 - Parts data: EPC catalog 452, via the private parts catalog (available on request)
