@@ -1,7 +1,7 @@
 # R16 / R16/1: EZL ignition reference resistor
 
 **System:** ignition
-**Status:** reference (EZL reads open circuit on this car, see below)
+**Status:** reference. Fitted: R16/1 `24 81`, 750 Ω, the factory value for this car (owner, 2026-10-11)
 
 A resistor plugged into the EZL ignition module's wiring tells the module which ignition timing map
 to use. Mercedes made two kinds:
@@ -16,11 +16,43 @@ to use. Mercedes made two kinds:
 |---|---|---|
 | Ignition control unit (EZL) | `A 007 545 47 32` or `A 007 545 48 32` | EPC 452, 54.255 pos 5 |
 | EZL cable harness | `A 201 540 87 10` | EPC 452, 54.255 pos 14 |
-| R16/1 resistor | **Not listed in EPC 452** | Probably supplied as part of a harness |
-| Resistance fitted | **OL (open)** at EZL contact 3 to ground, ignition off. Resistor missing, open, or not grounded | Owner, 2026-10-11 |
-| Location | **Not found yet.** A sealed 2-wire part by the battery is a candidate, not confirmed: [battery frame entry](../body/2026-10-11-battery-frame-replacement.md#found-near-the-battery-sealed-2-wire-part-unidentified) | |
+| R16/1 resistor | **`A 000 540 24 81`, 750 Ω** (marked "24 81" on the part). Matches the factory spec for USA 102.985, 1987–1989: fixed reference resistor 750 Ω (job 15-515, table below). Not listed in EPC 452 | Owner, 2026-10-11; service manual group 15 |
+| Location | **Below the air filter.** Located from the factory manual and seen on the car by the owner. Type (fixed R16/1 or adjustable plug) and resistance not yet recorded | Owner, 2026-10-11; service manual group 15 |
 
-**Location (forum reports, not checked on this car):** taped to the wiring harness, wrapped in black
+**Found 2026-10-11:** below the air filter (owner). The sealed 2-wire part by the battery
+([battery frame entry](../body/2026-10-11-battery-frame-replacement.md#found-near-the-battery-sealed-2-wire-part-unidentified))
+is therefore probably something else; still unidentified.
+
+**Factory manual (group 15, job 15-510, engines 102.96/98):** two kinds are fitted: a variable
+resistance trimming plug (R16) or a fixed reference resistor (R16/1). Model 201 fixed values listed
+there: `000 540 22 81` 220 Ω, `25 81` 1300 Ω, `26 81` 2400 Ω. Test at the ignition control module,
+sensor connector contact 3 to ground. Its ignition-timing table (15-515) notes a safety retardation
+of 6° and an entry for an open circuit in the trimming plug
+([saved copy](references/mb-service-manual-15-electrical-engine/README.md)).
+
+**Factory value for this car (job 15-515, table "Engine 102.983/102.985, USA"):**
+
+| Engine | Model year | Ignition control module | Reference resistor | Ignition point °CKA BTDC (without / with vacuum) |
+|---|---|---|---|---|
+| 102.985 | 1987/1988 | `005 545 30 32`, `005 545 32 32` | 750 Ω | 25–29 / 39–43 at 3200 rpm; 8–12 at idle |
+| 102.985 | 1989 | `007 545 47 32`, `007 545 48 32` (may also be fitted before 08/88) | 750 Ω | 23–27 / 39–43 at 3200 rpm; 8–12 at idle |
+| 102.985 | 1991 | `010 545 59 32`, `010 545 60 32` | 1.3 kΩ manual, 2.4 kΩ automatic | 22–26 / 39–43 at 3200 rpm; 8–12 at idle |
+
+The EPC lists `007 545 47 32` / `48 32` for this car, so **750 Ω is correct**. The same table's note says
+an open circuit in the resistor makes the module apply a safety retardation of 6°.
+
+**Fuel (job 15-515, footnote):** normal-compression engines need at least 98 RON (88 MON),
+low-compression engines at least 92 RON (82 MON); below that, retard 1–2° per RON, at most 6°. The
+US 750 Ω setting was made for US premium (91 AKI, roughly 95 RON). In Uruguay, 95 and 97 RON are at
+or above that, so **no change is needed**. More advance (470 or 220 Ω) is not a factory setting for
+this engine, there is no knock sensor, and forum posts report little gain on the low-compression US
+engine. Recommendation (2026-10-11): keep `24 81`.
+
+**Correction (2026-10-11):** an earlier version of this page said the owner measured OL at EZL
+contact 3. The owner never measured R16 or the EZL, so that reading is withdrawn. Nothing suggests
+the resistor or its wiring is faulty.
+
+**Location (forum reports, earlier):** taped to the wiring harness, wrapped in black
 tape. One BenzWorld post says: remove the battery and the plastic cover behind it, and look on the
 fire wall. The EZL module sits on the left wheelhouse panel (EPC 54.255).
 

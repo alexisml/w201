@@ -84,13 +84,13 @@ popped out of its mount. Where the wires go isn't known yet; the harness is tape
 
 Not identified. Two ideas, neither confirmed:
 
-- **R16/1 ignition reference resistor**, which forum posts place near the battery and firewall. See
-  [R16 note](../ignition/r16-reference-resistor.md).
+- ~~**R16/1 ignition reference resistor**~~: ruled out. R16/1 was found below the air filter on
+  2026-10-11 (`24 81`, 750 Ω). See [R16 note](../ignition/r16-reference-resistor.md).
 - **An air temperature sensor** for the climate control, since it sits at the fresh-air intake next
   to the blower, and the blower was out recently.
 
-Related measurement: **EZL contact 3 to ground, ignition off: OL** (owner, 2026-10-11). The EZL sees
-no reference resistor. Whether that's this part with an open circuit or a separate problem is open.
+Correction (2026-10-11): an earlier version said the owner measured OL at EZL contact 3. No such
+measurement was taken; withdrawn.
 
 To tell them apart: find the end of its cable, measure across the two wires, and warm the part by
 hand. A reading that changes smoothly means a temperature sensor; a steady 220, 470, 750, 1300 or
