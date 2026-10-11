@@ -14,6 +14,17 @@ Open jobs on the car. Each item links to the entry with the details, parts and c
       Bench-test it, check the round plug's wiring, then fit and plug in the loose round plug.
       → [Coolant sensors, Pos 98 wiring](cooling/coolant-sensors.md#pos-98-wiring)
 
+- [ ] **Thermovalve's loose hose (40–50 cm):** find its port, probably an empty nipple on the throttle
+      housing, under the airflow meter / fuel distributor. Check for the vacuum routing tag at the
+      front left under the hood. → [Coolant sensors, thermovalve](cooling/coolant-sensors.md#thermovalve-pos-101-vacuum)
+
+## Transmission
+
+- [ ] **Check the vacuum modulator line:** the port on top of intake runner #3 has a non-factory cap.
+      Find the modulator hose (driver's side of the transmission), check it and the modulator for
+      ATF, check the fluid level (cold: max 12 mm below MIN) and how it shifts, then reconnect.
+      → [Coolant sensors, transmission vacuum port](cooling/coolant-sensors.md#thermovalve-pos-101-vacuum)
+
 ## Engine
 
 - [ ] **Replace the oil filler cap** and seal. Cap `A 000 010 02 85` (check the current number),
