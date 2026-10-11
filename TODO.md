@@ -7,6 +7,39 @@ Open jobs on the car. Each item links to the entry with the details, parts and c
 - [ ] **Replace the battery frame** (corroded). Order frame `A 201 626 04 45` plus nuts, washers and
       rubber rings; treat the metal underneath. → [Battery frame replacement](body/2026-10-11-battery-frame-replacement.md)
 
+## Lights
+
+- [ ] **Replace the headlight's plastic adjusting screws** (EPC 82.180 pos 86, lighting unit to
+      lateral stiffening). Order `A 201 826 00 71`, 4 per car (2 per side). They also come in the
+      mounting kit `A 201 826 00 00` (pos 71), one per side.
+
+## Body seals
+
+Nice to have, not urgent. Details and locations in [Hood and engine bay seals](aesthetics/seals.md).
+
+- [ ] **Fit the hood front edge seals** `A 201 889 21 98` (EPC 88.120 pos 143, front corners of the
+      hood by the grille). **Bought 4** (2026-10-11); the car takes 2 (left 280 mm, right 235 mm).
+- [ ] **Hood seal, right** `A 201 889 20 98` (EPC 88.120 pos 158, at the headlight). Left one is probably still on the car.
+- [ ] **Grille shell to hood insert** `A 201 888 00 97` (EPC 88.135 pos 56, top of the radiator grille
+      shell).
+- [ ] **Cowl cover fasteners** (center cover `A 201 836 04 02`, EPC 83.165): screws
+      `N 007 976 00 4205`, washers `N 000 433 00 5304`, clip nuts `A 000 994 05 45`, rivets
+      `A 124 990 05 92`, 2 of each.
+- [ ] **Cowl cover side pieces (2):** probably left `A 201 836 01 02` (pos 71) and right
+      `A 201 836 02 02` (pos 74), EPC 83.165 sheet 2. Check against the car first.
+- [ ] **Air inlet seal** `A 124 628 52 98` (EPC 83.165 sheet 2 pos 89, 1715 mm): seals the sides of
+      the air inlet grille against the hood. Same number as the side-to-side seal behind the engine;
+      order `A 210 628 00 98` instead.
+
+## Hardware
+
+- [ ] **Tapping screw `N 000 000 00 0548`** (replaces `N 914 031 00 4300` and `N 914 032 00 4300`),
+      several. Used for the partition panel at the rear of the engine bay, 8 per car: 3 × panel to fire
+      wall, wheelhouse and console (EPC 68.055 pos 26, with washers `N 000 125 00 6449`), 3 × center
+      partition panel to side panels (62.105), 2 × fuse box bracket to partition panel (54.045).
+      **Size 4.8 × 16 mm**, hex head with flange (Mercedes parts store:
+      [N000000000548](general-reference/references/mb-originalteile-n000000000548/README.md)).
+
 ## Cooling
 
 - [ ] **Fit the 3-pin fan switch** (car has A/C, so it takes the 3-pin 110 °C type per the factory
@@ -28,8 +61,9 @@ Open jobs on the car. Each item links to the entry with the details, parts and c
 
 ## Engine
 
-- [ ] **Replace the oil filler cap** and seal. Cap `A 000 010 02 85` (check the current number),
-      seal `A 111 018 00 80` (47.5 × 59 mm, matches the one fitted). → [Oil filler cap](engine/oil-filler-cap.md)
+- [ ] **Replace the oil filler cap** and seal. Cap `A 000 010 02 85` or a successor (`000 010 03 01`
+      likely fits; an order for it was cancelled 2026-10-11). Seal `A 111 018 00 80` (47.5 × 59 mm,
+      matches the one fitted), if the cap doesn't come with one. → [Oil filler cap](engine/oil-filler-cap.md)
 
 ## Ignition
 

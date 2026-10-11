@@ -51,3 +51,73 @@ Notes:
   ([Wayback](https://web.archive.org/web/20250619152618/https://mbzclassicparts.com/en/products/w124-w201-abdichtung-kotflugel-links-neu-1)),
   [right](https://mbzclassicparts.com/en/products/w124-w201-abdichtung-kotfluegel-rechts-neu-2018890598)
   ([Wayback](https://web.archive.org/web/20251012091156/https://mbzclassicparts.com/en/products/w124-w201-abdichtung-kotfluegel-rechts-neu-2018890598)).
+
+## Hood front edge seal
+
+EPC 88.120 Engine hood, pos 143. Rubber strip clipped to the front edge of the hood, at the front
+corners next to the radiator grille shell (in the drawing it sits at the front lip of the hood, by
+the hood latch). Nice to have, not urgent.
+
+- [ ] **Seal, engine hood front**: `A 201 889 21 98` (pos 143). Same number for both sides; the
+  catalog gives 280 mm on the left and 235 mm on the right, so it is cut to length. **Bought 4**
+  (2026-10-11), sold as "Engine Hood Seal"; 2 go on the car, 2 spare
+
+## Hood seal, right (pos 158)
+
+EPC 88.120 Engine hood, pos 158. Curved rubber seal at the headlights, one per side (owner
+confirmed it's the light seal). The owner thinks the left one is still on the car.
+
+- [ ] **Seal, engine hood right**: `A 201 889 20 98` (pos 158)
+- Left, if needed: `A 201 889 19 98` (pos 158)
+
+## Grille insert to hood
+
+EPC 88.135 Radiator grille shell, pos 56. Rubber insert between the top of the radiator grille shell
+and the hood. Full grille parts in [grille.md](grille.md).
+
+- [ ] **Insert, radiator grille shell to engine hood**: `A 201 888 00 97` (pos 56)
+
+## Cowl cover (grille below the windshield wipers)
+
+EPC 83.165 Air guide, **sheet 2** of the drawing. The plastic grille over the fresh-air inlet below
+the windshield, in front of the wipers. ILCATS only shows sheet 1; sheet 2 comes from elcats.ru
+(same catalog 452). Saved in the private parts catalog
+(`images/83/165-2.png`, available on request).
+
+| Pos | Part | What it is | Where |
+|-----|------|------------|-------|
+| 68 | `A 201 836 04 02` | Cover, center (the grille) | Full width below the windshield |
+| 71 | `A 201 836 01 02` | Cover, left end piece | Left end of the grille (driver's side), at the hood corner |
+| 74 | `A 201 836 02 02` | Cover, right end piece | Right end of the grille, at the hood corner |
+| 76 | `A 126 328 01 81` | Buffer (rubber stop), 1 | Clipped into a slot in the center cover, right of center |
+| 89 | `A 124 628 52 98` | Seal, 1715 mm | See below |
+
+The drawing is seen from the front of the car, so its left side is the car's right. The 2 side
+pieces (pos 71 and 74) are probably the "2 seals on the sides" of the grille: in the
+drawing they are the shaped end caps that close the gap between the grille ends and the hood.
+Check against the car.
+
+Fasteners (catalog qty per car):
+
+Sizes (not in the catalog, decoded from the standard part numbers; **medium confidence**, measure
+one before buying): the screw is a DIN 7976 hex-head tapping screw (the `007976` in the number),
+**ST4.2** thread (`42` in the size code), 7 mm hex; length not given, likely 13–16 mm. The washer is
+DIN 433, 5.3 mm hole (`0053`), which fits a 4.2 mm screw. Mercedes now supplies the screw as
+`N 007976 004216` (a search result for the MBUSA parts store lists it as replacing `004205`; the page itself returned 403, so unconfirmed:
+[MBUSA vent grille screw](https://mbparts.mbusa.com/oem-parts/mercedes-benz-vent-grille-screw-7976004216?c=az0x),
+**not archived**: 403 to automated fetch).
+
+
+- [ ] **Tapping screw** `N 007 976 00 4205` (pos 77), 2. At the left end of the grille, through the left
+  end piece (pos 71) into the clip nut
+- [ ] **Washer** `N 000 433 00 5304` (pos 80), 2. Replaces `N 000 125 00 5317`
+- [ ] **Clip nut** `A 000 994 05 45` (pos 83), 2
+- [ ] **Rivet**, center cover `A 124 990 05 92` (pos 86), 2. Under the center cover. Replaces
+  `A 000 990 40 92`
+
+- [ ] **Seal, air inlet cover** `A 124 628 52 98` (pos 89), 1715 mm. Nice to have. Seals the sides
+  of the air inlet (the grille) against the hood. Catalogs 452 and 15D both list this number for
+  pos 89 ("seal, central covering"); it is the **same number** as the side-to-side seal behind the
+  engine (EPC 68.055 pos 32, top of this note), so it may be one strip that runs along both. Order
+  `A 210 628 00 98` instead. Older numbers: `A 201 836 01 98` → `A 201 836 02 98` →
+  `A 124 628 52 98`.
