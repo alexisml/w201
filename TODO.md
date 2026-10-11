@@ -16,7 +16,8 @@ Open jobs on the car. Each item links to the entry with the details, parts and c
 
 - [ ] **Thermovalve's loose hose (40–50 cm):** find its port, probably an empty nipple on the throttle
       housing, under the airflow meter / fuel distributor. Check for the vacuum routing tag at the
-      front left under the hood. → [Coolant sensors, thermovalve](cooling/coolant-sensors.md#thermovalve-pos-101-vacuum)
+      front left under the hood. Rubber connector to the throttle housing: `A 117 997 09 82`
+      (EPC 14.120 pos 17, 40 mm). → [Coolant sensors, thermovalve](cooling/coolant-sensors.md#thermovalve-pos-101-vacuum)
 
 ## Transmission
 
