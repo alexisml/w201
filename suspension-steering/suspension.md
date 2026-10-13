@@ -66,8 +66,9 @@ bump stop, boot and self-locking nuts together, and do both sides.
 
 ## Sport upgrade: springs and dampers
 
-Goal: a sportier look and handling, **not** a big drop. Target about 25–30 mm lower. Stock springs
-are out; the choice is between H&R and Eibach.
+Goal: clearly **sportier than stock** in look and handling (firmer, less roll, sharper turn-in),
+but **not** a big drop. Target about 25–30 mm lower. Stock springs and dampers are out; the springs
+will be H&R or Eibach.
 
 ### Springs
 
@@ -89,11 +90,29 @@ EU price for either set was about €210–235 (Portugal, VAT included). No sell
 
 ### Dampers
 
-- **Bilstein B6 Sport** (plan): firmer, standard length, works with a drop of about 30–40 mm.
-  Bilstein has said B6 is fine with 40 mm H&R springs on other cars; no W201-specific report found.
-- Bilstein B4: standard replacement, too soft for this goal.
-- Bilstein B8: shortened body, only needed for bigger drops.
-- Bilstein B12 Pro-Kit: Eibach springs and B8 dampers as one kit, more drop than wanted.
+*Part numbers from retailer listings seen 2026-10-12 (no links saved yet). Confirm with the maker's
+fitment lookup before buying, and save that page as the source.*
+
+| Line | Front | Rear | Notes |
+|---|---|---|---|
+| **Koni Sport** (yellow, adjustable) | `8741-1092SPORT`, twin-tube, rebound adjustable, top-pin mount | `26-1198SPORT`, monotube, high-pressure gas, adjustable | Listed for the 190E 2.3 1984–88; not for self-levelling cars. Common pair with H&R springs |
+| **Bilstein B6** (yellow, fixed) | `22-100412`, twin-tube, W201 10/82–08/93, EAN 4025258468187 | **Not confirmed.** `24-100441` is listed for the W124 E420, `24-100427` has no fitment listed | Firmer than stock, not adjustable. Find the rear number with Bilstein's lookup |
+| Bilstein B8 (short body) | not found | `24-014700` (B36-1470), shared with the W124 | Only needed for bigger drops |
+| Bilstein B4 (standard) | `22-001993` / `22-002006` | `24-014052`, cross-referenced to `A 201 326 15 00` (this car's EPC rear shock) | Stock-like, too soft for the goal |
+| Koni STR.T (orange, fixed) | number not found | number not found | Sold for the W201 by UK 190 specialists |
+
+Plan: **Koni Sport with H&R `29644-1`**, Bilstein B6 as the alternative. Why Koni: adjustable, so
+the firmness can be matched to the springs and to taste, and both part numbers are confirmed for
+this car.
+
+Setting: the goal is sportier than stock, and even the softest Koni setting is firmer than stock
+(a 190E 2.6 owner on motor-talk.de put it at about 25% firmer). Start at about a third of the
+adjustment range, drive it, and firm up in small steps until the body is controlled without
+crashing over bumps. Owner reports say the hardest settings are too much on the road. One owner
+of a 2.3-16 on MBWorld found H&R springs harsh, so don't start at full firm.
+
+Bilstein B6 is also clearly firmer than stock, but fixed. Choose it if a set-and-forget damper
+is preferred (and a longer life is reported in general owner talk, not W201-specific).
 
 ### Spring pads
 
@@ -124,7 +143,7 @@ about 30 mm, trim about 10 mm off. (The 30 mm gap is a rule of thumb, not a sour
 - [ ] Check what is fitted: damper brand and date, spring pad burls, top mount condition
 - [ ] Measure ride height (wheel centre to arch edge) at all four corners before any work
 - [ ] Choose H&R `29644-1` or Eibach `E2502-140`, confirm fitment on the maker's site, save the source
-- [ ] Order Bilstein B6 (check part numbers for 201.028), new pads, bump stops, boots, top mounts,
+- [ ] Order Koni Sport `8741-1092SPORT` / `26-1198SPORT` (or Bilstein B6), new pads, bump stops, boots, top mounts,
       mounting kits and nuts
 - [ ] Look up WIS torque values for the top mount nuts, damper rod nut and lower bolts
-- [ ] After fitting and settling: measure height, adjust pads, alignment check
+- [ ] After fitting and settling: measure height, adjust pads, alignment check, set Koni firmness
