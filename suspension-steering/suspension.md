@@ -149,7 +149,16 @@ about 30 mm, trim about 10 mm off. (The 30 mm gap is a rule of thumb, not a sour
 - [ ] Check what is fitted: damper brand and date, spring pad burls, top mount condition
 - [ ] Measure ride height (wheel centre to arch edge) at all four corners before any work
 - [ ] Choose H&R `29644-1` or Eibach `E2502-140`, confirm fitment on the maker's site, save the source
-- [ ] Order Koni Sport `8741-1092SPORT` / `26-1198SPORT` (or Bilstein B6), new pads, bump stops, boots, top mounts,
-      mounting kits and nuts
+- [ ] Order (both sides; skip any part the damper box already includes):
+  - Dampers: Koni Sport `8741-1092SPORT` front, `26-1198SPORT` rear (or Bilstein B6)
+  - Springs: H&R `29644-1` (or Eibach `E2502-140`)
+  - Spring pads: front `A 201 321 10 84`, rear `A 201 325 10 44` (2 burls; adjust after settling)
+  - Front top mounts `A 201 320 24 44` (Lemförder or genuine)
+  - Front bump stops `A 129 323 07 44` and boots `A 124 323 01 92`
+  - Front rebound stops `A 201 323 01 32`
+  - Mounting parts kits: front `A 124 990 00 99`, rear `A 124 990 03 99`
+  - Rear shock-to-body rubber buffers (`A 201 326 12 68` and the others in the rear table)
+  - Self-locking nuts: front damper rod `N 910 113 01 4001`, top mount `N 913 004 00 8004`, rear
+    `N 308 673 01 0000`
 - [ ] Look up WIS torque values for the top mount nuts, damper rod nut and lower bolts
 - [ ] After fitting and settling: measure height, adjust pads, alignment check, set Koni firmness
