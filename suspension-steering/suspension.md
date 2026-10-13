@@ -64,6 +64,12 @@ Plan: Lemförder, or genuine if the price is close. Read buyer reviews for the e
 before ordering, whatever the brand. Replace the top mount, the mounting parts kit,
 bump stop, boot and self-locking nuts together, and do both sides.
 
+Stock top mounts work with the sport setup (Koni Sport or Bilstein B6 with H&R or Eibach springs).
+On the W201 front the spring sits on the lower arm, so the top mount only holds the damper rod and
+the stiffer springs add no load to it. Both dampers are top-pin types made for the factory mount.
+If the damper box includes its own rod rubbers, use those in place of the mounting parts kit.
+Reinforced or "sport" top mounts are not needed for this mild setup.
+
 ## Sport upgrade: springs and dampers
 
 Goal: clearly **sportier than stock** in look and handling (firmer, less roll, sharper turn-in),
