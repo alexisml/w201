@@ -164,6 +164,7 @@ Lessons learned, follow-ups, references.
 | 2026-10-07 | [Power antenna controller ideas (untested): Arduino + PROFET, ESP32](electrical/power-antenna-controller/README.md) | electrical | ideas |
 | 2026-10-11 | [Suspension: refresh and sport upgrade](suspension-steering/suspension.md) (top mounts, H&R / Bilstein) | suspension-steering | planned |
 | 2026-10-11 | [Battery frame replacement](body/2026-10-11-battery-frame-replacement.md) (parts, sizes; sealed part found by the battery) | body | open |
+| 2026-10-23 | [Audio: current setup and upgrade plan](interior/audio.md) (head unit specs, slim sub sizes, budget tiers) | interior | planned |
 
 ---
 

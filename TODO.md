@@ -2,6 +2,14 @@
 
 Open jobs on the car. Each item links to the entry with the details, parts and checklist.
 
+## Interior
+
+- [ ] **Measure the rear seat cavity for a slim sub** (cushion out: depth, width, length, access
+      plates, wiring) and fit-test cardboard mockups. Also measure the parcel shelf first-aid-kit hole
+      and the dash speaker pod depth. → [Audio](interior/audio.md#mockup-sizes-for-a-fit-test)
+- [ ] **Save copies of the links in the audio note** (repo link rule; not done yet).
+      → [Audio](interior/audio.md)
+
 ## Body
 
 - [ ] **Replace the battery frame** (corroded). Order frame `A 201 626 04 45` plus nuts, washers and
