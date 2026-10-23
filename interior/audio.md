@@ -31,7 +31,7 @@ BVCP9700A manual ([PDF](https://images.salsify.com/image/upload/s--1dxs8W49--/b7
 
 | Item | Value |
 |------|-------|
-| Size | Double DIN, 3.80 × 6.71 × 3.56" (H × W × D); 7" 1024×600 screen |
+| Size | Double DIN, 3.80 × 6.71 × 3.56" (H × W × D); 7" 1024×600 screen (double DIN and 7" confirmed by the owner on the car) |
 | Built-in amp | "Max Power 85 W × 4". **No RMS figure** given. Speaker load **4–8 Ω**; the manual warns against 1–3 Ω speakers and bridging |
 | Pre-outs | **3 pairs, 4 V**: front (full range), rear (full range), sub (mono, own LPF, ignores the fader) |
 | Sub output | LPF 50 / 80 / 120 / 160 Hz; level +1 to +14 dB |
