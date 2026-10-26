@@ -306,6 +306,54 @@ route is a **DSP-408 + one of the amps above**.
 B → C is an add-on later: the DSP slots in between the head unit and the amp without changing anything
 else. Switch the head unit's internal amp off once an external amp drives the speakers.
 
+## Option: replace the head unit instead of adding a DSP
+
+Researched 2026-10-23, not verified on this car. A better head unit with **time alignment +
+high-pass + sub low-pass** does everything the DSP-408 would do here. Its built-in amp stays weak
+(14–22 W RMS), but with the bass sent to a sub that can be enough (see below).
+
+US street prices from dealer listings; no Uruguay prices found (Mercado Libre UY needs a login).
+
+| Unit | Amp RMS × 4 (CTA-2006) | Time alignment | HPF / sub LPF | Pre-outs | Wireless CP / AA | US price | Source |
+|------|------------------------|----------------|---------------|----------|------------------|----------|--------|
+| **Sony XAV-AX6000** | **20 W**, rated 4 Ω | Yes, per speaker in 1 cm steps, seat presets | Yes, front + rear, adjustable slope / yes | 3 pairs, 5 V | Both | ~$600 | [Sony help guide](https://helpguide.sony.net/ev/xav-ax60/v1/en/contents/TP1000661292.html), [Sonic Electronix](https://www.sonicelectronix.com/viewitem.php?id=197726) |
+| **Sony XAV-AX4000** | **20 W**, rated 4–8 Ω | Same as AX6000 | Same | 3 pairs (2 V or 5 V: sources conflict) | CarPlay wireless only; AA both | $400–600 | [Sony help guide specs](https://helpguide.sony.net/ev/xav-ax40/v1/en/contents/TP1000661344.html) |
+| **Kenwood DMX5710S** | ~22 W (unverified) | Yes | Yes / yes | 2.5 V | Both | $380–460 | [Electronic Express](https://electronicexpress.com/catalog/567115/kenwood-dmx5710-6-8-in-digital-multimedia-bluetooth-receiver-with-apple-carplay-and-android-auto) |
+| **Pioneer DMH-W3050NEX** | 14 W | Yes, presets + custom | 25–250 Hz, 6–24 dB/oct (forum, not manual) / yes; 3-way network mode | 3 pairs, 4 V | Both | $470–530 | [Team IU](https://teamiu.com/products/pioneer-dmh-w3050nex-digital-multimedia-receiver), [Pioneer network mode](https://usa.pioneer/blogs/tech-tips/better-sound-staging-with-time-alignment-network-mode) |
+| Pioneer DMH-W4660NEX | 14 W | Yes | Same as W3050NEX | 3 pairs, 4 V | Both | $500–600 | [Car Toys](https://www.cartoys.com/pioneer-dmh-w4660nex) |
+| Alpine iLX-507 | 18 W | 6-channel time correction | Yes / yes; 13-band parametric EQ per channel | 3 pairs, 4 V | Both | ~$650 | [Worldwide Stereo](https://www.worldwidestereo.com/products/alpine-ilx-507-7-hi-res-digital-multimedia-receiver) |
+| Alpine iLX-W670 | 16 W | 6-channel time correction | Yes / yes | 3 pairs, 4 V | **Wired only** | $280–350 | [Alpine](https://alpine-usa.com/product/ilxw670s-alpine-7-inch-ultra-shallow-multimedia-receiver), [spec sheet](https://content.abt.com/documents/175113/alpine-car-video-ILX-W670-spec-sheet.pdf) |
+| JVC KW-M785BW | ~22 W (unverified) | Yes | Yes / yes | 3 pairs | Both | $370–480, stock patchy | [Crutchfield](https://www.crutchfield.ca/p_105KWM785B/JVC-KW-M785BW.html) |
+
+Over budget: Kenwood Excelon DMX958XR / DMX908S ($800–1,000; 22 W, 5 V, 3-way), Sony XAV-AX8500
+($800–900), Pioneer DMH-WT7600NEX (~$1,300). Kenwood DMX4707S is superseded and wired-only.
+
+All are rated 4 Ω; the Infinitys are 3 Ω. Common and usually fine, but the amp runs warmer and may
+hit protection at high volume.
+
+### Is a head unit's 20 W enough? (estimate)
+
+- The "92 dB" is at 2.83 V, which into 3 Ω is about 2.7 W, so about 90 dB at 1 W / 1 m.
+- 20 W per speaker: about 103 dB at 1 m. Four speakers in a small cabin: roughly **104–106 dB
+  peaks** at the seat, **90–95 dB clean average** for music. CTA ratings are at 14.4 V, so expect
+  about 1 dB less in practice.
+- An external 4 × 50 W amp adds about 4 dB of headroom, but the speakers' 35 W rating caps the useful
+  gain near 2.4 dB.
+- **Verdict:** 20–22 W + an 80 Hz high-pass + a powered sub is enough for normal-to-loud listening.
+  The high-pass matters more than the watts. An external amp buys cleaner peaks at high volume:
+  optional, not needed.
+
+### Head unit packages
+
+| Package | Parts | ≈ US cost |
+|---------|-------|-----------|
+| **D. New head unit + sub** | Sony XAV-AX4000/AX6000 (or Kenwood DMX5710S) + powered slim sub + 8 AWG kit | $700–950 |
+| **E. D + amp later** | D + Pioneer GM-DX874 when more headroom is wanted | +$220 |
+
+Compared to C (BOSS + DSP-408 + amp + sub, ≈ $700): about the same money, fewer boxes, easy on-screen
+tuning, wireless CarPlay and a better unit overall, but less tuning depth than the DSP-408 and less
+power until an amp is added. Selling the BOSS offsets part of the cost.
+
 ## Power and install
 
 - **Alternator:** reported as **70 A** for 1987 and later (Bosch reman AL160X), about 25–30 A at
