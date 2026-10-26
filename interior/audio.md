@@ -354,6 +354,10 @@ Compared to C (BOSS + DSP-408 + amp + sub, ≈ $700): about the same money, fewe
 tuning, wireless CarPlay and a better unit overall, but less tuning depth than the DSP-408 and less
 power until an amp is added. Selling the BOSS offsets part of the cost.
 
+**Decision input (owner, 2026-10-26):** a wireless Android Auto dongle is already in use, so wireless
+phone support is no reason to replace the BOSS. That favours keeping it and going **B → C**
+(amp with high-pass + sub now, DSP-408 when ready).
+
 ## Power and install
 
 - **Alternator:** reported as **70 A** for 1987 and later (Bosch reman AL160X), about 25–30 A at
