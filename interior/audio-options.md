@@ -373,6 +373,24 @@ phone support is no reason to replace the BOSS. That favours keeping it and goin
 
 ## DSP candidates
 
+Summary (2026-10-27). Requirement: 4 inputs (keep the head unit's balance and fader), handles the
+BOSS's 4 V pre-outs, time alignment.
+
+| DSP | Type | Inputs | 4 V from BOSS | Tuning | ≈ Price | Verdict |
+|-----|------|--------|---------------|--------|---------|---------|
+| **Helix DSP Mini MK2** | Processor | 4 RCA + high-level + optical → 6 out | Yes | Windows (PC-Tool) | ~$400 in UY | Shortlist: best quality, local warranty |
+| **DS18 DSP4.8BTM** | Processor | 4 RCA → 8 out | Yes | Phone app | ~$320 imported | Shortlist: phone tuning |
+| **Stetsom HL400.4 DSPlayer** | Amp + DSP | 4 RCA or high-level | RCA 1 V max: use high-level inputs | Phone app | ~$110 US + import | Shortlist: cheapest, one box, reliability unknown |
+| Dayton DSP-408 | Processor | 4 RCA → 8 out | RCA 3.2 V max: use high-level inputs | PC / app | ~$165–200 + import | Possible |
+| Rockford DSR1 | Processor | 4 RCA → 8 out | Yes | App / PC | ~$420 + import | Too expensive |
+| Kicker KEY200.4 | Amp + DSP | 4 | Yes | **Automatic (mic)** | ~$240 + import | Out: 4 Ω minimum (needs 1 Ω resistors) |
+| Alpine PXE-C60-60 (OPTIM6) | Processor | 6 | Not published | **Automatic (phone mic)** | ~$500 + amp | Out: price |
+| Genius GDSP-15404A | Amp + DSP | 2 RCA + 4 high-level | — | Windows | ~$158 | Out: 4 Ω, 40 W, time alignment unconfirmed |
+| Stetsom STX 2436 / STX 2448 | Processor | 2 | 2 V (STX 2436) | Phone app | ~$60–90 | Out: 2 inputs |
+| Taramps PRO 2.4 BT | Processor | 2 | Yes (9 V) | Phone app | — | Out: 2 inputs |
+
+Details for each below.
+
 ### DS18 DSP4.8BTM
 
 **What people say** (thin: retailer reviews, no independent tests found,
