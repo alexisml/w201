@@ -526,7 +526,7 @@ power until an amp is added. Selling the BOSS offsets part of the cost.
 phone support is no reason to replace the BOSS. That favours keeping it and going **B → C**
 (amp with high-pass + sub now, DSP-408 when ready).
 
-## Plan in progress (2026-10-27): local amp + DS18 DSP
+## Plan in progress (2026-10-27): local amp + DSP (Helix DSP Mini MK2)
 
 Budget ceiling for amp + DSP: about $300–400. Leading idea: a 2 Ω-stable 4-channel amp bought in
 Uruguay (for example the plain **Stetsom HL400.4**) + a **DS18 DSP4.8BTM** from eBay or the US.
@@ -565,6 +565,11 @@ US$400 in Uruguay; both need the amp):
 For four 4" coaxials and a powered sub, the Helix's extra quality is small in practice; tuning on
 the phone counts for more here. The Helix is worth it only with access to a Windows PC (an Intel Mac
 with Boot Camp works; Windows on Apple-silicon Macs may not handle its USB driver: not checked).
+
+**Decision (owner, 2026-10-27):** a Windows laptop is available, so the **Helix DSP Mini MK2** (bought
+in Uruguay) is the pick, paired with a local 2 Ω-stable 4-channel amp (Stetsom HL400.4 likely; UY
+price pending). The wiring and tuning steps below apply the same way: tune with Helix DSP PC-Tool on
+the Windows laptop instead of the phone app; REW and a UMIK-1 mic also run on Windows.
 
 **Wiring**
 
