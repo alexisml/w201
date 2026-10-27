@@ -340,6 +340,17 @@ no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user
 - RCA and high-level inputs, an RCA **DSP output** (can feed the powered sub), remote in/out.
   Also a Bluetooth / USB / FM player built in (not needed here).
 - Very small: 50 × 125 × 139 mm, 0.5 kg. 25 A fuse, 4–6 mm² power cable.
+- **Sold in the US:** $109.99 at Stetsom's US store (2026-10-27), also on Amazon US
+  ([Stetsom US store](https://stetsomstore.com/products/stetsom-hl400-4-dsplayer-amplifier-dsp-player-radio-bt-fm),
+  [Amazon](https://www.amazon.com/Stetsom-DSPlayer-400x4-Amplifier-Compatible/dp/B0F1G9Y3KK), **not archived yet**).
+- **Reviews (thin, 2026-10-27):** no independent sound tests found; mostly Brazilian YouTube videos.
+  Praised for features per price and the app. Complaints: units that stopped powering on (one owner
+  voided the warranty by opening it to check the internal fuse), Bluetooth quieter than RCA, one
+  "don't recommend" video that still calls it good value. Stetsom is a big, established Brazilian
+  brand known more for loud bass amps than for sound-quality tuning. No mic auto-tune: tuning is by
+  hand in the app.
+  ([returned-unit video](https://www.youtube.com/watch?v=hdEO5ssPs3g),
+  [power test video](https://www.youtube.com/watch?v=kCwX2CQMYyI), **not archived yet**)
 - **Check:** its RCA input sensitivity is 250 mV – 1 V; the BOSS pre-outs go up to 4 V. Keep the gain
   at minimum, or use the high-level (speaker wire) inputs, which take 1.5 V, to avoid clipping the input.
 
