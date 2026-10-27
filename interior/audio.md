@@ -339,6 +339,29 @@ not checked on the listings themselves):
 - Plain 4-channel amps with fixed 90 Hz filters and no DSP, for reference: Taramps TS 400x4
   (4 × 100 W at 2 Ω), Stetsom IR400.4.
 
+### US all-in-one DSP amps rated for 2 Ω (researched 2026-10-27)
+
+Requirement: built-in DSP with per-channel delay, adjustable high-pass, EQ, and **2 Ω stable** (for
+the 3 Ω Infinitys). **Nothing current and confirmed was found new in the US under $500.** Rockford has
+no DSP amps (the DSR1 is a processor only); the JBL MS-A1004 shows no delay; the Kicker KEY200.4 is
+4 Ω minimum.
+
+| Model | RMS × 4 at 4 Ω / 2 Ω | DSP | Tuning | Size (mm) | US price | Source |
+|-------|----------------------|-----|--------|-----------|----------|--------|
+| **Audison Prima AP4.9bit** | 70 / 130 | 9-ch DSP, 0–15 ms delay per channel, spare outputs for a sub | PC (bit Tune) | ~198 × 134 × 46 (unverified) | $800 new; ~$540–600 open box / eBay | [Sound of Tri-State](https://www.soundoftristate.com/ap49bit), [Creative Audio](https://creativeaudio.net/ap4-9-bit-uvg/) |
+| **Musway M4 Nano** | 55 / 95 | 8-ch DSP; delay very likely, not shown on the page; 4 RCA outputs | PC, or app with BTA-HD dongle | **150 × 45 × 95** | $700 (order only) | [OnlineCarStereo](https://www.onlinecarstereo.com/CarAudio/p_98517_Musway_M4%20Nano.aspx) |
+| **AudioControl D-4.800** | 125 / 200 | Delay per route, 30-band EQ, sub pre-outs, RCA in up to 8 V | PC/Mac, optional BT | ~226 × 203 × 53 | $829 | [AudioControl](https://audiocontrol.com/products/d-4-800-high-power-4-channel-dsp-matrix-amplifier-accubass) |
+| LinksWell LWAMP-0400-04 | 100 at 4 Ω; **2 Ω not confirmed** | 31-band EQ, app; **delay not confirmed** | App | — | $380 | [Quadratec](https://www.quadratec.com/p/linkswell/dsp-amplifier/4-channel-lwamp.0400.04) |
+| JL Audio VX400/4i | 75 / 100 | Full DSP, 0.01 ms delay steps | PC (TüN) | 229 × 168 × 54 | $1,200+ | [Worldwide Stereo](https://worldwidestereo.com/products/jl-audio-vx400-4i-100-watts-x-4-at-2-ohms-4-channel-amplifier-w-dsp) |
+
+Not in the US or discontinued: Helix M FOUR DSP (discontinued), Sony XM-GS6DSP (discontinued, front
+not 2 Ω), Blam DSP 4.120 (UK, £570), Hifonics JUNO4DSP (EU, €329, delay unconfirmed), Pioneer
+DEQ-2000A (Japan/Australia), Zapco ST-4X DSP III (EU, €594). All links above **not archived yet**.
+
+**Conclusion:** for one box rated for 3 Ω, the imported Stetsom HL400.4 DSPlayer is by far the best
+value. In the US the realistic choices are an open-box Audison AP4.9bit (~$550–600) or the Musway
+M4 Nano ($700, smallest).
+
 ### Three ways to do amp + high-pass + time alignment
 
 | Option | Boxes | Time alignment | 3 Ω in spec | Power × 4 | Tuning | ≈ Cost |
