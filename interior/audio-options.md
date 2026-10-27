@@ -132,8 +132,8 @@ that tunes itself with the included microphone: auto time alignment (defeatable)
 24 dB/oct high-pass at 60 / 80 / 120 Hz (or full range). Very small: 187 × 70 × 43 mm, fits behind
 the dash or under a seat. Not bridgeable, no sub channel (the powered sub stays on the head unit's
 sub pre-out). Specs from Kicker and the owner's manual
-([Kicker](https://www.kicker.com/key-smart-amplifier),
-[Crutchfield FAQ](https://www.crutchfield.com/learn/kicker-47key200-4-compact-4-channel-amplifier-faq.html), **not archived yet**).
+([Kicker](https://www.kicker.com/key-smart-amplifier) ([archive](https://web.archive.org/web/20230630002936/https://www.kicker.com/key-smart-amplifier)),
+[Crutchfield FAQ](https://www.crutchfield.com/learn/kicker-47key200-4-compact-4-channel-amplifier-faq.html) ([saved copy](references/crutchfield-kicker-key200-4-faq/README.md))).
 
 - **Catch:** rated **4 Ω minimum per channel**; the Infinitys are 3 Ω. Each channel sees about 25%
   more current than rated. At normal volume it will most likely work (the BOSS is also rated 4 Ω and
@@ -145,17 +145,15 @@ sub pre-out). Specs from Kicker and the owner's manual
   and preferred EQ off, which keeps the time alignment), less punch than a full-size amp, little
   manual control, fixed bi-amp crossover, a few defective units (limiter / protect mode, replaced
   under warranty). DIYMA verdict: decent for simple systems like this one, not for complex builds.
-  Sources: [BestCarAudio test](https://www.bestcaraudio.com/test-drive-review-kicker-key200-4-smart-amplifier/),
-  [DIYMA](https://www.diymobileaudio.com/threads/is-the-kicker-key-200-4-with-dsp-pretty-decent.471902/),
-  [Bronco6G "disappointing"](https://www.bronco6g.com/forum/threads/kicker-key-200-4-amp-disappointing.89851/),
-  [Maverick impressions](https://www.mavericktruckclub.com/forum/threads/kicker-key-200-4-installed-impressions.29344/),
-  [Tacoma World](https://www.tacomaworld.com/threads/problems-after-kicker-key-200-4.709503/)
-  (**not archived yet**).
+  Sources: [BestCarAudio test](https://www.bestcaraudio.com/test-drive-review-kicker-key200-4-smart-amplifier/) ([archive](https://web.archive.org/web/20260609143522/https://www.bestcaraudio.com/test-drive-review-kicker-key200-4-smart-amplifier/)),
+  [DIYMA](https://www.diymobileaudio.com/threads/is-the-kicker-key-200-4-with-dsp-pretty-decent.471902/) (**not archived**),
+  [Bronco6G "disappointing"](https://www.bronco6g.com/forum/threads/kicker-key-200-4-amp-disappointing.89851/) ([partial archive](https://web.archive.org/web/20261027155841/https://www.bronco6g.com/forum/threads/kicker-key-200-4-amp-disappointing.89851/)),
+  [Maverick impressions](https://www.mavericktruckclub.com/forum/threads/kicker-key-200-4-installed-impressions.29344/) ([partial archive](https://web.archive.org/web/20241205035519/https://www.mavericktruckclub.com/forum/threads/kicker-key-200-4-installed-impressions.29344/page-2)),
+  [Tacoma World](https://www.tacomaworld.com/threads/problems-after-kicker-key-200-4.709503/) ([archive](https://web.archive.org/web/20261027155904/https://www.tacomaworld.com/threads/problems-after-kicker-key-200-4.709503/)).
 - **No higher-end KEY:** the 4-channel KEY line is only the KEY200.4 (plus the KEY500.1 mono sub amp).
   Amps with mic auto-tune are rare: besides the KEY200.4, only the Alpine PXE-C80-88 DSP amp (~$1,000)
   and the Alpine OPTIM6 processor (~$500, needs a separate amp) were found
-  ([Sonic Electronix guide, 2026-08](https://learn.sonicelectronix.com/top-4-budget-car-audio-dsps-with-auto-eq-calibration/),
-  **not archived yet**).
+  ([Sonic Electronix guide, 2026-08](https://learn.sonicelectronix.com/top-4-budget-car-audio-dsps-with-auto-eq-calibration/) ([saved copy](references/sonic-budget-auto-eq-dsps/README.md))).
 - **Ways around the 4 Ω minimum** (our reasoning, not from Kicker):
   1. **1 Ω series resistor per speaker** so the amp sees about 4 Ω. Use a 1 Ω, 25 W aluminium-housed
      resistor (Dale RH-25 style, a few dollars each), bolted to metal. At the amp's full 50 W it
@@ -180,8 +178,8 @@ sub pre-out). Specs from Kicker and the owner's manual
 
 **Stetsom HL400.4 DSPlayer** (Brazilian brand, common in South America, so likely sold in Uruguay;
 no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user manual
-([Stetsom](https://stetsom.com.br/en/produto/hl400-4-dsplayer/),
-[manual PDF](https://stetsom.com.br/manual/manual_dsplayer.pdf), **not archived yet**).
+([Stetsom](https://stetsom.com.br/en/produto/hl400-4-dsplayer/) ([archive](https://web.archive.org/web/20260411123142/https://stetsom.com.br/en/produto/hl400-4-dsplayer/), [saved copy](references/stetsom-hl400-4-dsplayer/README.md)),
+[manual PDF](https://stetsom.com.br/manual/manual_dsplayer.pdf) ([archive](https://web.archive.org/web/20250619131733/https://stetsom.com.br/manual/manual_dsplayer.pdf), [saved copy](references/stetsom-dsplayer-manual/README.md))).
 
 - 4 × 100 W RMS at **2 Ω** (13.8 V), 4 × 70 W at 4 Ω: the 3 Ω Infinitys are in spec.
 - DSP set from a phone app ("car mode"): **EQ, crossover, level, phase, delay** (time alignment)
@@ -190,16 +188,16 @@ no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user
   Also a Bluetooth / USB / FM player built in (not needed here).
 - Very small: 50 × 125 × 139 mm, 0.5 kg. 25 A fuse, 4–6 mm² power cable.
 - **Sold in the US:** $109.99 at Stetsom's US store (2026-10-27), also on Amazon US
-  ([Stetsom US store](https://stetsomstore.com/products/stetsom-hl400-4-dsplayer-amplifier-dsp-player-radio-bt-fm),
-  [Amazon](https://www.amazon.com/Stetsom-DSPlayer-400x4-Amplifier-Compatible/dp/B0F1G9Y3KK), **not archived yet**).
+  ([Stetsom US store](https://stetsomstore.com/products/stetsom-hl400-4-dsplayer-amplifier-dsp-player-radio-bt-fm) ([archive](https://web.archive.org/web/20260305205819/https://stetsomstore.com/products/stetsom-hl400-4-dsplayer-amplifier-dsp-player-radio-bt-fm), [saved copy](references/stetsomstore-dsplayer/README.md)),
+  [Amazon](https://www.amazon.com/Stetsom-DSPlayer-400x4-Amplifier-Compatible/dp/B0F1G9Y3KK) ([saved copy](references/amazon-stetsom-dsplayer/README.md))).
 - **Reviews (thin, 2026-10-27):** no independent sound tests found; mostly Brazilian YouTube videos.
   Praised for features per price and the app. Complaints: units that stopped powering on (one owner
   voided the warranty by opening it to check the internal fuse), Bluetooth quieter than RCA, one
   "don't recommend" video that still calls it good value. Stetsom is a big, established Brazilian
   brand known more for loud bass amps than for sound-quality tuning. No mic auto-tune: tuning is by
   hand in the app.
-  ([returned-unit video](https://www.youtube.com/watch?v=hdEO5ssPs3g),
-  [power test video](https://www.youtube.com/watch?v=kCwX2CQMYyI), **not archived yet**)
+  ([returned-unit video](https://www.youtube.com/watch?v=hdEO5ssPs3g) (**not archived**; "Motivos o Pq irei devolver Modulo Stetsom HL400.4 Dsplayer. Não recomendo!", channel RAFAEL MOOCA),
+  [power test video](https://www.youtube.com/watch?v=kCwX2CQMYyI) (**not archived**; "Amplificador Stetsom DSPlayer HL400.4 BOB - Review e Teste de Potência 2026", channel INFINITY SOM))
 - **Check:** its RCA input sensitivity is 250 mV – 1 V; the BOSS pre-outs go up to 4 V. Keep the gain
   at minimum, or use the high-level (speaker wire) inputs, which take 1.5 V, to avoid clipping the input.
 
@@ -207,10 +205,10 @@ no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user
 
 | Model | Type | Power | Filters | Size (mm) | Fit here | Source |
 |-------|------|-------|---------|-----------|----------|--------|
-| **Stetsom HL400.4** (2 Ω, plain, not DSPlayer) | 4 ch | 4 × 100 W at 2 Ω, 4 × 60 W at 4 Ω (13.8 V) | CH1–2: flat / HPF 90 Hz / LPF 90 Hz (fixed). CH3–4: flat / HPF 90 Hz / LPF 30–75 Hz + bass boost. Slope not stated | 50 × 125 × 124 | **Good**: 3 Ω in spec, HPF close to 80 Hz, tiny. No time alignment. RCA input 200 mV sensitivity: keep gain low, or use the 1.5 V "FIO" (wire) input | [Stetsom](https://stetsom.com.br/en/produto/hl400-4-2-ohms/), [manual PDF](https://stetsom.com.br/manual/manual_hl400.4.pdf) (**not archived yet**) |
+| **Stetsom HL400.4** (2 Ω, plain, not DSPlayer) | 4 ch | 4 × 100 W at 2 Ω, 4 × 60 W at 4 Ω (13.8 V) | CH1–2: flat / HPF 90 Hz / LPF 90 Hz (fixed). CH3–4: flat / HPF 90 Hz / LPF 30–75 Hz + bass boost. Slope not stated | 50 × 125 × 124 | **Good**: 3 Ω in spec, HPF close to 80 Hz, tiny. No time alignment. RCA input 200 mV sensitivity: keep gain low, or use the 1.5 V "FIO" (wire) input | [Stetsom](https://stetsom.com.br/en/produto/hl400-4-2-ohms/) ([archive](https://web.archive.org/web/20260102112242/https://stetsom.com.br/en/produto/hl400-4-2-ohms/), [saved copy](references/stetsom-hl400-4/README.md)), [manual PDF](https://stetsom.com.br/manual/manual_hl400.4.pdf) ([archive](https://web.archive.org/web/20250504101716/https://stetsom.com.br/manual/manual_hl400.4.pdf), [saved copy](references/stetsom-hl400-4-manual/README.md)) |
 | **Pioneer GM-DX874** | 4 ch | 4 × 100 W at 4 Ω, 4 × 150 W at 2 Ω | HPF 40–500 Hz, 12 dB/oct | 264 × 60 × 200 | **Good**: 3 Ω in spec, adjustable HPF. No time alignment | (see table above) |
-| JBL GTO-501EZ | **mono** sub amp | 500 W at 2 Ω, 350 W at 4 Ω | LPF 40–280 Hz, 12 dB/oct, bass boost | 246 × 66 × 213 | Only for a **passive** sub; not needed with a powered sub. Discontinued in the US | [JBL support](https://support.harmanaudio.com/product-registration/GTO-501EZ_.html) (**not archived yet**) |
-| Pioneer GM-D8601 | **mono** sub amp | 300 W at 4 Ω, 500 W at 2 Ω, 800 W at 1 Ω | LPF 40–240 Hz, 12 dB/oct, bass boost remote | ~270 × 60 × 200 | Only for a **passive** sub. Replaced by GM-D8701 | [Pioneer India](https://pioneer-india.in/buy/car-entertainment-car-amplifiers-mono/gm-d8601/) (**not archived yet**) |
+| JBL GTO-501EZ | **mono** sub amp | 500 W at 2 Ω, 350 W at 4 Ω | LPF 40–280 Hz, 12 dB/oct, bass boost | 246 × 66 × 213 | Only for a **passive** sub; not needed with a powered sub. Discontinued in the US | [JBL support](https://support.harmanaudio.com/product-registration/GTO-501EZ_.html) ([archive](https://web.archive.org/web/20250710051044/https://support.harmanaudio.com/us/en/car-marine/car-electronics/car-electronics-amplifiers/car-electronics-amplifiers-mono-sub/GTO-501EZ_.html)) |
+| Pioneer GM-D8601 | **mono** sub amp | 300 W at 4 Ω, 500 W at 2 Ω, 800 W at 1 Ω | LPF 40–240 Hz, 12 dB/oct, bass boost remote | ~270 × 60 × 200 | Only for a **passive** sub. Replaced by GM-D8701 | [Pioneer India](https://pioneer-india.in/buy/car-entertainment-car-amplifiers-mono/gm-d8601/) ([archive](https://web.archive.org/web/20241213222153/https://pioneer-india.in/buy/car-entertainment-car-amplifiers-mono/gm-d8601/)) |
 
 ### Getting amp + DSP in one box from the region
 
@@ -235,15 +233,15 @@ no DSP amps (the DSR1 is a processor only); the JBL MS-A1004 shows no delay; the
 
 | Model | RMS × 4 at 4 Ω / 2 Ω | DSP | Tuning | Size (mm) | US price | Source |
 |-------|----------------------|-----|--------|-----------|----------|--------|
-| **Audison Prima AP4.9bit** | 70 / 130 | 9-ch DSP, 0–15 ms delay per channel, spare outputs for a sub | PC (bit Tune) | ~198 × 134 × 46 (unverified) | $800 new; ~$540–600 open box / eBay | [Sound of Tri-State](https://www.soundoftristate.com/ap49bit), [Creative Audio](https://creativeaudio.net/ap4-9-bit-uvg/) |
-| **Musway M4 Nano** | 55 / 95 | 8-ch DSP; delay very likely, not shown on the page; 4 RCA outputs | PC, or app with BTA-HD dongle | **150 × 45 × 95** | $700 (order only) | [OnlineCarStereo](https://www.onlinecarstereo.com/CarAudio/p_98517_Musway_M4%20Nano.aspx) |
-| **AudioControl D-4.800** | 125 / 200 | Delay per route, 30-band EQ, sub pre-outs, RCA in up to 8 V | PC/Mac, optional BT | ~226 × 203 × 53 | $829 | [AudioControl](https://audiocontrol.com/products/d-4-800-high-power-4-channel-dsp-matrix-amplifier-accubass) |
-| LinksWell LWAMP-0400-04 | 100 at 4 Ω; **2 Ω not confirmed** | 31-band EQ, app; **delay not confirmed** | App | — | $380 | [Quadratec](https://www.quadratec.com/p/linkswell/dsp-amplifier/4-channel-lwamp.0400.04) |
-| JL Audio VX400/4i | 75 / 100 | Full DSP, 0.01 ms delay steps | PC (TüN) | 229 × 168 × 54 | $1,200+ | [Worldwide Stereo](https://worldwidestereo.com/products/jl-audio-vx400-4i-100-watts-x-4-at-2-ohms-4-channel-amplifier-w-dsp) |
+| **Audison Prima AP4.9bit** | 70 / 130 | 9-ch DSP, 0–15 ms delay per channel, spare outputs for a sub | PC (bit Tune) | ~198 × 134 × 46 (unverified) | $800 new; ~$540–600 open box / eBay | [Sound of Tri-State](https://www.soundoftristate.com/ap49bit) ([archive](https://web.archive.org/web/20261026120130/https://www.soundoftristate.com/ap49bit)), [Creative Audio](https://creativeaudio.net/ap4-9-bit-uvg/) ([saved copy](references/ca-audison-ap4-9bit-used/README.md)) |
+| **Musway M4 Nano** | 55 / 95 | 8-ch DSP; delay very likely, not shown on the page; 4 RCA outputs | PC, or app with BTA-HD dongle | **150 × 45 × 95** | $700 (order only) | [OnlineCarStereo](https://www.onlinecarstereo.com/CarAudio/p_98517_Musway_M4%20Nano.aspx) ([archive](https://web.archive.org/web/20260711023127/https://www.onlinecarstereo.com/CarAudio/p_98517_Musway_M4%20Nano.aspx)) |
+| **AudioControl D-4.800** | 125 / 200 | Delay per route, 30-band EQ, sub pre-outs, RCA in up to 8 V | PC/Mac, optional BT | ~226 × 203 × 53 | $829 | [AudioControl](https://audiocontrol.com/products/d-4-800-high-power-4-channel-dsp-matrix-amplifier-accubass) ([saved copy](references/audiocontrol-d-4-800/README.md)) |
+| LinksWell LWAMP-0400-04 | 100 at 4 Ω; **2 Ω not confirmed** | 31-band EQ, app; **delay not confirmed** | App | — | $380 | [Quadratec](https://www.quadratec.com/p/linkswell/dsp-amplifier/4-channel-lwamp.0400.04) (**not archived**) |
+| JL Audio VX400/4i | 75 / 100 | Full DSP, 0.01 ms delay steps | PC (TüN) | 229 × 168 × 54 | $1,200+ | [Worldwide Stereo](https://worldwidestereo.com/products/jl-audio-vx400-4i-100-watts-x-4-at-2-ohms-4-channel-amplifier-w-dsp) ([archive](https://web.archive.org/web/20241008191106/https://www.worldwidestereo.com/products/jl-audio-vx400-4i-100-watts-x-4-at-2-ohms-4-channel-amplifier-w-dsp)) |
 
 Not in the US or discontinued: Helix M FOUR DSP (discontinued), Sony XM-GS6DSP (discontinued, front
 not 2 Ω), Blam DSP 4.120 (UK, £570), Hifonics JUNO4DSP (EU, €329, delay unconfirmed), Pioneer
-DEQ-2000A (Japan/Australia), Zapco ST-4X DSP III (EU, €594). All links above **not archived yet**.
+DEQ-2000A (Japan/Australia), Zapco ST-4X DSP III (EU, €594). All links above.
 
 **Conclusion:** for one box rated for 3 Ω, the imported Stetsom HL400.4 DSPlayer is by far the best
 value. In the US the realistic choices are an open-box Audison AP4.9bit (~$550–600) or the Musway
@@ -257,11 +255,11 @@ Owner preference: a DSP that tunes itself with a microphone (nice to have, not r
 
 | Model | Mic auto-tune | Inputs | Outputs | Size (mm) | US price | Source |
 |-------|---------------|--------|---------|-----------|----------|--------|
-| **Alpine PXE-C60-60 (OPTIM6)** | **Yes**: AutoEQ 2.0 sets EQ, time alignment and levels with a phone mic (iPhone X+ or Android) or the optional KTX-CSP1 mic kit | 6 RCA (max level not published), 6 high-level up to 27–30 V, BT, USB | 6 RCA, 4 V | 145 × 151 × 42.5 | $500 (launched at $400) | [Alpine](https://alpine-usa.com/product/pxe-c60-60-optim6-sound-processor), [Alpine press](https://www.alpine-usa.com/company/press/2023/alpine-now-shipping-the-optimtm6-6-channel-sound-processor-with-automatic-sound-tuning) |
-| miniDSP C-DSP 8x12 DL | **Yes**: Dirac Live (best correction); needs a laptop; UMIK-1 mic bundle | 6 RCA (2 or 4 V), high-level, digital | 12 | 41 × 205 × 122 | $890–940 | [miniDSP](https://www.minidsp.com/products/car-audio-dsp/cdsp-8x12-dl) |
-| **DS18 DSP4.8BTM** | No (manual, app) | 4 RCA up to **4 V** | 8, 3.5 V | — | $195–235 | [DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth-water-resistant) |
+| **Alpine PXE-C60-60 (OPTIM6)** | **Yes**: AutoEQ 2.0 sets EQ, time alignment and levels with a phone mic (iPhone X+ or Android) or the optional KTX-CSP1 mic kit | 6 RCA (max level not published), 6 high-level up to 27–30 V, BT, USB | 6 RCA, 4 V | 145 × 151 × 42.5 | $500 (launched at $400) | [Alpine](https://alpine-usa.com/product/pxe-c60-60-optim6-sound-processor) ([archive](https://web.archive.org/web/20260713085158/https://www.alpine-usa.com/product/pxe-c60-60-optim6-sound-processor)), [Alpine press](https://www.alpine-usa.com/company/press/2023/alpine-now-shipping-the-optimtm6-6-channel-sound-processor-with-automatic-sound-tuning) ([saved copy](references/alpine-optim6-press-release/README.md)) |
+| miniDSP C-DSP 8x12 DL | **Yes**: Dirac Live (best correction); needs a laptop; UMIK-1 mic bundle | 6 RCA (2 or 4 V), high-level, digital | 12 | 41 × 205 × 122 | $890–940 | [miniDSP](https://www.minidsp.com/products/car-audio-dsp/cdsp-8x12-dl) ([archive](https://web.archive.org/web/20260424140650/https://www.minidsp.com/products/car-audio-dsp/cdsp-8x12-dl)) |
+| **DS18 DSP4.8BTM** | No (manual, app) | 4 RCA up to **4 V** | 8, 3.5 V | — | $195–235 | [DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth-water-resistant) ([archive](https://web.archive.org/web/20230924011802/https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth-water-resistant)) |
 | Dayton DSP-408 | No (manual) | 4 RCA, **max 3.2 V** (1% THD point; sources differ on the sign). The BOSS can send 4 V near full volume: leave headroom, add an inline RCA attenuator, or feed the **speaker-level inputs** (≥ 8 V) from the BOSS speaker outputs instead | 8 | — | $165 | (see DSP table below) |
-| Rockford DSR1 | No | 4 RCA up to 4 V, high-level | 8 | ~130 × 103 × 32 | $420 | [Sound of Tri-State](https://www.soundoftristate.com/rockford-fosgate-dsr1) |
+| Rockford DSR1 | No | 4 RCA up to 4 V, high-level | 8 | ~130 × 103 × 32 | $420 | [Sound of Tri-State](https://www.soundoftristate.com/rockford-fosgate-dsr1) ([archive](https://web.archive.org/web/20261026120327/https://www.soundoftristate.com/rockford-fosgate-dsr1)) |
 
 No mic auto-tune: AudioControl DM-608/810, JL TwK-88, JL FiX-82 (its "auto" uses a test tone to undo
 factory EQ, no mic), Helix DSP Mini MK2 (unclear). Any manual DSP can be measured with a UMIK-1 mic and
@@ -271,9 +269,9 @@ REW (free PC software): REW calculates the EQ, then it is typed in by hand (semi
 
 | Amp | RMS × 4 at 4 Ω / 2 Ω | Size (mm) | US price | Source |
 |-----|----------------------|-----------|----------|--------|
-| **Alpine KTA-450** | 50 / 45–50 | **181 × 89 × 36** (smallest) | $230–300 | [Abt](https://www.abt.com/Alpine-4-Channel-Power-Pack-Amplifier-With-PowerStack-KTA450/p/131270.html) |
-| **AudioControl EPICFOUR** | 100 / 200 (far more than needed: set gains carefully) | 239 × 155 × 51 | $160–200 | [AudioControl](https://audiocontrol.com/products/epicfour-4-channel-amplifier-800w-rms) |
-| JL Audio JD400/4 | 75 / 100 | ~242 × 53 × 180 | $300 new, $210 refurbished | [Sound of Tri-State](https://www.soundoftristate.com/jl-audio-jd400-4) |
+| **Alpine KTA-450** | 50 / 45–50 | **181 × 89 × 36** (smallest) | $230–300 | [Abt](https://www.abt.com/Alpine-4-Channel-Power-Pack-Amplifier-With-PowerStack-KTA450/p/131270.html) ([archive](https://web.archive.org/web/20250916112432/https://www.abt.com/Alpine-4-Channel-Power-Pack-Amplifier-With-PowerStack-KTA450/p/131270.html)) |
+| **AudioControl EPICFOUR** | 100 / 200 (far more than needed: set gains carefully) | 239 × 155 × 51 | $160–200 | [AudioControl](https://audiocontrol.com/products/epicfour-4-channel-amplifier-800w-rms) ([archive](https://web.archive.org/web/20260311043044/https://audiocontrol.com/products/epicfour-4-channel-amplifier-800w-rms)) |
+| JL Audio JD400/4 | 75 / 100 | ~242 × 53 × 180 | $300 new, $210 refurbished | [Sound of Tri-State](https://www.soundoftristate.com/jl-audio-jd400-4) ([archive](https://web.archive.org/web/20261026115650/https://www.soundoftristate.com/jl-audio-jd400-4)) |
 
 **Combos**
 
@@ -284,7 +282,7 @@ REW (free PC software): REW calculates the EQ, then it is typed in by hand (semi
 | **DS18 DSP4.8BTM + EPICFOUR** (+ UMIK-1 mic for REW) | $395–435 (+ mic) | Semi | 4 V inputs match the BOSS. Only 4 inputs: feed the sub from a DSP output |
 | Dayton DSP-408 + EPICFOUR (+ UMIK-1) | ~$365 (+ mic) | Semi | Watch the 3.2 V input limit |
 
-All links in this section **not archived yet**.
+All links in this section.
 
 ### Three ways to do amp + high-pass + time alignment
 
@@ -400,9 +398,9 @@ Specs: 4 RCA in up to 4 V (matches the BOSS), 8 out, time alignment 0–18.95 ms
 8-band parametric EQ per output plus input EQ (15 or 28 bands: sources differ), crossovers 6–48 dB/oct,
 limiter, presets. App "DS18 DSP" for Android 7+ and iOS 13+; no desktop software (the iPad app is
 "not verified" on macOS)
-([Crutchfield reviews](https://www.crutchfield.com/p_408DSP48BT/Reviews/DS18-DSP4-8BTM.html),
-[DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth),
-[App Store](https://apps.apple.com/app/id1625944939), **not archived yet**).
+([Crutchfield reviews](https://www.crutchfield.com/p_408DSP48BT/Reviews/DS18-DSP4-8BTM.html) (**not archived**),
+[DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth) ([archive](https://web.archive.org/web/20251016163013/https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth)),
+[App Store](https://apps.apple.com/app/id1625944939) ([archive](https://web.archive.org/web/20220609003500/https://apps.apple.com/app/id1625944939), [saved copy](references/appstore-ds18-dsp/README.md))).
 
 ### Genius Audio GDSP-15404A (rejected)
 
@@ -411,8 +409,8 @@ brand). 4 × 40 W RMS at **4 Ω**, 2 Ω "not recommended" (so the 3 Ω Infinitys
 the Kicker); not bridgeable; 32-bit DSP, 15-band EQ per channel, HPF/LPF, 6 RCA outputs; only
 **2 RCA inputs** + 4 high-level; Bluetooth/USB player; time alignment **not confirmed**; tuning
 software for **Windows only** (no Mac, no phone app). $157.99 in Genius's own store
-([Genius Audio](https://geniusaudio.com/products/6-channel-high-resolution-digital-audio-processor-amplified-40watts-x-4ch-with-bluetooth-music-gdsp-15404),
-[manual](https://www.manualslib.com/manual/2533534/Genius-Audio-Gdsp-15404.html), **not archived yet**).
+([Genius Audio](https://geniusaudio.com/products/6-channel-high-resolution-digital-audio-processor-amplified-40watts-x-4ch-with-bluetooth-music-gdsp-15404) ([archive](https://web.archive.org/web/20250918030535/https://geniusaudio.com/products/6-channel-high-resolution-digital-audio-processor-amplified-40watts-x-4ch-with-bluetooth-music-gdsp-15404)),
+[manual](https://www.manualslib.com/manual/2533534/Genius-Audio-Gdsp-15404.html) (**not archived**)).
 Verdict: weaker and less convenient than the Stetsom + DS18 pair for this car.
 
 ### DS18 vs Helix DSP Mini MK2
@@ -440,9 +438,8 @@ high-level) → **4 RCA outputs**; delay 0–8 ms (275 cm) per output; 15-band g
 parametric bands; Butterworth / Linkwitz-Riley crossovers up to 36–48 dB/oct; limiter; phase;
 pink-noise and sweep generator; Android 5+ / iOS 12+ app over Bluetooth; **max input 5.6 Vpp
 (about 2 V RMS)**; 34 × 74 × 110 mm. About R$ 315–489 in Brazil
-([Loja do Som Automotivo](https://www.lojadesomautomotivo.com.br/stetsom-stx-2436-processador-de-audio-via-bluetooth.html),
-[blog](https://blog.lojadesomautomotivo.com.br/processador-stetsom-stx-2436-digital-com-bluetooth-6841),
-**not archived yet**).
+([Loja do Som Automotivo](https://www.lojadesomautomotivo.com.br/stetsom-stx-2436-processador-de-audio-via-bluetooth.html) (**not archived**),
+[blog](https://blog.lojadesomautomotivo.com.br/processador-stetsom-stx-2436-digital-com-bluetooth-6841) (**not archived**)).
 
 - Works for this car: BOSS front L/R → the 2 inputs; the 4 outputs feed the 4 speakers, each with its
   own delay, EQ and high-pass. Sub stays on the BOSS sub pre-out.
@@ -461,8 +458,8 @@ DSP processor, no amp; specs from Taramps' page and manual, 2026-10-27):
 12–48 dB/oct, 10 Hz – 22 kHz; 15-band graphic + parametric input and output EQ; Bluetooth 5.4 app
 (Android 8.1+, iOS 16+); 198 × 35 × 130 mm. Like the STX 2436 it has no spare outputs (sub stays on the
 BOSS), but the input level problem is gone and the specs are official
-([Taramps](https://www.taramps.com.br/en/produto/pro-2-4s-bt/),
-[manual PDF](https://www.taramps.com.br/wp-content/uploads/2025/06/MN_PRO-2.4BT_ENG.pdf), **not archived yet**).
+([Taramps](https://www.taramps.com.br/en/produto/pro-2-4s-bt/) ([saved copy](references/taramps-pro-2-4-bt/README.md)),
+[manual PDF](https://www.taramps.com.br/wp-content/uploads/2025/06/MN_PRO-2.4BT_ENG.pdf) ([saved copy](references/taramps-pro-2-4-bt-manual/README.md))).
 Other DS18-priced processors seen: Dayton DSP-408 (~$165–200, 3.2 V input limit), Banda X8 AIR
 (~$113, input count not published), NVX XDSP28 (2 inputs).
 

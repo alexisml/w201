@@ -9,7 +9,9 @@ Open jobs on the car. Each item links to the entry with the details, parts and c
       and the dash speaker pod depth. → [Audio](interior/audio.md#mockup-sizes-for-a-fit-test)
 - [ ] **Audio note links not fully saved:** 4 BenzWorld threads (paywall), 2 Sonic Electronix pages and the
       Mercado Livre SW8A-MS page are **not archived**; MBClub sub thread and 2 BenzWorld threads have page 1
-      only. Save them from a normal browser if possible. → [Audio](interior/audio.md)
+      only. Later batch (2026-10-27): DIYMA and Crutchfield DS18 reviews, Quadratec LinksWell, ManualsLib
+      Genius manual, 2 STX 2436 store pages and 2 YouTube videos not archived; Bronco6G and Maverick
+      threads partial. Save them from a normal browser if possible. → [Audio](interior/audio.md)
 
 ## Body
 
