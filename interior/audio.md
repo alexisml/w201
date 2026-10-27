@@ -526,6 +526,45 @@ power until an amp is added. Selling the BOSS offsets part of the cost.
 phone support is no reason to replace the BOSS. That favours keeping it and going **B → C**
 (amp with high-pass + sub now, DSP-408 when ready).
 
+## Plan in progress (2026-10-27): local amp + DS18 DSP
+
+Budget ceiling for amp + DSP: about $300–400. Leading idea: a 2 Ω-stable 4-channel amp bought in
+Uruguay (for example the plain **Stetsom HL400.4**) + a **DS18 DSP4.8BTM** from eBay or the US.
+
+**DS18 DSP4.8BTM, what people say** (thin: retailer reviews, no independent tests found,
+2026-10-27): mostly positive; easy to learn for a first DSP; no dongle, Bluetooth built in; app runs
+in landscape only; no volume knob (users got used to it); EQ points can't be dragged on the graph.
+Specs: 4 RCA in up to 4 V (matches the BOSS), 8 out, time alignment 0–18.95 ms (entered as 0–6500 mm),
+8-band parametric EQ per output plus input EQ (15 or 28 bands: sources differ), crossovers 6–48 dB/oct,
+limiter, presets. App "DS18 DSP" for Android 7+ and iOS 13+; no desktop software (the iPad app is
+"not verified" on macOS)
+([Crutchfield reviews](https://www.crutchfield.com/p_408DSP48BT/Reviews/DS18-DSP4-8BTM.html),
+[DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth),
+[App Store](https://apps.apple.com/app/id1625944939), **not archived yet**).
+
+**Wiring**
+
+- BOSS front and rear RCA pre-outs → DSP inputs 1–4. BOSS sub pre-out → powered sub directly
+  (keep its 80 Hz LPF there). Switch the BOSS internal amp off.
+- DSP outputs 1–4 → amp → the four Infinitys. Outputs 5–8 spare.
+- Amp crossover switches to **flat**: the DSP does the high-pass.
+- Amp gain low: the Stetsom's RCA input is 200 mV sensitive, the DSP sends up to 3.5 V.
+- Remote: BOSS Blue/White → DSP and amp turn-on.
+
+**Tuning (Pixel phone + Mac)**
+
+1. **Crossovers** (app on the Pixel): high-pass all four outputs at 80 Hz, Linkwitz-Riley 24 dB/oct.
+2. **Gains:** BOSS at about 75% volume, a clean loud track, raise the amp gain until just below audible
+   distortion; leave the DSP levels at 0 dB.
+3. **Time alignment:** tape-measure from the driver's head (between the ears) to each speaker, in mm.
+   Type the distances in; the app computes the delays (the farthest speaker gets 0).
+4. **Levels:** match left and right; set the rears 3–6 dB below the fronts so they fill in without
+   pulling the image back.
+5. **EQ:** with a USB measurement mic (miniDSP UMIK-1) and **REW** (free, runs on the Mac) at the
+   driver's head, measure each speaker, let REW's EQ tool suggest cuts, and type them into the
+   DSP's parametric EQ. Mostly cuts, few boosts. Without the mic: tune by ear with familiar tracks.
+6. Listen, adjust, save as a preset.
+
 ## Power and install
 
 - **Alternator:** reported as **70 A** for 1987 and later (Bosch reman AL160X), about 25–30 A at
