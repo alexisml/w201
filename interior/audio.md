@@ -307,6 +307,11 @@ sub pre-out). Specs from Kicker and the owner's manual
   [Maverick impressions](https://www.mavericktruckclub.com/forum/threads/kicker-key-200-4-installed-impressions.29344/),
   [Tacoma World](https://www.tacomaworld.com/threads/problems-after-kicker-key-200-4.709503/)
   (**not archived yet**).
+- **No higher-end KEY:** the 4-channel KEY line is only the KEY200.4 (plus the KEY500.1 mono sub amp).
+  Amps with mic auto-tune are rare: besides the KEY200.4, only the Alpine PXE-C80-88 DSP amp (~$1,000)
+  and the Alpine OPTIM6 processor (~$500, needs a separate amp) were found
+  ([Sonic Electronix guide, 2026-08](https://learn.sonicelectronix.com/top-4-budget-car-audio-dsps-with-auto-eq-calibration/),
+  **not archived yet**).
 - **Ways around the 4 Ω minimum** (our reasoning, not from Kicker):
   1. **1 Ω series resistor per speaker** so the amp sees about 4 Ω. Use a 1 Ω, 25 W aluminium-housed
      resistor (Dale RH-25 style, a few dollars each), bolted to metal. At the amp's full 50 W it
