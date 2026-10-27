@@ -582,10 +582,21 @@ pink-noise and sweep generator; Android 5+ / iOS 12+ app over Bluetooth; **max i
   or add an RCA attenuator. No spare outputs.
 - Budget alternative to the Helix: an all-Stetsom, all-local pair (STX 2436 + HL400.4), tuned from
   the phone.
+- **Rejected (owner, 2026-10-27):** the input limit, no spare outputs and unconfirmed specs.
 
 **Decision (owner, 2026-10-27):** a Windows laptop is available, so the **Helix DSP Mini MK2** (bought
 in Uruguay) is the pick, paired with a local 2 Ω-stable 4-channel amp (Stetsom HL400.4 likely; UY
-price pending). The wiring and tuning steps below apply the same way: tune with Helix DSP PC-Tool on
+price about US$135 on Mercado Libre UY, 2026-10-27; the owner may choose another amp).
+
+**Choosing the amp** (any brand), what matters with the Helix and the Infinitys:
+- 4 channels, **stable at 2 Ω** (the speakers are 3 Ω); avoid 4 Ω-minimum amps.
+- About **50–100 W RMS per channel** (the speakers take 35 W RMS; more only adds headroom, set the
+  gain accordingly).
+- **RCA input that accepts the Helix's output level** (up to about 6 V): an input sensitivity range
+  reaching 4–8 V is ideal. A very sensitive input (like the Stetsom's 200 mV) still works with the
+  gain near minimum, but leaves little adjustment.
+- Crossover that can be set to **flat/off** (the Helix does the filtering).
+- Class D and small, for under a seat or behind trim; a real RMS rating from a known brand. The wiring and tuning steps below apply the same way: tune with Helix DSP PC-Tool on
 the Windows laptop instead of the phone app; REW and a UMIK-1 mic also run on Windows.
 
 **Wiring**
