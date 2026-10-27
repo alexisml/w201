@@ -631,6 +631,23 @@ the Windows laptop instead of the phone app; REW and a UMIK-1 mic also run on Wi
 - Amp gain low: the Stetsom's RCA input is 200 mV sensitive, the DSP sends up to 3.5 V.
 - Remote: BOSS Blue/White → DSP and amp turn-on.
 
+**Bypass (owner idea, 2026-10-27)**: a way to run the speakers straight from the BOSS if the amp or
+DSP fails, and to compare tuned vs untuned. Nothing ready-made for this exact use was found; it's a
+simple DIY build (our design, not tested):
+
+- **Relay switch-over:** 4 DPDT relays (or 8 SPDT), 12 V coil, contacts rated about 5 A or more. Each
+  speaker's + and − go to the relay common; normally-closed contacts → BOSS speaker output (bypass);
+  normally-open → amp output (normal). Coils fed from the remote turn-on line **through a toggle
+  switch** under the dash: switch off (or amp/DSP not powered) = bypass, the BOSS drives the speakers.
+  Fail-safe by design.
+- **Switch both + and − of every channel.** The BOSS and most class-D amps have bridged outputs: never
+  join speaker negatives together or to ground.
+- **Keep the BOSS internal amp on** so bypass works (its outputs sit unloaded in normal mode, which is
+  fine). Switching it off only matters for heat or noise.
+- **Simpler manual version:** connectors at the amp end of the speaker wiring, plus a jumper plug that
+  joins the BOSS speaker wires straight to the speaker lines. Swap plugs to bypass.
+- Same relay approach as the [power antenna controller ideas](../electrical/power-antenna-controller/README.md).
+
 **Tuning (Pixel phone + Mac)**
 
 1. **Crossovers** (app on the Pixel): high-pass all four outputs at 80 Hz, Linkwitz-Riley 24 dB/oct.
