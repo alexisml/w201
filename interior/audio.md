@@ -316,6 +316,15 @@ no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user
 - **Check:** its RCA input sensitivity is 250 mV – 1 V; the BOSS pre-outs go up to 4 V. Keep the gain
   at minimum, or use the high-level (speaker wire) inputs, which take 1.5 V, to avoid clipping the input.
 
+### Amps seen on Mercado Libre UY (owner, 2026-10-27)
+
+| Model | Type | Power | Filters | Size (mm) | Fit here | Source |
+|-------|------|-------|---------|-----------|----------|--------|
+| **Stetsom HL400.4** (2 Ω, plain, not DSPlayer) | 4 ch | 4 × 100 W at 2 Ω, 4 × 60 W at 4 Ω (13.8 V) | CH1–2: flat / HPF 90 Hz / LPF 90 Hz (fixed). CH3–4: flat / HPF 90 Hz / LPF 30–75 Hz + bass boost. Slope not stated | 50 × 125 × 124 | **Good**: 3 Ω in spec, HPF close to 80 Hz, tiny. No time alignment. RCA input 200 mV sensitivity: keep gain low, or use the 1.5 V "FIO" (wire) input | [Stetsom](https://stetsom.com.br/en/produto/hl400-4-2-ohms/), [manual PDF](https://stetsom.com.br/manual/manual_hl400.4.pdf) (**not archived yet**) |
+| **Pioneer GM-DX874** | 4 ch | 4 × 100 W at 4 Ω, 4 × 150 W at 2 Ω | HPF 40–500 Hz, 12 dB/oct | 264 × 60 × 200 | **Good**: 3 Ω in spec, adjustable HPF. No time alignment | (see table above) |
+| JBL GTO-501EZ | **mono** sub amp | 500 W at 2 Ω, 350 W at 4 Ω | LPF 40–280 Hz, 12 dB/oct, bass boost | 246 × 66 × 213 | Only for a **passive** sub; not needed with a powered sub. Discontinued in the US | [JBL support](https://support.harmanaudio.com/product-registration/GTO-501EZ_.html) (**not archived yet**) |
+| Pioneer GM-D8601 | **mono** sub amp | 300 W at 4 Ω, 500 W at 2 Ω, 800 W at 1 Ω | LPF 40–240 Hz, 12 dB/oct, bass boost remote | ~270 × 60 × 200 | Only for a **passive** sub. Replaced by GM-D8701 | [Pioneer India](https://pioneer-india.in/buy/car-entertainment-car-amplifiers-mono/gm-d8601/) (**not archived yet**) |
+
 ### Three ways to do amp + high-pass + time alignment
 
 | Option | Boxes | Time alignment | 3 Ω in spec | Power × 4 | Tuning | ≈ Cost |
@@ -324,6 +333,7 @@ no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user
 | **Stetsom HL400.4 DSPlayer** | 1 | Manual (app) | Yes | 100 W at 2 Ω | App | check UY |
 | Pioneer GM-DX874 + Dayton DSP-408 | 2 | Manual (PC/app) | Yes | 150 W at 2 Ω | Most control | $390 US |
 | Pioneer GM-DX874 alone | 1 | **None** | Yes | 150 W at 2 Ω | Knobs only | $220 US |
+| Stetsom HL400.4 (plain) | 1 | **None** | Yes | 100 W at 2 Ω | Switches, HPF fixed 90 Hz | check UY |
 
 ### DSP
 
