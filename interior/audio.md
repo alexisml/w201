@@ -542,6 +542,15 @@ limiter, presets. App "DS18 DSP" for Android 7+ and iOS 13+; no desktop software
 [DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth),
 [App Store](https://apps.apple.com/app/id1625944939), **not archived yet**).
 
+**Also seen in Uruguay: Genius Audio GDSP-15404A** (amp + DSP in one box; Latin American car-audio
+brand). 4 × 40 W RMS at **4 Ω**, 2 Ω "not recommended" (so the 3 Ω Infinitys are out of spec, like
+the Kicker); not bridgeable; 32-bit DSP, 15-band EQ per channel, HPF/LPF, 6 RCA outputs; only
+**2 RCA inputs** + 4 high-level; Bluetooth/USB player; time alignment **not confirmed**; tuning
+software for **Windows only** (no Mac, no phone app). $157.99 in Genius's own store
+([Genius Audio](https://geniusaudio.com/products/6-channel-high-resolution-digital-audio-processor-amplified-40watts-x-4ch-with-bluetooth-music-gdsp-15404),
+[manual](https://www.manualslib.com/manual/2533534/Genius-Audio-Gdsp-15404.html), **not archived yet**).
+Verdict: weaker and less convenient than the Stetsom + DS18 pair for this car.
+
 **Wiring**
 
 - BOSS front and rear RCA pre-outs → DSP inputs 1–4. BOSS sub pre-out → powered sub directly
