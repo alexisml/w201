@@ -591,10 +591,22 @@ pink-noise and sweep generator; Android 5+ / iOS 12+ app over Bluetooth; **max i
 | **Helix DSP Mini MK2** (UY) + local 2 Ω amp | 2 | Windows laptop (PC-Tool) | ~$400 + amp (HL400.4 about US$135 on Mercado Libre UY) |
 | **DS18 DSP4.8BTM** (imported) + local 2 Ω amp | 2 | Phone app (Pixel) | ~$320 + amp |
 | **Stetsom HL400.4 DSPlayer** (amp + DSP in one) | 1 | Phone app | ~$110 US (more after import) |
+| **Taramps PRO 2.4 BT** (Brazilian, check UY) + local 2 Ω amp | 2 | Phone app (Android 8.1+) | check price + amp |
 
 A Windows laptop is available, so the Helix's Windows-only tuning is workable. The wiring and tuning
 steps below apply to all three (tool: PC-Tool, the DS18 app or the Stetsom app); REW and a UMIK-1
 mic run on Windows or Mac.
+
+**Taramps PRO 2.4 BT** (DSP processor, no amp; specs from Taramps' page and manual, 2026-10-27):
+2 inputs (RCA up to **9 V RMS at minimum gain**, so the BOSS's 4 V is fine; high-level up to 10 V RMS)
+→ 4 outputs (2.1 V RMS max); delay up to 8 ms (272 cm) per channel; Linkwitz-Riley / Butterworth
+12–48 dB/oct, 10 Hz – 22 kHz; 15-band graphic + parametric input and output EQ; Bluetooth 5.4 app
+(Android 8.1+, iOS 16+); 198 × 35 × 130 mm. Like the STX 2436 it has no spare outputs (sub stays on the
+BOSS), but the input level problem is gone and the specs are official
+([Taramps](https://www.taramps.com.br/en/produto/pro-2-4s-bt/),
+[manual PDF](https://www.taramps.com.br/wp-content/uploads/2025/06/MN_PRO-2.4BT_ENG.pdf), **not archived yet**).
+Other DS18-priced processors seen: Dayton DSP-408 (~$165–200, 3.2 V input limit), Banda X8 AIR
+(~$113, input count not published), NVX XDSP28 (2 inputs).
 
 **Choosing the amp** (any brand), what matters with the Helix and the Infinitys:
 - 4 channels, **stable at 2 Ω** (the speakers are 3 Ω); avoid 4 Ω-minimum amps.
