@@ -300,6 +300,31 @@ sub pre-out). Specs from Kicker and the owner's manual
 - **Fit for this car:** the auto time alignment is exactly what the dash-corner speakers need. A good
   choice if the 3 Ω risk is acceptable; the Pioneer + Dayton route is the in-spec one.
 
+### Middle ground: one-box DSP amp, 2 Ω stable
+
+**Stetsom HL400.4 DSPlayer** (Brazilian brand, common in South America, so likely sold in Uruguay;
+no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user manual
+([Stetsom](https://stetsom.com.br/en/produto/hl400-4-dsplayer/),
+[manual PDF](https://stetsom.com.br/manual/manual_dsplayer.pdf), **not archived yet**).
+
+- 4 × 100 W RMS at **2 Ω** (13.8 V), 4 × 70 W at 4 Ω: the 3 Ω Infinitys are in spec.
+- DSP set from a phone app ("car mode"): **EQ, crossover, level, phase, delay** (time alignment)
+  and balance. Delay range, EQ bands and filter slopes are not stated in the manual.
+- RCA and high-level inputs, an RCA **DSP output** (can feed the powered sub), remote in/out.
+  Also a Bluetooth / USB / FM player built in (not needed here).
+- Very small: 50 × 125 × 139 mm, 0.5 kg. 25 A fuse, 4–6 mm² power cable.
+- **Check:** its RCA input sensitivity is 250 mV – 1 V; the BOSS pre-outs go up to 4 V. Keep the gain
+  at minimum, or use the high-level (speaker wire) inputs, which take 1.5 V, to avoid clipping the input.
+
+### Three ways to do amp + high-pass + time alignment
+
+| Option | Boxes | Time alignment | 3 Ω in spec | Power × 4 | Tuning | ≈ Cost |
+|--------|-------|----------------|-------------|-----------|--------|--------|
+| Kicker KEY200.4 | 1 | Auto (mic) | **No** (4 Ω min) | 50 W | Automatic, easy | $240 US |
+| **Stetsom HL400.4 DSPlayer** | 1 | Manual (app) | Yes | 100 W at 2 Ω | App | check UY |
+| Pioneer GM-DX874 + Dayton DSP-408 | 2 | Manual (PC/app) | Yes | 150 W at 2 Ω | Most control | $390 US |
+| Pioneer GM-DX874 alone | 1 | **None** | Yes | 150 W at 2 Ω | Knobs only | $220 US |
+
 ### DSP
 
 | Model | What | Price | Source |
