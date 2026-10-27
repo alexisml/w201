@@ -90,7 +90,10 @@ power and time alignment.
   resistors), Alpine OPTIM6 combos (~$700), a new head unit (the wireless Android Auto dongle already
   covers what it would add).
 
-### Amp + DSP shortlist (not decided)
+### Amp + DSP shortlist
+
+**Top pick (owner, 2026-10-27): DS18 DSP4.8BTM**, with the **Helix DSP Mini MK2** as the alternative;
+either one plus a local 2 Ω-stable 4-channel amp. The Stetsom DSPlayer stays as the budget fallback.
 
 Requirement: **4 DSP inputs** (front and rear from the BOSS), so the head unit's
 balance and fader keep working. 2-input processors (Taramps PRO 2.4 BT, Stetsom STX 2436 / STX 2448)
@@ -98,9 +101,9 @@ are out; most Brazilian processors are 2-input.
 
 | Option | Boxes | Tuning | ≈ Cost (amp + DSP) |
 |--------|-------|--------|--------------------|
-| **Helix DSP Mini MK2** (UY) + local 2 Ω amp | 2 | Windows laptop (PC-Tool) | ~$400 + amp (HL400.4 about US$135 on Mercado Libre UY) |
-| **DS18 DSP4.8BTM** (imported) + local 2 Ω amp | 2 | Phone app (Pixel) | ~$320 + amp |
-| **Stetsom HL400.4 DSPlayer** (amp + DSP in one; 4 inputs, use the speaker-wire inputs: its RCA takes 1 V max) | 1 | Phone app | ~$110 US (more after import) |
+| Helix DSP Mini MK2 (UY) + local 2 Ω amp: **alternative** | 2 | Windows laptop (PC-Tool) | ~$400 + amp (HL400.4 about US$135 on Mercado Libre UY) |
+| **DS18 DSP4.8BTM** (imported) + local 2 Ω amp: **top pick** | 2 | Phone app (Pixel) | ~$320 + amp |
+| Stetsom HL400.4 DSPlayer (amp + DSP in one, budget fallback; 4 inputs, use the speaker-wire inputs: its RCA takes 1 V max) | 1 | Phone app | ~$110 US (more after import) |
 
 A Windows laptop is available, so the Helix's Windows-only tuning is workable. The wiring and tuning
 steps below apply to all three (tool: PC-Tool, the DS18 app or the Stetsom app); REW and a UMIK-1
