@@ -526,7 +526,7 @@ power until an amp is added. Selling the BOSS offsets part of the cost.
 phone support is no reason to replace the BOSS. That favours keeping it and going **B → C**
 (amp with high-pass + sub now, DSP-408 when ready).
 
-## Plan in progress (2026-10-27): local amp + DSP (Helix DSP Mini MK2)
+## Plan in progress (2026-10-27): amp + DSP shortlist
 
 Budget ceiling for amp + DSP: about $300–400. Leading idea: a 2 Ω-stable 4-channel amp bought in
 Uruguay (for example the plain **Stetsom HL400.4**) + a **DS18 DSP4.8BTM** from eBay or the US.
@@ -584,9 +584,17 @@ pink-noise and sweep generator; Android 5+ / iOS 12+ app over Bluetooth; **max i
   the phone.
 - **Rejected (owner, 2026-10-27):** the input limit, no spare outputs and unconfirmed specs.
 
-**Decision (owner, 2026-10-27):** a Windows laptop is available, so the **Helix DSP Mini MK2** (bought
-in Uruguay) is the pick, paired with a local 2 Ω-stable 4-channel amp (Stetsom HL400.4 likely; UY
-price about US$135 on Mercado Libre UY, 2026-10-27; the owner may choose another amp).
+**Shortlist (owner, 2026-10-27), not decided yet:**
+
+| Option | Boxes | Tuning | ≈ Cost (amp + DSP) |
+|--------|-------|--------|--------------------|
+| **Helix DSP Mini MK2** (UY) + local 2 Ω amp | 2 | Windows laptop (PC-Tool) | ~$400 + amp (HL400.4 about US$135 on Mercado Libre UY) |
+| **DS18 DSP4.8BTM** (imported) + local 2 Ω amp | 2 | Phone app (Pixel) | ~$320 + amp |
+| **Stetsom HL400.4 DSPlayer** (amp + DSP in one) | 1 | Phone app | ~$110 US (more after import) |
+
+A Windows laptop is available, so the Helix's Windows-only tuning is workable. The wiring and tuning
+steps below apply to all three (tool: PC-Tool, the DS18 app or the Stetsom app); REW and a UMIK-1
+mic run on Windows or Mac.
 
 **Choosing the amp** (any brand), what matters with the Helix and the Infinitys:
 - 4 channels, **stable at 2 Ω** (the speakers are 3 Ω); avoid 4 Ω-minimum amps.
