@@ -566,6 +566,23 @@ For four 4" coaxials and a powered sub, the Helix's extra quality is small in pr
 the phone counts for more here. The Helix is worth it only with access to a Windows PC (an Intel Mac
 with Boot Camp works; Windows on Apple-silicon Macs may not handle its USB driver: not checked).
 
+**Also seen in Uruguay: Stetsom STX 2436 (STX2436BT)**, a small DSP processor (no amp). Specs from
+Brazilian retailers (no official sheet found, listings disagree in places): **2 inputs** (RCA or
+high-level) → **4 RCA outputs**; delay 0–8 ms (275 cm) per output; 15-band graphic EQ + a few
+parametric bands; Butterworth / Linkwitz-Riley crossovers up to 36–48 dB/oct; limiter; phase;
+pink-noise and sweep generator; Android 5+ / iOS 12+ app over Bluetooth; **max input 5.6 Vpp
+(about 2 V RMS)**; 34 × 74 × 110 mm. About R$ 315–489 in Brazil
+([Loja do Som Automotivo](https://www.lojadesomautomotivo.com.br/stetsom-stx-2436-processador-de-audio-via-bluetooth.html),
+[blog](https://blog.lojadesomautomotivo.com.br/processador-stetsom-stx-2436-digital-com-bluetooth-6841),
+**not archived yet**).
+
+- Works for this car: BOSS front L/R → the 2 inputs; the 4 outputs feed the 4 speakers, each with its
+  own delay, EQ and high-pass. Sub stays on the BOSS sub pre-out.
+- **Catch:** about 2 V RMS max input, the BOSS sends up to 4 V. Keep the BOSS volume below the top,
+  or add an RCA attenuator. No spare outputs.
+- Budget alternative to the Helix: an all-Stetsom, all-local pair (STX 2436 + HL400.4), tuned from
+  the phone.
+
 **Decision (owner, 2026-10-27):** a Windows laptop is available, so the **Helix DSP Mini MK2** (bought
 in Uruguay) is the pick, paired with a local 2 Ω-stable 4-channel amp (Stetsom HL400.4 likely; UY
 price pending). The wiring and tuning steps below apply the same way: tune with Helix DSP PC-Tool on
