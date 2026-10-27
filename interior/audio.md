@@ -586,18 +586,21 @@ pink-noise and sweep generator; Android 5+ / iOS 12+ app over Bluetooth; **max i
 
 **Shortlist (owner, 2026-10-27), not decided yet:**
 
+**Requirement (owner, 2026-10-27): 4 DSP inputs** (front and rear from the BOSS), so the head unit's
+balance and fader keep working. 2-input processors (Taramps PRO 2.4 BT, Stetsom STX 2436 / STX 2448)
+are out; most Brazilian processors are 2-input.
+
 | Option | Boxes | Tuning | ≈ Cost (amp + DSP) |
 |--------|-------|--------|--------------------|
 | **Helix DSP Mini MK2** (UY) + local 2 Ω amp | 2 | Windows laptop (PC-Tool) | ~$400 + amp (HL400.4 about US$135 on Mercado Libre UY) |
 | **DS18 DSP4.8BTM** (imported) + local 2 Ω amp | 2 | Phone app (Pixel) | ~$320 + amp |
 | **Stetsom HL400.4 DSPlayer** (amp + DSP in one) | 1 | Phone app | ~$110 US (more after import) |
-| **Taramps PRO 2.4 BT** (Brazilian, check UY) + local 2 Ω amp | 2 | Phone app (Android 8.1+) | check price + amp |
 
 A Windows laptop is available, so the Helix's Windows-only tuning is workable. The wiring and tuning
 steps below apply to all three (tool: PC-Tool, the DS18 app or the Stetsom app); REW and a UMIK-1
 mic run on Windows or Mac.
 
-**Taramps PRO 2.4 BT** (DSP processor, no amp; specs from Taramps' page and manual, 2026-10-27):
+**Taramps PRO 2.4 BT** (rejected: 2 inputs; DSP processor, no amp; specs from Taramps' page and manual, 2026-10-27):
 2 inputs (RCA up to **9 V RMS at minimum gain**, so the BOSS's 4 V is fine; high-level up to 10 V RMS)
 → 4 outputs (2.1 V RMS max); delay up to 8 ms (272 cm) per channel; Linkwitz-Riley / Butterworth
 12–48 dB/oct, 10 Hz – 22 kHz; 15-band graphic + parametric input and output EQ; Bluetooth 5.4 app
