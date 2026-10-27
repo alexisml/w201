@@ -295,6 +295,18 @@ sub pre-out). Specs from Kicker and the owner's manual
   more current than rated. At normal volume it will most likely work (the BOSS is also rated 4 Ω and
   drives them), but at high volume it can run hot and hit protection, and it is outside the spec
   (warranty).
+- **Reviews (2026-10-27, owner forums and one dealer test, mostly trucks with stock speakers):** the
+  auto setup with the included mic is widely praised; "massive" improvement over stock is common;
+  small, runs cool, fits behind a head unit. Complaints: auto-EQ results vary (some found it harsh
+  and preferred EQ off, which keeps the time alignment), less punch than a full-size amp, little
+  manual control, fixed bi-amp crossover, a few defective units (limiter / protect mode, replaced
+  under warranty). DIYMA verdict: decent for simple systems like this one, not for complex builds.
+  Sources: [BestCarAudio test](https://www.bestcaraudio.com/test-drive-review-kicker-key200-4-smart-amplifier/),
+  [DIYMA](https://www.diymobileaudio.com/threads/is-the-kicker-key-200-4-with-dsp-pretty-decent.471902/),
+  [Bronco6G "disappointing"](https://www.bronco6g.com/forum/threads/kicker-key-200-4-amp-disappointing.89851/),
+  [Maverick impressions](https://www.mavericktruckclub.com/forum/threads/kicker-key-200-4-installed-impressions.29344/),
+  [Tacoma World](https://www.tacomaworld.com/threads/problems-after-kicker-key-200-4.709503/)
+  (**not archived yet**).
 - **Ways around the 4 Ω minimum** (our reasoning, not from Kicker):
   1. **1 Ω series resistor per speaker** so the amp sees about 4 Ω. Use a 1 Ω, 25 W aluminium-housed
      resistor (Dale RH-25 style, a few dollars each), bolted to metal. At the amp's full 50 W it
