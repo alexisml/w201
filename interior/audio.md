@@ -325,6 +325,20 @@ no UY price checked yet). Researched 2026-10-27 from Stetsom's page and the user
 | JBL GTO-501EZ | **mono** sub amp | 500 W at 2 Ω, 350 W at 4 Ω | LPF 40–280 Hz, 12 dB/oct, bass boost | 246 × 66 × 213 | Only for a **passive** sub; not needed with a powered sub. Discontinued in the US | [JBL support](https://support.harmanaudio.com/product-registration/GTO-501EZ_.html) (**not archived yet**) |
 | Pioneer GM-D8601 | **mono** sub amp | 300 W at 4 Ω, 500 W at 2 Ω, 800 W at 1 Ω | LPF 40–240 Hz, 12 dB/oct, bass boost remote | ~270 × 60 × 200 | Only for a **passive** sub. Replaced by GM-D8701 | [Pioneer India](https://pioneer-india.in/buy/car-entertainment-car-amplifiers-mono/gm-d8601/) (**not archived yet**) |
 
+### Getting amp + DSP in one box from the region
+
+The owner found only plain amps on Mercado Libre UY (2026-10-27). Seen elsewhere (search results,
+not checked on the listings themselves):
+
+- **Stetsom HL400.4 DSPlayer**: Magazine Luiza Brazil about R$ 354; eBay Spain about €115; listed on
+  Mercado Libre Argentina. Cheap enough to bring from Brazil or Argentina, or ask a UY Stetsom
+  seller to order it.
+- **Taramps Pro 2.4 BT**: a separate small DSP processor (EQ, crossover, **delay**, limiter, Bluetooth
+  app, 4 RCA outputs), listed on Mercado Libre Mexico. Pairs with a plain HL400.4 if the DSPlayer
+  can't be found. Specs not checked against Taramps.
+- Plain 4-channel amps with fixed 90 Hz filters and no DSP, for reference: Taramps TS 400x4
+  (4 × 100 W at 2 Ω), Stetsom IR400.4.
+
 ### Three ways to do amp + high-pass + time alignment
 
 | Option | Boxes | Time alignment | 3 Ω in spec | Power × 4 | Tuning | ≈ Cost |
