@@ -72,7 +72,7 @@ Infinity's own pages are gone (HTTP 410). Specs from a HARMAN Reference-series s
 | Cutout | 3-5/8" or 3-11/16" (retailers disagree) |
 
 The 3 Ω rating matters: any amp driving them should be **2 Ω stable**. Amps rated 4 Ω minimum
-(for example the Kicker KEY200.4) are a poor match. Their low end stops around 75 Hz, so a high-pass
+(for example the Kicker KEY200.4) run them out of spec (see below). Their low end stops around 75 Hz, so a high-pass
 near 80 Hz costs them nothing.
 
 ## What the car offers
@@ -281,8 +281,24 @@ The head unit can't high-pass the main speakers. Three ways to do it, cheapest f
 | Kicker CXA360.4 | 65 / 90 | 50–200 Hz | 171 × 60 × 317 (class A/B, big) | $173–230 | [Worldwide Stereo](https://worldwidestereo.com/products/kicker-cxa360-4-4-channel-90-watt-class-a-b-amplifier) ([archive](https://web.archive.org/web/20250428195854/https://www.worldwidestereo.com/products/kicker-cxa360-4-4-channel-90-watt-class-a-b-amplifier)) |
 | Sony XM-S400D | 45 / 45 | **fixed 120 Hz** (a bit high) | very small | $150 | [Car Toys](https://cartoys.com/products/sony-xm-s400d) ([archive](https://web.archive.org/web/20240808162905/https://cartoys.com/products/sony-xm-s400d)) |
 
-Avoid: **Kicker KEY200.4** ($240, has DSP and auto-EQ but is **4 Ω minimum**), Rockford PBR300X4
-(4 Ω only, discontinued). Discontinued: Kenwood X302-4, JBL Club A754.
+Avoid: Rockford PBR300X4 (4 Ω only, discontinued). Discontinued: Kenwood X302-4, JBL Club A754.
+
+**Kicker KEY200.4** (~$240, suggested by Gemini 2026-10-26): a 4 × 50 W amp with a built-in DSP
+that tunes itself with the included microphone: auto time alignment (defeatable), auto 40-band EQ,
+24 dB/oct high-pass at 60 / 80 / 120 Hz (or full range). Very small: 187 × 70 × 43 mm, fits behind
+the dash or under a seat. Not bridgeable, no sub channel (the powered sub stays on the head unit's
+sub pre-out). Specs from Kicker and the owner's manual
+([Kicker](https://www.kicker.com/key-smart-amplifier),
+[Crutchfield FAQ](https://www.crutchfield.com/learn/kicker-47key200-4-compact-4-channel-amplifier-faq.html), **not archived yet**).
+
+- **Catch:** rated **4 Ω minimum per channel**; the Infinitys are 3 Ω. Each channel sees about 25%
+  more current than rated. At normal volume it will most likely work (the BOSS is also rated 4 Ω and
+  drives them), but at high volume it can run hot and hit protection, and it is outside the spec
+  (warranty).
+- **Versus GM-DX874 + DSP-408 (~$390):** about $150 cheaper, one small box, no laptop tuning. Less
+  control: tuning is automatic only (no manual per-channel EQ or delays), and less power headroom.
+- **Fit for this car:** the auto time alignment is exactly what the dash-corner speakers need. A good
+  choice if the 3 Ω risk is acceptable; the Pioneer + Dayton route is the in-spec one.
 
 ### DSP
 
