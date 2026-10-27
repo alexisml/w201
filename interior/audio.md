@@ -362,6 +362,43 @@ DEQ-2000A (Japan/Australia), Zapco ST-4X DSP III (EU, €594). All links above *
 value. In the US the realistic choices are an open-box Audison AP4.9bit (~$550–600) or the Musway
 M4 Nano ($700, smallest).
 
+### US two-box setups: DSP processor + 2 Ω amp (researched 2026-10-27)
+
+Owner preference: a DSP that tunes itself with a microphone (nice to have, not required).
+
+**DSP processors**
+
+| Model | Mic auto-tune | Inputs | Outputs | Size (mm) | US price | Source |
+|-------|---------------|--------|---------|-----------|----------|--------|
+| **Alpine PXE-C60-60 (OPTIM6)** | **Yes**: AutoEQ 2.0 sets EQ, time alignment and levels with a phone mic (iPhone X+ or Android) or the optional KTX-CSP1 mic kit | 6 RCA (max level not published), 6 high-level up to 27–30 V, BT, USB | 6 RCA, 4 V | 145 × 151 × 42.5 | $500 (launched at $400) | [Alpine](https://alpine-usa.com/product/pxe-c60-60-optim6-sound-processor), [Alpine press](https://www.alpine-usa.com/company/press/2023/alpine-now-shipping-the-optimtm6-6-channel-sound-processor-with-automatic-sound-tuning) |
+| miniDSP C-DSP 8x12 DL | **Yes**: Dirac Live (best correction); needs a laptop; UMIK-1 mic bundle | 6 RCA (2 or 4 V), high-level, digital | 12 | 41 × 205 × 122 | $890–940 | [miniDSP](https://www.minidsp.com/products/car-audio-dsp/cdsp-8x12-dl) |
+| **DS18 DSP4.8BTM** | No (manual, app) | 4 RCA up to **4 V** | 8, 3.5 V | — | $195–235 | [DS18](https://ds18.com/products/ds18-dsp4-8btm-4-channel-in-and-8-channel-out-digital-sound-processor-with-bluetooth-water-resistant) |
+| Dayton DSP-408 | No (manual) | 4 RCA, **max 3.2 V** (the BOSS can send 4 V: keep volume / level below max) | 8 | — | $165 | (see DSP table below) |
+| Rockford DSR1 | No | 4 RCA up to 4 V, high-level | 8 | ~130 × 103 × 32 | $420 | [Sound of Tri-State](https://www.soundoftristate.com/rockford-fosgate-dsr1) |
+
+No mic auto-tune: AudioControl DM-608/810, JL TwK-88, JL FiX-82 (its "auto" uses a test tone to undo
+factory EQ, no mic), Helix DSP Mini MK2 (unclear). Any manual DSP can be measured with a UMIK-1 mic and
+REW (free PC software): REW calculates the EQ, then it is typed in by hand (semi-automatic).
+
+**Compact 4-channel amps, 2 Ω stable**
+
+| Amp | RMS × 4 at 4 Ω / 2 Ω | Size (mm) | US price | Source |
+|-----|----------------------|-----------|----------|--------|
+| **Alpine KTA-450** | 50 / 45–50 | **181 × 89 × 36** (smallest) | $230–300 | [Abt](https://www.abt.com/Alpine-4-Channel-Power-Pack-Amplifier-With-PowerStack-KTA450/p/131270.html) |
+| **AudioControl EPICFOUR** | 100 / 200 (far more than needed: set gains carefully) | 239 × 155 × 51 | $160–200 | [AudioControl](https://audiocontrol.com/products/epicfour-4-channel-amplifier-800w-rms) |
+| JL Audio JD400/4 | 75 / 100 | ~242 × 53 × 180 | $300 new, $210 refurbished | [Sound of Tri-State](https://www.soundoftristate.com/jl-audio-jd400-4) |
+
+**Combos**
+
+| Combo | ≈ Total | Auto-tune | Notes |
+|-------|---------|-----------|-------|
+| **Alpine PXE-C60-60 + Alpine KTA-450** | $730–800 | **Yes** (phone mic) | Both small, one brand. 6 inputs take front, rear and sub |
+| Alpine PXE-C60-60 + AudioControl EPICFOUR | ~$700 | **Yes** | Cheapest true auto-tune |
+| **DS18 DSP4.8BTM + EPICFOUR** (+ UMIK-1 mic for REW) | $395–435 (+ mic) | Semi | 4 V inputs match the BOSS. Only 4 inputs: feed the sub from a DSP output |
+| Dayton DSP-408 + EPICFOUR (+ UMIK-1) | ~$365 (+ mic) | Semi | Watch the 3.2 V input limit |
+
+All links in this section **not archived yet**.
+
 ### Three ways to do amp + high-pass + time alignment
 
 | Option | Boxes | Time alignment | 3 Ω in spec | Power × 4 | Tuning | ≈ Cost |
