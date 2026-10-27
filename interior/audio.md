@@ -132,6 +132,28 @@ Any brand; what matters with the DSP and the 3 Ω Infinitys:
 - Remote: BOSS Blue/White → DSP and amp turn-on.
 
 
+### Cables and parts (DS18 + amp + powered sub)
+
+The DS18 has RCA jacks for its 4 inputs and 8 outputs (high-level inputs also possible), runs on
+10–15 V at 300 mA max, and is set up over Bluetooth. Box contents (power harness?) not published: check
+on arrival. Lengths assume the DSP and amp under the front passenger seat and the sub under the rear
+seat: measure first.
+
+| Item | Qty | Notes |
+|------|-----|-------|
+| RCA cable, stereo pair, ~2 m | 2 | BOSS front and rear pre-outs → DSP inputs 1–4 |
+| RCA cable, stereo pair, ~0.5 m | 2 | DSP outputs 1–4 → amp inputs |
+| RCA cable, ~4–5 m (mono, or a pair with one side used) | 1 | BOSS sub pre-out → powered sub |
+| Amp power kit, 8 AWG OFC | 1 | Power and ground cable, fuse holder + fuse near the battery (size to the amp), ring terminals, grommet |
+| Distribution block (fused) | 1 | Splits the 8 AWG feed to the amp, the sub and the DSP |
+| 18 AWG wire + 1–2 A inline fuse | ~1 m | DSP power from the distribution block |
+| Remote wire, 18 AWG | ~5 m | BOSS Blue/White → DSP, amp and sub turn-on |
+| Speaker wire, 16 AWG | ~4 runs | Amp outputs → speakers. Easiest: back to the dash and into the car's speaker leads where the BOSS speaker outputs connect now (also where a bypass would go) |
+| Short ground straps | 2–3 | DSP, amp and sub to bare body metal near them |
+
+Run RCA and speaker cables down the driver side, power down the passenger side (see
+[Power and install](#power-and-install)).
+
 ### Bypass
 
 A way to run the speakers straight from the BOSS if the amp or
