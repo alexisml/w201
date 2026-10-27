@@ -295,6 +295,21 @@ sub pre-out). Specs from Kicker and the owner's manual
   more current than rated. At normal volume it will most likely work (the BOSS is also rated 4 Ω and
   drives them), but at high volume it can run hot and hit protection, and it is outside the spec
   (warranty).
+- **Ways around the 4 Ω minimum** (our reasoning, not from Kicker):
+  1. **1 Ω series resistor per speaker** so the amp sees about 4 Ω. Use a 1 Ω, 25 W aluminium-housed
+     resistor (Dale RH-25 style, a few dollars each), bolted to metal. At the amp's full 50 W it
+     dissipates about 12.5 W; with music, a few watts. Costs: about 2.5 dB less level (voltage
+     divider 3 : 4) and a weaker grip on the speaker (damping factor about 3), so the response follows
+     the speaker's impedance curve a little. The 80 Hz high-pass removes most of the bass where that
+     matters, and the KEY's auto-EQ measures the result and corrects the rest. Cheapest fix.
+  2. **4 Ω speakers instead of the Infinitys** (at least the fronts). Many 4" coaxials are 4 Ω
+     (Kicker, Rockford, Alpine; check each); a Kicker 4" with a Kicker amp is a natural pair. Fully in
+     spec, no lost level; costs a new pair or two.
+  3. **Front and rear in series per side** (about 6 Ω per channel, 2 channels used). In spec, but front
+     and rear then share the same delay and EQ, which defeats most of the time alignment. Not
+     recommended.
+  4. **Run it at 3 Ω anyway.** About 25% below the minimum: likely fine at normal volume, may hit
+     protection when hot and loud, outside the warranty.
 - **Versus GM-DX874 + DSP-408 (~$390):** about $150 cheaper, one small box, no laptop tuning. Less
   control: tuning is automatic only (no manual per-channel EQ or delays), and less power headroom.
 - **Fit for this car:** the auto time alignment is exactly what the dash-corner speakers need. A good
