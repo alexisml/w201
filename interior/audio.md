@@ -551,6 +551,21 @@ software for **Windows only** (no Mac, no phone app). $157.99 in Genius's own st
 [manual](https://www.manualslib.com/manual/2533534/Genius-Audio-Gdsp-15404.html), **not archived yet**).
 Verdict: weaker and less convenient than the Stetsom + DS18 pair for this car.
 
+**DS18 vs Helix DSP Mini MK2** (owner's prices 2026-10-27: DS18 about US$320 imported, Helix about
+US$400 in Uruguay; both need the amp):
+
+| | DS18 DSP4.8BTM | Helix DSP Mini MK2 |
+|---|---|---|
+| Price here | ~$320 (imported) | ~$400 (local, local warranty) |
+| Quality | Budget DSP, works | Top-tier German DSP (Audiotec Fischer) |
+| Tuning | Phone app over Bluetooth (Pixel) | DSP PC-Tool, **Windows only**; wireless via the HEC BT HD module or WiFi adapter, still needs Windows. No Mac version or phone app found |
+| Inputs / outputs | 4 RCA (4 V) / 8 | 4 RCA (2–4 V), high-level, optical / 6 |
+| Mic auto-tune | No | Time measurement with the optional MTK1 mic (~$199, unclear) |
+
+For four 4" coaxials and a powered sub, the Helix's extra quality is small in practice; tuning on
+the phone counts for more here. The Helix is worth it only with access to a Windows PC (an Intel Mac
+with Boot Camp works; Windows on Apple-silicon Macs may not handle its USB driver: not checked).
+
 **Wiring**
 
 - BOSS front and rear RCA pre-outs → DSP inputs 1–4. BOSS sub pre-out → powered sub directly
