@@ -594,7 +594,7 @@ are out; most Brazilian processors are 2-input.
 |--------|-------|--------|--------------------|
 | **Helix DSP Mini MK2** (UY) + local 2 Ω amp | 2 | Windows laptop (PC-Tool) | ~$400 + amp (HL400.4 about US$135 on Mercado Libre UY) |
 | **DS18 DSP4.8BTM** (imported) + local 2 Ω amp | 2 | Phone app (Pixel) | ~$320 + amp |
-| **Stetsom HL400.4 DSPlayer** (amp + DSP in one) | 1 | Phone app | ~$110 US (more after import) |
+| **Stetsom HL400.4 DSPlayer** (amp + DSP in one; 4 inputs, use the speaker-wire inputs: its RCA takes 1 V max) | 1 | Phone app | ~$110 US (more after import) |
 
 A Windows laptop is available, so the Helix's Windows-only tuning is workable. The wiring and tuning
 steps below apply to all three (tool: PC-Tool, the DS18 app or the Stetsom app); REW and a UMIK-1
